@@ -5,21 +5,48 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\sptEnemy</sprite>
+    <sprite>sprites\sprPlatform</sprite>
+    <sprites name="player">
+      <sprite>sprites\sprPlayerIdleRight</sprite>
+      <sprite>sprites\sprPlayerIdleLeft</sprite>
+      <sprite>sprites\sprPlayerRunRight</sprite>
+      <sprite>sprites\sprPlayerRunLeft</sprite>
+    </sprites>
+    <sprites name="sword">
+      <sprite>sprites\sprSwordRight</sprite>
+      <sprite>sprites\sprSwordLeft</sprite>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="keyboard">
+      <script>scripts\isValidKey.gml</script>
+      <script>scripts\isPressed.gml</script>
+      <script>scripts\isPressedNoConflict.gml</script>
+      <script>scripts\debug_KeysPressedString.gml</script>
+      <script>scripts\updateKey.gml</script>
+      <script>scripts\noKeysPressed.gml</script>
+    </scripts>
     <scripts name="utils">
       <script>scripts\array.gml</script>
       <script>scripts\assert.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
+    <object>objects\objEnemy</object>
+    <object>objects\objSword</object>
     <object>objects\objMouseController</object>
+    <object>objects\objPlayer</object>
+    <object>objects\objKeyboardController</object>
     <object>objects\objUnitTestRunner</object>
+    <object>objects\objPlatform</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmUnitTest</room>
+    <room>rooms\rmTest</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
