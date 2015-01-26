@@ -19,6 +19,7 @@
       <sprite>sprites\sprSwordLeft</sprite>
     </sprites>
     <sprites name="player2">
+<<<<<<< HEAD
       <sprites name="run">
         <sprite>sprites\sprPlayerRunRight2</sprite>
         <sprite>sprites\sprPlayerRunLeft2</sprite>
@@ -41,6 +42,14 @@
           <sprite>sprites\sprPlayerAttackLeft</sprite>
         </sprites>
       </sprites>
+=======
+      <sprite>sprites\sprPlayerRunRight2</sprite>
+      <sprite>sprites\sprPlayerRunLeft2</sprite>
+      <sprite>sprites\sprPlayerIdleRight2</sprite>
+      <sprite>sprites\sprPlayerIdleLeft2</sprite>
+      <sprite>sprites\sprPlayerJumpRight</sprite>
+      <sprite>sprites\sprPlayerJumpLeft</sprite>
+>>>>>>> Add new sprites and scripts for prototype2
     </sprites>
   </sprites>
   <backgrounds name="background"/>
