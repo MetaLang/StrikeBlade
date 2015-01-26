@@ -428,12 +428,13 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="5">
+    <constants number="6">
       <constant name="MOUSE">objMouseController</constant>
       <constant name="ASSERT_ENABLED">true</constant>
       <constant name="KEYS">objKeyboardController</constant>
       <constant name="UNITTESTS_ENABLED">true</constant>
       <constant name="START_ROOM">rmTest</constant>
+      <constant name="DEBUG_INFO_ENABLED">true</constant>
     </constants>
   </ConfigConstants>
 </Config>
