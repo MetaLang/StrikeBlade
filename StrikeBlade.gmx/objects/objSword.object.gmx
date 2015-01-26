@@ -11,9 +11,9 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
@@ -25,35 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>trackMouse</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>true</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>facing</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>Direction.right</string>
+            <string>creationPointX = x;
+creationPointY = y;
+</string>
           </argument>
         </arguments>
       </action>
@@ -75,14 +49,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//if (trackMouse)
-//{
-    x = mouse_x;
-    y = mouse_y;
-//}
+            <string>if (distance_to_point(creationPointX, creationPointY) &gt; 400
+    || distance_to_point(objPlayer.x, 
+            objPlayer.y - objPlayer.sprite_height / 2) &gt; 400)
+{
+    instance_destroy();
+}
 
-facing = objPlayer.facing;
-
+/*
 var facingMultiplier = 0;
 if (facing == Direction.right)
 {
@@ -104,12 +78,13 @@ else if (facing == Direction.left)
 var deltaAngle = -1 * (MOUSE.xVelocity * 5 + MOUSE.yVelocity * 10); 
 image_angle += deltaAngle;
 image_angle = clamp(image_angle, -90, 45);
+*/
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="64">
+    <event eventtype="4" ename="objPlatform">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -126,8 +101,65 @@ image_angle = clamp(image_angle, -90, 45);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>imageAngleStr = "image_angle: " + string(image_angle);
-draw_text(window_get_width() / 2 - (string_width("image_angle: -000.00") + 200), 50, imageAngleStr);
+            <string>move_contact_solid(direction, vspeed * -sign(direction));
+vspeed = 0;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
+
+if (DEBUG_INFO_ENABLED)
+{
+    var oldColour = draw_get_colour();
+    draw_set_colour(c_green);
+    
+    if (distance_to_point(creationPointX, creationPointY) &gt; 300)
+    {
+        draw_set_colour(c_red);
+        draw_circle(creationPointX, creationPointY, 5, false);
+        draw_line(creationPointX, creationPointY, x, y);
+        draw_set_colour(c_green);
+    }
+    else
+    {
+        draw_circle(creationPointX, creationPointY, 5, false);
+        draw_line(creationPointX, creationPointY, x, y);
+    }
+    
+    if (distance_to_point(objPlayer.x, objPlayer.y - objPlayer.sprite_height / 2) &gt; 300)
+    {
+        draw_set_colour(c_red);
+        draw_line(x, y, objPlayer.x, objPlayer.y - objPlayer.sprite_height / 2);
+        draw_set_colour(c_green);
+    }
+    else
+    {   
+        draw_line(x, y, objPlayer.x, objPlayer.y - objPlayer.sprite_height / 2);
+    }
+    
+    draw_circle(objPlayer.x, objPlayer.y, 400, true);
+    draw_set_colour(oldColour);
+}
 </string>
           </argument>
         </arguments>

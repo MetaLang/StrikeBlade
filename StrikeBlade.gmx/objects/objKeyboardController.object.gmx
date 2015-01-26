@@ -97,7 +97,10 @@ ds_map_add(conflicts, d, a);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(window_get_width() / 2, 50, "Keys Pressed: " + debug_KeysPressedString());
+            <string>if (DEBUG_INFO_ENABLED)
+{
+    draw_text(window_get_width() / 2, 50, "Keys Pressed: " + debug_KeysPressedString());
+}
 </string>
           </argument>
         </arguments>
