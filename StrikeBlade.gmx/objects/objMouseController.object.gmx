@@ -78,9 +78,11 @@ lastY = mouse_y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(window_get_width() / 2 - 200, 50, "xVelocity: " + string(xVelocity));
-draw_text(window_get_width() / 2 - 200, 100, "yVelocity: " + string(yVelocity));
-
+            <string>if (DEBUG_INFO_ENABLED)
+{
+    draw_text(window_get_width() / 2 - 200, 50, "xVelocity: " + string(xVelocity));
+    draw_text(window_get_width() / 2 - 200, 100, "yVelocity: " + string(yVelocity));
+}
 
 </string>
           </argument>

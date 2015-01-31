@@ -5,21 +5,76 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\sptEnemy</sprite>
+    <sprite>sprites\sprPlatform</sprite>
+    <sprites name="player">
+      <sprite>sprites\sprPlayerIdleRight</sprite>
+      <sprite>sprites\sprPlayerIdleLeft</sprite>
+      <sprite>sprites\sprPlayerRunRight</sprite>
+      <sprite>sprites\sprPlayerRunLeft</sprite>
+    </sprites>
+    <sprites name="sword">
+      <sprite>sprites\sprSwordRight</sprite>
+      <sprite>sprites\sprSwordLeft</sprite>
+    </sprites>
+    <sprites name="player2">
+      <sprites name="run">
+        <sprite>sprites\sprPlayerRunRight2</sprite>
+        <sprite>sprites\sprPlayerRunLeft2</sprite>
+      </sprites>
+      <sprites name="idle">
+        <sprite>sprites\sprPlayerIdleRight2</sprite>
+        <sprite>sprites\sprPlayerIdleLeft2</sprite>
+      </sprites>
+      <sprites name="jump">
+        <sprite>sprites\sprPlayerJumpLeft</sprite>
+        <sprite>sprites\sprPlayerJumpRight</sprite>
+      </sprites>
+      <sprites name="attack">
+        <sprites name="up">
+          <sprite>sprites\sprPlayerAttackUpRight</sprite>
+          <sprite>sprites\sprPlayerAttackUpLeft</sprite>
+        </sprites>
+        <sprites name="side">
+          <sprite>sprites\sprPlayerAttackRight</sprite>
+          <sprite>sprites\sprPlayerAttackLeft</sprite>
+        </sprites>
+      </sprites>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="keyboard">
+      <script>scripts\isValidKey.gml</script>
+      <script>scripts\isPressed.gml</script>
+      <script>scripts\isPressedNoConflict.gml</script>
+      <script>scripts\debug_KeysPressedString.gml</script>
+      <script>scripts\updateKey.gml</script>
+      <script>scripts\noKeysPressed.gml</script>
+    </scripts>
     <scripts name="utils">
       <script>scripts\array.gml</script>
       <script>scripts\assert.gml</script>
+      <script>scripts\setSpriteFromFacing.gml</script>
+      <script>scripts\dirToKey.gml</script>
+      <script>scripts\getDirSign.gml</script>
+      <script>scripts\keyToDir.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
+    <object>objects\objEnemy</object>
+    <object>objects\objSword</object>
     <object>objects\objMouseController</object>
+    <object>objects\objPlayer</object>
+    <object>objects\objKeyboardController</object>
     <object>objects\objUnitTestRunner</object>
+    <object>objects\objPlatform</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmUnitTest</room>
+    <room>rooms\rmTest</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

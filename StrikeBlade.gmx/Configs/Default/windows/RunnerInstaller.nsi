@@ -82,7 +82,7 @@ InstallDir "$PROFILE\${APP_NAME}"
 InstallDirRegKey HKCU "Software\Runner" "Install_Dir"
 
 ; Request application privileges for Windows Vista
-RequestExecutionLevel admin
+RequestExecutionLevel user
 
 
 VIProductVersion "${FULL_VERSION}"

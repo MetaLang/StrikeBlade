@@ -1,0 +1,5 @@
+MOUSE=objMouseController
+ASSERT_ENABLED=true
+KEYS=objKeyboardController
+UNITTESTS_ENABLED=true
+START_ROOM=rmTest
