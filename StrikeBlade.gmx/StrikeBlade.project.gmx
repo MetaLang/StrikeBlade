@@ -133,6 +133,10 @@
       <script>scripts\dirToKey.gml</script>
       <script>scripts\getDirSign.gml</script>
       <script>scripts\keyToDir.gml</script>
+      <scripts name="collections">
+        <script>scripts\array.gml</script>
+        <script>scripts\map.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <objects name="objects">
