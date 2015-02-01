@@ -46,6 +46,10 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="collections">
+      <script>scripts\array.gml</script>
+      <script>scripts\map.gml</script>
+    </scripts>
     <scripts name="keyboard">
       <script>scripts\isValidKey.gml</script>
       <script>scripts\isPressed.gml</script>
@@ -55,7 +59,6 @@
       <script>scripts\noKeysPressed.gml</script>
     </scripts>
     <scripts name="utils">
-      <script>scripts\array.gml</script>
       <script>scripts\assert.gml</script>
       <script>scripts\setSpriteFromFacing.gml</script>
       <script>scripts\dirToKey.gml</script>
@@ -66,11 +69,16 @@
   <objects name="objects">
     <object>objects\objEnemy</object>
     <object>objects\objSword</object>
-    <object>objects\objMouseController</object>
     <object>objects\objPlayer</object>
-    <object>objects\objKeyboardController</object>
-    <object>objects\objUnitTestRunner</object>
     <object>objects\objPlatform</object>
+    <objects name="controllers">
+      <object>objects\objKeyboardController</object>
+      <object>objects\objUnitTestRunner</object>
+      <object>objects\objMouseController</object>
+    </objects>
+    <objects name="util">
+      <object>objects\objEnumContainer</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmUnitTest</room>

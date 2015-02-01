@@ -25,19 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>enum Direction
-{
-    left,
-    right,
-}
-
-facing = Direction.right;
+            <string>facing = Direction.right;
 runSpeed = 13;
 jumpSpeed = -20;
 swordThrowSpeed = 20;
 numJumps = 2;
-
 image_speed = 1/3;
+armourSlots = map(
+    ArmourSlots.head,  noone,
+    ArmourSlots.chest, noone,
+    ArmourSlots.hands, noone,
+    ArmourSlots.legs,  noone,
+);
+
 </string>
           </argument>
         </arguments>
@@ -166,6 +166,28 @@ vspeed = 0;
 
 
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objEnemy">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>

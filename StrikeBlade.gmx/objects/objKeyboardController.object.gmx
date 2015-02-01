@@ -44,11 +44,11 @@ for (var i = 0; i &lt; count; i++)
     ds_map_add(pressed, members[i], false);
 }
 
-conflicts = ds_map_create();
-ds_map_add(conflicts, w, s);
-ds_map_add(conflicts, s, w);
-ds_map_add(conflicts, a, d);
-ds_map_add(conflicts, d, a);
+conflicts = map(
+    w, s,
+    s, w,
+    a, d,
+    d, a);
 </string>
           </argument>
         </arguments>
