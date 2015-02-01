@@ -99,6 +99,12 @@
         </sprites>
       </sprites>
     </sprites>
+    <sprites name="armour pickups">
+      <sprite>sprites\sprArmourPickupRed</sprite>
+      <sprite>sprites\sprArmourPickupBlue</sprite>
+      <sprite>sprites\sprAmourPickupGreen</sprite>
+      <sprite>sprites\sprArmourPickupBlack</sprite>
+	</sprites>
     <sprites name="Tiles">
       <sprite>sprites\sprGrassTile1</sprite>
       <sprite>sprites\sprGrassTile2</sprite>
@@ -133,10 +139,10 @@
       <script>scripts\dirToKey.gml</script>
       <script>scripts\getDirSign.gml</script>
       <script>scripts\keyToDir.gml</script>
-      <scripts name="collections">
-        <script>scripts\array.gml</script>
-        <script>scripts\map.gml</script>
-      </scripts>
+    </scripts>
+    <scripts name="player">
+      <script>scripts\canMoveInDir.gml</script>
+      <script>scripts\getPlayerSprite.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -151,6 +157,14 @@
     </objects>
     <objects name="util">
       <object>objects\objEnumContainer</object>
+      <object>objects\objDebug</object>
+    </objects>
+    <objects name="armour pickups">
+      <object>objects\objChestArmour</object>
+      <object>objects\objArmourPickup</object>
+      <object>objects\objHandAmour</object>
+      <object>objects\objFeetArmour</object>
+      <object>objects\objLegArmour</object>
     </objects>
   </objects>
   <rooms name="rooms">
