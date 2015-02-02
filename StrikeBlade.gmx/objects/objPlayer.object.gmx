@@ -121,20 +121,35 @@ else
     assert(false, "Unexpected value for 'facing': ", facing);
 }
 
-if (mouse_check_button_released(mb_right))
+if (mouse_check_button_pressed(mb_left) &amp;&amp; !instance_exists(objSword))
 {
-    if (instance_exists(objSword))
+    var dir = point_direction(x, 
+                              y - (sprite_height / 2), 
+                              mouse_x, 
+                              mouse_y);
+    var swordX = lengthdir_x(sprite_width  / 2 + 30, dir);
+    var swordY = lengthdir_y(sprite_height / 2 + 40, dir);
+    with (instance_create(x + swordX, y - (sprite_height / 2) + swordY, objAttackSword))
     {
-        if (place_free(objSword.x - sprite_width / 2)
-                &amp;&amp; place_free(objSword.x + sprite_width / 2)
-                &amp;&amp; place_free(objSword.y - sprite_height / 2)
-                &amp;&amp; place_free(objSword.y + sprite_height / 2))
+        alarm[0] = room_speed * 0.5;
+        facing = objPlayer.facing;
+        image_angle += dir - 90;
+    }
+}
+else if (mouse_check_button_released(mb_right))
+{
+    if (instance_exists(objThrownSword))
+    {
+        if (place_free(objThrownSword.x - sprite_width / 2)
+                &amp;&amp; place_free(objThrownSword.x + sprite_width / 2)
+                &amp;&amp; place_free(objThrownSword.y - sprite_height / 2)
+                &amp;&amp; place_free(objThrownSword.y + sprite_height / 2))
         {
-            x = objSword.x;
-            y = objSword.y + (sprite_height / 2);
-            direction = objSword.direction;
-            speed = objSword.speed;
-            with (objSword)
+            x = objThrownSword.x;
+            y = objThrownSword.y + (sprite_height / 2);
+            direction = objThrownSword.direction;
+            speed = objThrownSword.speed;
+            with (objThrownSword)
             {
                 instance_destroy();
             }
@@ -143,7 +158,7 @@ if (mouse_check_button_released(mb_right))
     else
     {
         var swordStartX = x + getDirSign(facing) * (runSpeed + swordThrowSpeed);
-        with (instance_create(swordStartX, y - (sprite_height / 2), objSword))
+        with (instance_create(swordStartX, y - (sprite_height / 2), objThrownSword))
         {
             facing = objPlayer.facing;
             throwDist = objPlayer.swordThrowDist;
@@ -155,6 +170,35 @@ if (mouse_check_button_released(mb_right))
             speed = objPlayer.swordThrowSpeed;
             image_angle += dir - 90;
         }
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objThrownSword">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(other)
+{
+    if (speed == 0)
+    {
+        instance_destroy();
     }
 }
 </string>
@@ -213,35 +257,6 @@ if (mouse_check_button_released(mb_right))
 vspeed = 0;
 
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="objSword">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>with(other)
-{
-    if (speed == 0)
-    {
-        instance_destroy();
-    }
-}
 </string>
           </argument>
         </arguments>

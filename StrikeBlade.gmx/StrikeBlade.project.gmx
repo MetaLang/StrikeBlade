@@ -147,7 +147,6 @@
   </scripts>
   <objects name="objects">
     <object>objects\objEnemy</object>
-    <object>objects\objSword</object>
     <object>objects\objPlayer</object>
     <object>objects\objPlatform</object>
     <objects name="controllers">
@@ -165,6 +164,11 @@
       <object>objects\objHandAmour</object>
       <object>objects\objFeetArmour</object>
       <object>objects\objLegArmour</object>
+    </objects>
+    <objects name="sword">
+      <object>objects\objSword</object>
+      <object>objects\objThrownSword</object>
+      <object>objects\objAttackSword</object>
     </objects>
   </objects>
   <rooms name="rooms">
