@@ -76,7 +76,7 @@ if (isPressedNoConflict(KEYS.a) &amp;&amp; canMoveInDir(keyToDir(KEYS.a)))
     x -= runSpeed;
 }
 
-if (isPressed(KEYS.w) &amp;&amp; (!place_free(x, y + 1) || jumpCount &lt; maxJumps))
+if (isPressed(KEYS.w) &amp;&amp; !place_free(x, y + 1))
 {
     y += jumpSpeed;
     vspeed = jumpSpeed;
@@ -125,23 +125,36 @@ if (mouse_check_button_released(mb_right))
 {
     if (instance_exists(objSword))
     {
-        x = objSword.x;
-        y = objSword.y + (sprite_height / 2);
-        hspeed = objSword.hspeed;
-        with (objSword)
+        if (place_free(objSword.x - sprite_width / 2)
+                &amp;&amp; place_free(objSword.x + sprite_width / 2)
+                &amp;&amp; place_free(objSword.y - sprite_height / 2)
+                &amp;&amp; place_free(objSword.y + sprite_height / 2))
         {
-            instance_destroy();
+            x = objSword.x;
+            y = objSword.y + (sprite_height / 2);
+            direction = objSword.direction;
+            speed = objSword.speed;
+            with (objSword)
+            {
+                instance_destroy();
+            }
         }
     }
     else
     {
         var swordStartX = x + getDirSign(facing) * (runSpeed + swordThrowSpeed);
-        var sword = instance_create(swordStartX, y - (sprite_height / 2), objSword);
-        sword.facing = facing;
-        sword.throwDist = swordThrowDist;
-        setSpriteFromFacing(sword, sprSwordRight, sprSwordLeft);
-        sword.hspeed = getDirSign(facing) * swordThrowSpeed;
-        sword.image_angle = getDirSign(facing) * -90;
+        with (instance_create(swordStartX, y - (sprite_height / 2), objSword))
+        {
+            facing = objPlayer.facing;
+            throwDist = objPlayer.swordThrowDist;
+            var dir = point_direction(objPlayer.x, 
+                                      objPlayer.y - (objPlayer.sprite_height / 2), 
+                                      mouse_x, 
+                                      mouse_y);
+            direction = dir;
+            speed = objPlayer.swordThrowSpeed;
+            image_angle += dir - 90;
+        }
     }
 }
 </string>
@@ -205,6 +218,35 @@ vspeed = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="objSword">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(other)
+{
+    if (speed == 0)
+    {
+        instance_destroy();
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="objEnemy">
       <action>
         <libid>1</libid>
@@ -254,6 +296,10 @@ draw_rectangle(bbox_left,
                bbox_bottom,
                true);
 draw_set_colour(oldColour);*/
+
+//draw_set_colour(c_red);
+//draw_line(x, y, x, y - 40);
+//draw_line(x, y, mouse_x, mouse_y);
 </string>
           </argument>
         </arguments>

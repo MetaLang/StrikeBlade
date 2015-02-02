@@ -54,8 +54,7 @@
       </sprites>
     </sprites>
     <sprites name="sword">
-      <sprite>sprites\sprSwordRight</sprite>
-      <sprite>sprites\sprSwordLeft</sprite>
+      <sprite>sprites\sprSword</sprite>
     </sprites>
     <sprites name="player">
       <sprites name="blue">
@@ -139,6 +138,7 @@
       <script>scripts\dirToKey.gml</script>
       <script>scripts\getDirSign.gml</script>
       <script>scripts\keyToDir.gml</script>
+      <script>scripts\angleToSign.gml</script>
     </scripts>
     <scripts name="player">
       <script>scripts\canMoveInDir.gml</script>
