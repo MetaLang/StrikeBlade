@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>enum ArmourSlots
+            <string>enum Direction
+{
+    left,
+    right,
+}
+
+enum ArmourSlots
 {
     head,
     chest,
@@ -34,10 +40,10 @@
     feet,
 }
 
-enum Direction
+enum Animations
 {
-    left,
-    right,
+    idle,
+    run,
 }
 </string>
           </argument>

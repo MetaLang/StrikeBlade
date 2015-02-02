@@ -6,26 +6,16 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sptEnemy</sprite>
+    <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprPlatform</sprite>
-    <sprites name="player">
-      <sprite>sprites\sprPlayerIdleRight</sprite>
-      <sprite>sprites\sprPlayerIdleLeft</sprite>
-      <sprite>sprites\sprPlayerRunRight</sprite>
-      <sprite>sprites\sprPlayerRunLeft</sprite>
-    </sprites>
-    <sprites name="sword">
-      <sprite>sprites\sprSwordRight</sprite>
-      <sprite>sprites\sprSwordLeft</sprite>
-    </sprites>
-    <sprites name="player2">
+    <sprites name="player_old">
       <sprites name="run">
-        <sprite>sprites\sprPlayerRunRight2</sprite>
-        <sprite>sprites\sprPlayerRunLeft2</sprite>
+        <sprite>sprites\sprPlayerRunRight_old</sprite>
+        <sprite>sprites\sprPlayerRunLeft_old</sprite>
       </sprites>
       <sprites name="idle">
-        <sprite>sprites\sprPlayerIdleRight2</sprite>
-        <sprite>sprites\sprPlayerIdleLeft2</sprite>
+        <sprite>sprites\sprPlayerIdleRight_old</sprite>
+        <sprite>sprites\sprPlayerIdleLeft_old</sprite>
       </sprites>
       <sprites name="jump">
         <sprite>sprites\sprPlayerJumpLeft</sprite>
@@ -39,6 +29,52 @@
         <sprites name="side">
           <sprite>sprites\sprPlayerAttackRight</sprite>
           <sprite>sprites\sprPlayerAttackLeft</sprite>
+        </sprites>
+      </sprites>
+    </sprites>
+    <sprites name="sword">
+      <sprite>sprites\sprSwordRight</sprite>
+      <sprite>sprites\sprSwordLeft</sprite>
+    </sprites>
+    <sprites name="player">
+      <sprites name="blue">
+        <sprites name="idle">
+          <sprite>sprites\sprIdleRightBlue</sprite>
+          <sprite>sprites\sprIdleLeftBlue</sprite>
+        </sprites>
+        <sprites name="run">
+          <sprite>sprites\sprRunRightBlue</sprite>
+          <sprite>sprites\sprRunLeftBlue</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="red">
+        <sprites name="idle">
+          <sprite>sprites\sprIdleRightRed</sprite>
+          <sprite>sprites\sprIdleLeftRed</sprite>
+        </sprites>
+        <sprites name="run">
+          <sprite>sprites\sprRunRightRed</sprite>
+          <sprite>sprites\sprRunLeftRed</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="black">
+        <sprites name="idle">
+          <sprite>sprites\sprIdleRightBlack</sprite>
+          <sprite>sprites\sprIdleLeftBlack</sprite>
+        </sprites>
+        <sprites name="run">
+          <sprite>sprites\sprRunRightBlack</sprite>
+          <sprite>sprites\sprRunLeftBlack</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="green">
+        <sprites name="idle">
+          <sprite>sprites\sprIdleRightGreen</sprite>
+          <sprite>sprites\sprIdleLeftGreen</sprite>
+        </sprites>
+        <sprites name="run">
+          <sprite>sprites\sprRunRightGreen</sprite>
+          <sprite>sprites\sprRunLeftGreen</sprite>
         </sprites>
       </sprites>
     </sprites>
