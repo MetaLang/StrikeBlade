@@ -29,8 +29,8 @@
 currentAnimation = Animations.idle;
 runSpeed = 13;
 jumpSpeed = -20;
-swordThrowSpeed = 20;
-swordThrowDist = 800;
+swordThrowSpeed = 40;
+swordThrowDist = 1000;
 maxJumps = 2;
 jumpCount = 0;
 damage = 1;
@@ -124,7 +124,7 @@ if (place_free(x, y + 1))
 else
 {
     gravity = 0;
-    friction = 4;
+    friction = 8;
 }
 
 if (facing == Direction.right)
@@ -205,7 +205,7 @@ else if (mouse_check_button_released(mb_right) &amp;&amp; !instance_exists(objAt
             x = objThrownSword.x;
             y = objThrownSword.y + (sprite_height / 2);
             direction = objThrownSword.direction;
-            speed = objThrownSword.speed;
+            speed = objThrownSword.speed / 2;
             with (objThrownSword)
             {
                 instance_destroy();
@@ -366,7 +366,7 @@ vspeed = 0;
             <kind>1</kind>
             <string>draw_self();
 
-draw_text(room_width / 2, 50, "Armour Level: " + string(armourLevel));
+//draw_text(room_width / 2, 50, "Armour Level: " + string(armourLevel));
 </string>
           </argument>
         </arguments>

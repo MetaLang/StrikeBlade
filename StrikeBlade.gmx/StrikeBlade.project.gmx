@@ -27,6 +27,7 @@
     </sounds>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\sprBotSpawner</sprite>
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprPlatform</sprite>
     <sprites name="player_old">
@@ -128,7 +129,6 @@
       <sprite>sprites\sprCaveFloorTile1</sprite>
       <sprite>sprites\sprCaveFloorTile2</sprite>
     </sprites>
-    <sprite>sprites\sprBotSpawner</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgCity1</background>

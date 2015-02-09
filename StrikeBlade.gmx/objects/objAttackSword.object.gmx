@@ -122,8 +122,8 @@ if (path_position &gt;= 1)
             <kind>1</kind>
             <string>draw_self();
 
-draw_text(room_width / 2 - 500, 50, "x: " + string(x)
-            + ", y: " + string(y) + ", Sword Angle: " + string(image_angle));
+//draw_text(room_width / 2 - 500, 50, "x: " + string(x)
+//            + ", y: " + string(y) + ", Sword Angle: " + string(image_angle));
 </string>
           </argument>
         </arguments>
