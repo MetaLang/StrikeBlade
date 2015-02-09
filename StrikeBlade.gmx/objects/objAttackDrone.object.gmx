@@ -3,7 +3,7 @@
   <spriteName>sprAttackDroneCooling</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>objEnemy</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -32,7 +32,7 @@ runSpeed = 5;
 range = 200;
 currentState = "Flying To Hero";
 droneMinHeight = 700;
-coolDownTime = room_speed * 3;
+coolDownTime = sbSeconds(3);
 image_speed = 1/3;
 </string>
           </argument>
@@ -111,7 +111,7 @@ switch(currentState) {
     case "Attacking":
         // Shoot Laser
         instance_create(x, y, objBotLaser);
-        alarm[0] = coolDownTime; // Cool down
+        alarm[AttackDroneAlarms.laser] = coolDownTime; // Cool down
         currentState = "Cooling Down";
     break;
         

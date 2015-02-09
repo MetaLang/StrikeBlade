@@ -3,7 +3,7 @@
   <spriteName>sprShockBotRun</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>objEnemy</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -31,8 +31,8 @@ hp = 1;
 runSpeed = 5;
 currentState = "Attacking";
 facing = Direction.left;
-bounceBackTime = room_speed * 0.5;
-coolDownTime = room_speed * 3;
+bounceBackTime = sbSeconds(0.5);
+coolDownTime = sbSeconds(3);
 image_speed = 1/3; 
 </string>
           </argument>
@@ -82,31 +82,8 @@ currentState = "Attacking";
             <kind>1</kind>
             <string>// Leaving Bounce Back State
 currentState = "Cooling Down";
+alarm[ShockBot.cooldown] = coolDownTime;
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>coolDownTime</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -197,57 +174,10 @@ switch(currentState) {
           <argument>
             <kind>1</kind>
             <string>hp -= other.damage;
-
 currentState = "Bouncing Back";
+move_bounce_solid(true);
+alarm[ShockBotAlarms.bounce] = bounceBackTime;
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>115</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_bounce</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>bounceBackTime</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
           </argument>
         </arguments>
       </action>

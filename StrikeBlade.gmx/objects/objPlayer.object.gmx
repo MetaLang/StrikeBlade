@@ -3,7 +3,7 @@
   <spriteName>sprIdleRightBlack</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10</depth>
+  <depth>-100</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -50,40 +50,6 @@ armourLevel = maxArmourLevel;
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*
-if (sprite_index == sprPlayerInvisible)
-{
-    sprite_index = getPlayerSprite(Direction.right, Animations.invisible);
-    alarm[1] = room_speed * 0.5;
-}
-else
-{
-    sprite_index = sprPlayerInvisible;
-    alarm[1] = room_speed * 0.5;
-}
-*/
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -102,8 +68,6 @@ else
           <argument>
             <kind>1</kind>
             <string>invincible = false;
-alarm[1] = -1;
-sprite_index = getPlayerSprite(facing, Animations.idle);
 </string>
           </argument>
         </arguments>
@@ -190,20 +154,45 @@ else
     assert(false, "Unexpected value for 'facing': ", facing);
 }
 
-if (mouse_check_button_pressed(mb_left) &amp;&amp; !instance_exists(objSword))
+if (mouse_check_button(mb_left) &amp;&amp; !instance_exists(objThrownSword))
 {
+    var sword = instance_find(objAttackSword, 0);
+    if (sword == noone)
+    {
+        sword = instance_create(0, 0, objAttackSword);
+    }
     var dir = point_direction(x, y - (sprite_height / 2), 
                               mouse_x, mouse_y);
     var swordX = lengthdir_x(sprite_width  / 2 + 30, dir);
     var swordY = lengthdir_y(sprite_height / 2 + 40, dir);
-    with (instance_create(x + swordX, y - (sprite_height / 2) + swordY, objAttackSword))
+    var swordXRelativeToPlayer = x + swordX;
+    var swordYRelativeToPlayer = y - sprite_height / 2 + swordY;
+    //with (instance_create(x + swordX, y - (sprite_height / 2) + swordY, objAttackSword))
+    //if (swordX &gt;= -sprite_width / 2 &amp;&amp; swordX &lt;= x + sprite_width / 2)
+    //{
+    with (sword)
     {
-        alarm[0] = room_speed * 0.5;
+        x = swordXRelativeToPlayer;
+        y = swordYRelativeToPlayer;
         facing = objPlayer.facing;
-        image_angle += dir - 90;
+        var newAngle = dir - 90;
+        //if (newAngle &lt;= 45 || newAngle &gt;= 215)
+        //{
+            image_angle = newAngle;
+        //}
+        //alarm[AttackSwordAlarms.swing] = sbSeconds(0.5);
+        //path_start(pthSwordSwing, swingSpeed, 0, true);
+    }
+    //}
+}
+else if (mouse_check_button_released(mb_left) &amp;&amp; instance_exists(objAttackSword))
+{
+    with (objAttackSword)
+    {
+        instance_destroy();
     }
 }
-else if (mouse_check_button_released(mb_right))
+else if (mouse_check_button_released(mb_right) &amp;&amp; !instance_exists(objAttackSword))
 {
     if (instance_exists(objThrownSword))
     {
@@ -351,7 +340,7 @@ vspeed = 0;
 {
     sbDamageArmour(other.armourDamage);
     invincible = true;
-    alarm[0] = room_speed * 2;
+    alarm[PlayerAlarms.invincibility] = room_speed * 2;
 }
 </string>
           </argument>

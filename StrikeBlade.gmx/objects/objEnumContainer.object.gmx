@@ -46,6 +46,38 @@ enum Animations
     run,
     invisible,
 }
+
+enum PlayerAlarms
+{
+    invincibility = 0,
+    blink = 1,
+}
+
+enum BotSpawnerAlarms
+{
+    spawn = 0,
+}
+
+enum ShockBotAlarms
+{
+    bounce = 0,
+    cooldown = 1,
+}
+
+enum AttackDroneAlarms
+{
+    laser = 0,
+}
+
+enum ThrownSwordAlarms
+{
+    returnToPlayer = 0,
+}
+
+enum AttackSwordAlarms
+{
+    swing = 0,
+}
 </string>
           </argument>
         </arguments>

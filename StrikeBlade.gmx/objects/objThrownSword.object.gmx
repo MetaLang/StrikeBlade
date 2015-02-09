@@ -3,7 +3,7 @@
   <spriteName>sprSword</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>10</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>objSword</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -53,7 +53,7 @@ facing = Direction.right;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = -1;
+            <string>alarm[ThrownSwordAlarms.returnToPlayer] = -1;
 instance_destroy();
 </string>
           </argument>
@@ -79,7 +79,7 @@ instance_destroy();
             <kind>1</kind>
             <string>if (distance_to_point(creationPointX, creationPointY) &gt; throwDist
     || distance_to_point(objPlayer.x, 
-            objPlayer.y - objPlayer.sprite_height / 2) &gt; throwDist)
+                         objPlayer.y - objPlayer.sprite_height / 2) &gt; throwDist)
 {
     instance_destroy();
 }
@@ -131,6 +131,10 @@ image_angle = clamp(image_angle, -90, 45);
             <kind>1</kind>
             <string>move_contact_solid(direction, vspeed * -sign(direction));
 speed = 0;
+if (alarm[ThrownSwordAlarms.returnToPlayer] == -1)
+{
+    alarm[ThrownSwordAlarms.returnToPlayer] = room_speed * 3;
+}
 
 </string>
           </argument>
@@ -155,9 +159,9 @@ speed = 0;
           <argument>
             <kind>1</kind>
             <string>speed = 0;
-if (alarm[0] == -1)
+if (alarm[ThrownSwordAlarms.returnToPlayer] == -1)
 {
-    alarm[0] = room_speed * 3;
+    alarm[ThrownSwordAlarms.returnToPlayer] = room_speed * 3;
 }
 </string>
           </argument>

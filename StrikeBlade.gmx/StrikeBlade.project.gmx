@@ -120,7 +120,7 @@
       <sprite>sprites\sprArmourPickupBlue</sprite>
       <sprite>sprites\sprAmourPickupGreen</sprite>
       <sprite>sprites\sprArmourPickupBlack</sprite>
-	</sprites>
+    </sprites>
     <sprites name="Tiles">
       <sprite>sprites\sprGrassTile1</sprite>
       <sprite>sprites\sprGrassTile2</sprite>
@@ -136,7 +136,9 @@
     <background>background\bgCity3</background>
     <background>background\bgCitySky</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\pthSwordSwing</path>
+  </paths>
   <scripts name="scripts">
     <scripts name="collections">
       <script>scripts\array.gml</script>
@@ -157,6 +159,7 @@
       <script>scripts\getDirSign.gml</script>
       <script>scripts\keyToDir.gml</script>
       <script>scripts\angleToSign.gml</script>
+      <script>scripts\sbSeconds.gml</script>
     </scripts>
     <scripts name="player">
       <script>scripts\canMoveInDir.gml</script>
