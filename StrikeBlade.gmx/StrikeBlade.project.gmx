@@ -78,8 +78,20 @@
         </sprites>
       </sprites>
     </sprites>
+    <sprites name="Tiles">
+      <sprite>sprites\sprGrassTile1</sprite>
+      <sprite>sprites\sprGrassTile2</sprite>
+      <sprite>sprites\sprWaterTile</sprite>
+      <sprite>sprites\sprCaveFloorTile1</sprite>
+      <sprite>sprites\sprCaveFloorTile2</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bgCity1</background>
+    <background>background\bgCity2</background>
+    <background>background\bgCity3</background>
+    <background>background\bgCitySky</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="collections">
