@@ -1,6 +1,12 @@
 var dir = argument[0];
 var anim = argument[1];
 var colour;
+
+if (sprite_index == sprPlayerInvisible)
+{
+    return sprPlayerInvisible;
+}
+
 if (argument_count == 2)
 {
     colour = armourColours[armourLevel];

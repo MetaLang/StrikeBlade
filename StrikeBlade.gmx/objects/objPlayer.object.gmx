@@ -26,12 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>facing = Direction.right;
+currentAnimation = Animations.idle;
 runSpeed = 13;
 jumpSpeed = -20;
 swordThrowSpeed = 20;
 swordThrowDist = 800;
 maxJumps = 2;
 jumpCount = 0;
+damage = 1;
+invincible = false;
 
 armourColours = array(
     c_red,
@@ -42,6 +45,65 @@ armourColours = array(
 
 maxArmourLevel = array_length_1d(armourColours) - 1;
 armourLevel = maxArmourLevel;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*
+if (sprite_index == sprPlayerInvisible)
+{
+    sprite_index = getPlayerSprite(Direction.right, Animations.invisible);
+    alarm[1] = room_speed * 0.5;
+}
+else
+{
+    sprite_index = sprPlayerInvisible;
+    alarm[1] = room_speed * 0.5;
+}
+*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>invincible = false;
+alarm[1] = -1;
+sprite_index = getPlayerSprite(facing, Animations.idle);
 </string>
           </argument>
         </arguments>
@@ -67,13 +129,20 @@ armourLevel = maxArmourLevel;
             <string>if (isPressedNoConflict(KEYS.d) &amp;&amp; canMoveInDir(keyToDir(KEYS.d)))
 {
     facing = Direction.right;
+    currentAnimation = Animations.run;
     x += runSpeed;
 }
 
 if (isPressedNoConflict(KEYS.a) &amp;&amp; canMoveInDir(keyToDir(KEYS.a)))
 {
     facing = Direction.left;
+    currentAnimation = Animations.run;
     x -= runSpeed;
+}
+
+if (keyboard_check_released(KEYS.d) || keyboard_check_released(KEYS.a))
+{
+    currentAnimation = Animations.idle;
 }
 
 if (isPressed(KEYS.w) &amp;&amp; !place_free(x, y + 1))
@@ -98,22 +167,22 @@ if (facing == Direction.right)
 {
     if (isPressed(dirToKey(facing)) &amp;&amp; !place_free(x, y + 1))
     {
-        sprite_index = getPlayerSprite(Direction.right, Animations.run);
+        sprite_index = getPlayerSprite(facing, currentAnimation);
     }
     else
     {
-        sprite_index = getPlayerSprite(Direction.right, Animations.idle);
+        sprite_index = getPlayerSprite(facing, currentAnimation);
     }
 }
 else if (facing == Direction.left)
 {
     if (isPressed(dirToKey(facing)) &amp;&amp; !place_free(x, y + 1))
     {
-        sprite_index = getPlayerSprite(Direction.left, Animations.run);
+        sprite_index = getPlayerSprite(facing, currentAnimation);
     }
     else
     {
-        sprite_index = getPlayerSprite(Direction.left, Animations.idle);
+        sprite_index = getPlayerSprite(facing, currentAnimation);
     }
 }
 else
@@ -123,10 +192,8 @@ else
 
 if (mouse_check_button_pressed(mb_left) &amp;&amp; !instance_exists(objSword))
 {
-    var dir = point_direction(x, 
-                              y - (sprite_height / 2), 
-                              mouse_x, 
-                              mouse_y);
+    var dir = point_direction(x, y - (sprite_height / 2), 
+                              mouse_x, mouse_y);
     var swordX = lengthdir_x(sprite_width  / 2 + 30, dir);
     var swordY = lengthdir_y(sprite_height / 2 + 40, dir);
     with (instance_create(x + swordX, y - (sprite_height / 2) + swordY, objAttackSword))
@@ -140,10 +207,11 @@ else if (mouse_check_button_released(mb_right))
 {
     if (instance_exists(objThrownSword))
     {
-        if (place_free(objThrownSword.x - sprite_width / 2, objThrownSword.y - sprite_height / 2)
-                &amp;&amp; place_free(objThrownSword.x - sprite_width / 2, objThrownSword.y + sprite_height / 2)
-                &amp;&amp; place_free(objThrownSword.x + sprite_width / 2, objThrownSword.y + sprite_height / 2)
-                &amp;&amp; place_free(objThrownSword.x + sprite_width / 2, objThrownSword.y - sprite_height / 2))
+        var canTeleport = !(place_meeting(objThrownSword.x - sprite_width / 2, objThrownSword.y - sprite_height / 2, objPlatform)
+                            || place_meeting(objThrownSword.x - sprite_width / 2, objThrownSword.y + sprite_height / 2, objPlatform)
+                            || place_meeting(objThrownSword.x + sprite_width / 2, objThrownSword.y + sprite_height / 2, objPlatform)
+                            || place_meeting(objThrownSword.x + sprite_width / 2, objThrownSword.y - sprite_height / 2, objPlatform));
+        if (canTeleport)
         {
             x = objThrownSword.x;
             y = objThrownSword.y + (sprite_height / 2);
@@ -262,7 +330,7 @@ vspeed = 0;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objEnemy">
+    <event eventtype="4" ename="damageSource">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -279,7 +347,13 @@ vspeed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>if (!invincible)
+{
+    sbDamageArmour(other.armourDamage);
+    invincible = true;
+    alarm[0] = room_speed * 2;
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -303,18 +377,7 @@ vspeed = 0;
             <kind>1</kind>
             <string>draw_self();
 
-/*var oldColour = draw_get_colour();
-draw_set_colour(c_red);
-draw_rectangle(bbox_left,
-               bbox_top,
-               bbox_right,
-               bbox_bottom,
-               true);
-draw_set_colour(oldColour);*/
-
-//draw_set_colour(c_red);
-//draw_line(x, y, x, y - 40);
-//draw_line(x, y, mouse_x, mouse_y);
+draw_text(room_width / 2, 50, "Armour Level: " + string(armourLevel));
 </string>
           </argument>
         </arguments>

@@ -58,10 +58,7 @@
 {
     with (objPlayer)
     {
-        if (armourLevel &gt; 0)
-        {
-            armourLevel--;
-        }
+        sbDamageArmour(1);
     }
 }
 </string>

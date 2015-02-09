@@ -97,6 +97,23 @@
           <sprite>sprites\sprRunLeftGreen</sprite>
         </sprites>
       </sprites>
+      <sprite>sprites\sprPlayerInvisible</sprite>
+    </sprites>
+    <sprites name="attackDrone">
+      <sprite>sprites\sprAttackDroneCooling</sprite>
+      <sprite>sprites\sprAttackDroneIdle</sprite>
+      <sprite>sprites\sprBotLaser</sprite>
+    </sprites>
+    <sprites name="shockBot">
+      <sprites name="run">
+        <sprite>sprites\sprShockBotRun</sprite>
+      </sprites>
+      <sprites name="coolDown">
+        <sprite>sprites\sprShockBotCoolDown</sprite>
+      </sprites>
+      <sprites name="attack">
+        <sprite>sprites\sprShockBotAttack</sprite>
+      </sprites>
     </sprites>
     <sprites name="armour pickups">
       <sprite>sprites\sprArmourPickupRed</sprite>
@@ -111,6 +128,7 @@
       <sprite>sprites\sprCaveFloorTile1</sprite>
       <sprite>sprites\sprCaveFloorTile2</sprite>
     </sprites>
+    <sprite>sprites\sprBotSpawner</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgCity1</background>
@@ -143,10 +161,12 @@
     <scripts name="player">
       <script>scripts\canMoveInDir.gml</script>
       <script>scripts\getPlayerSprite.gml</script>
+      <script>scripts\sbDamageArmour.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\objEnemy</object>
+    <object>objects\objBotLaser</object>
+    <object>objects\damageSource</object>
     <object>objects\objPlayer</object>
     <object>objects\objPlatform</object>
     <objects name="controllers">
@@ -170,10 +190,17 @@
       <object>objects\objThrownSword</object>
       <object>objects\objAttackSword</object>
     </objects>
+    <objects name="enemies">
+      <object>objects\objShockBot</object>
+      <object>objects\objAttackDrone</object>
+      <object>objects\objBotSpawner</object>
+      <object>objects\objEnemy</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmUnitTest</room>
     <room>rooms\rmTest</room>
+    <room>rooms\rmEnemyTest</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
