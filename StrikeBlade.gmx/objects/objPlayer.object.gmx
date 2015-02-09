@@ -140,10 +140,10 @@ else if (mouse_check_button_released(mb_right))
 {
     if (instance_exists(objThrownSword))
     {
-        if (place_free(objThrownSword.x - sprite_width / 2)
-                &amp;&amp; place_free(objThrownSword.x + sprite_width / 2)
-                &amp;&amp; place_free(objThrownSword.y - sprite_height / 2)
-                &amp;&amp; place_free(objThrownSword.y + sprite_height / 2))
+        if (place_free(objThrownSword.x - sprite_width / 2, objThrownSword.y - sprite_height / 2)
+                &amp;&amp; place_free(objThrownSword.x - sprite_width / 2, objThrownSword.y + sprite_height / 2)
+                &amp;&amp; place_free(objThrownSword.x + sprite_width / 2, objThrownSword.y + sprite_height / 2)
+                &amp;&amp; place_free(objThrownSword.x + sprite_width / 2, objThrownSword.y - sprite_height / 2))
         {
             x = objThrownSword.x;
             y = objThrownSword.y + (sprite_height / 2);
