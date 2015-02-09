@@ -4,7 +4,28 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="Enemy Sounds">
+      <sound>sound\sndLaser</sound>
+      <sound>sound\sndEMelee</sound>
+    </sounds>
+    <sounds name="Player Sounds">
+      <sound>sound\sndSlash1</sound>
+      <sound>sound\sndBones</sound>
+      <sound>sound\sndSlash3</sound>
+      <sound>sound\sndExplosion</sound>
+      <sound>sound\sndArmorPick</sound>
+      <sound>sound\sndJump</sound>
+      <sound>sound\sndSlash2</sound>
+      <sound>sound\sndPlayerdmg</sound>
+    </sounds>
+    <sounds name="Background Music">
+      <sound>sound\sndThunderchild</sound>
+      <sound>sound\sndRockMenu</sound>
+      <sound>sound\sndAdventureHo</sound>
+      <sound>sound\sndWoodlandFantasy</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprPlatform</sprite>
