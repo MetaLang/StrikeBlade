@@ -30,7 +30,7 @@ a = ord('A');
 s = ord('S');
 d = ord('D');
 
-members = array(w, a, s, d);
+members = sbArray(w, a, s, d);
 count = array_length_1d(members);
 keyNames = 0;
 for (var i = count - 1; i &gt;= 0; i--)

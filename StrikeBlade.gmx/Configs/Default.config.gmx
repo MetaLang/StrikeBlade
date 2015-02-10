@@ -431,7 +431,7 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="7">
+    <constants number="11">
       <constant name="MOUSE">objMouseController</constant>
       <constant name="ASSERT_ENABLED">true</constant>
       <constant name="KEYS">objKeyboardController</constant>
@@ -439,6 +439,10 @@
       <constant name="START_ROOM">rmTest</constant>
       <constant name="DEBUG_INFO_ENABLED">false</constant>
       <constant name="DEBUG_KEYS_ENABLED">true</constant>
+      <constant name="EASY_LIGHTING_ENABLED">false</constant>
+      <constant name="DYNAMIC_LIGHTS_ENABLED">false</constant>
+      <constant name="EASY_LIGHTING_DEBUG_ENABLED">false</constant>
+      <constant name="EASY_LIGHTING_PRECISION">32</constant>
     </constants>
   </ConfigConstants>
 </Config>

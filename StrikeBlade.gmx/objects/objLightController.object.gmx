@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="9" enumb="113">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,19 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (DEBUG_KEYS_ENABLED)
-{
-    if (!instance_exists(objArmourPickup))
-    {
-        instance_create(1376, 992, objArmourPickup);
-    }
-}
+            <string>ls_system_properties(EASY_LIGHTING_ENABLED, ls_dm_normal, c_black);
+assert(ls_noview_attach(), "Could not initialize lighting system or it already exists");
+
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="112">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -54,13 +50,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (DEBUG_KEYS_ENABLED)
-{
-    with (objPlayer)
-    {
-        damageArmour(1);
-    }
-}
+            <string>ls_system_draw(EASY_LIGHTING_ENABLED, EASY_LIGHTING_DEBUG_ENABLED);
 </string>
           </argument>
         </arguments>

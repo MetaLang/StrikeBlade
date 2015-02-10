@@ -3,7 +3,9 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Easy_Lighting_Studio</extension>
+  </NewExtensions>
   <sounds name="sound">
     <sounds name="Enemy Sounds">
       <sound>sound\sndLaser</sound>
@@ -141,7 +143,7 @@
   </paths>
   <scripts name="scripts">
     <scripts name="collections">
-      <script>scripts\array.gml</script>
+      <script>scripts\sbArray.gml</script>
       <script>scripts\map.gml</script>
     </scripts>
     <scripts name="keyboard">
@@ -164,7 +166,7 @@
     <scripts name="player">
       <script>scripts\canMoveInDir.gml</script>
       <script>scripts\getPlayerSprite.gml</script>
-      <script>scripts\sbDamageArmour.gml</script>
+      <script>scripts\damageArmour.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -176,6 +178,7 @@
       <object>objects\objKeyboardController</object>
       <object>objects\objUnitTestRunner</object>
       <object>objects\objMouseController</object>
+      <object>objects\objLightController</object>
     </objects>
     <objects name="util">
       <object>objects\objEnumContainer</object>
@@ -203,7 +206,6 @@
   <rooms name="rooms">
     <room>rooms\rmUnitTest</room>
     <room>rooms\rmTest</room>
-    <room>rooms\rmEnemyTest</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
