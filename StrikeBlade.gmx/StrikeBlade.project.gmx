@@ -125,11 +125,13 @@
       <sprite>sprites\sprArmourPickupBlack</sprite>
     </sprites>
     <sprites name="Tiles">
-      <sprite>sprites\sprGrassTile1</sprite>
-      <sprite>sprites\sprGrassTile2</sprite>
       <sprite>sprites\sprWaterTile</sprite>
-      <sprite>sprites\sprCaveFloorTile1</sprite>
-      <sprite>sprites\sprCaveFloorTile2</sprite>
+      <sprites name="Tombstones">
+        <sprite>sprites\sprTomb4</sprite>
+        <sprite>sprites\SprTomb3</sprite>
+        <sprite>sprites\sprTomb2</sprite>
+        <sprite>sprites\sprTomb1</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -137,6 +139,7 @@
     <background>background\bgCity2</background>
     <background>background\bgCity3</background>
     <background>background\bgCitySky</background>
+    <background>background\bgTileSetTomb</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pthSwordSwing</path>
