@@ -117,6 +117,14 @@
       <sprites name="attack">
         <sprite>sprites\sprShockBotAttack</sprite>
       </sprites>
+      <sprites name="faultyBot">
+        <sprite>sprites\sprFaultyBot</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="heavyAttackDrone">
+      <sprite>sprites\sprHeavyAttackDrone</sprite>
+      <sprite>sprites\sprHeavyAttackDroneBomb</sprite>
+      <sprite>sprites\sprBotBomb</sprite>
     </sprites>
     <sprites name="armour pickups">
       <sprite>sprites\sprArmourPickupRed</sprite>
@@ -177,6 +185,9 @@
       <script>scripts\makeReticule.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fntScore</font>
+  </fonts>
   <objects name="objects">
     <object>objects\objPlayer</object>
     <object>objects\objPlatform</object>
@@ -192,6 +203,7 @@
     <objects name="util">
       <object>objects\objEnumContainer</object>
       <object>objects\objDebug</object>
+      <object>objects\objScore</object>
       <object>objects\objDeathTextDrawer</object>
     </objects>
     <objects name="armour pickups">
@@ -208,9 +220,12 @@
     </objects>
     <objects name="enemies">
       <object>objects\objShockBot</object>
+      <object>objects\objFaultyBot</object>
       <object>objects\objAttackDrone</object>
       <object>objects\objBotSpawner</object>
-      <object>objects\objEnemy</object>
+      <object>objects\objHeavyDroneBlaster</object>
+      <object>objects\objHeavyAttackDrone</object>
+      <object>objects\objBotBomb</object>
       <object>objects\objBotLaser</object>
     </objects>
     <objects name="hazards">
