@@ -167,7 +167,7 @@
       <script>scripts\getDirSign.gml</script>
       <script>scripts\keyToDir.gml</script>
       <script>scripts\angleToSign.gml</script>
-      <script>scripts\sbSeconds.gml</script>
+      <script>scripts\seconds.gml</script>
     </scripts>
     <scripts name="player">
       <script>scripts\canMoveInDir.gml</script>
@@ -180,16 +180,19 @@
   <objects name="objects">
     <object>objects\objPlayer</object>
     <object>objects\objPlatform</object>
+    <object>objects\objSpawnLocation</object>
     <object>objects\objReticule</object>
     <objects name="controllers">
       <object>objects\objKeyboardController</object>
       <object>objects\objUnitTestRunner</object>
       <object>objects\objMouseController</object>
       <object>objects\objLightController</object>
+      <object>objects\objSpawnController</object>
     </objects>
     <objects name="util">
       <object>objects\objEnumContainer</object>
       <object>objects\objDebug</object>
+      <object>objects\objDeathTextDrawer</object>
     </objects>
     <objects name="armour pickups">
       <object>objects\objChestArmour</object>

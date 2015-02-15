@@ -431,7 +431,7 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="11">
+    <constants number="13">
       <constant name="MOUSE">objMouseController</constant>
       <constant name="ASSERT_ENABLED">true</constant>
       <constant name="KEYS">objKeyboardController</constant>
@@ -443,6 +443,8 @@
       <constant name="DYNAMIC_LIGHTS_ENABLED">false</constant>
       <constant name="EASY_LIGHTING_DEBUG_ENABLED">false</constant>
       <constant name="EASY_LIGHTING_PRECISION">32</constant>
+      <constant name="UNIT_TEST_EVENT">ev_user0</constant>
+      <constant name="PLAYER_DEATH_EVENT">ev_user1</constant>
     </constants>
   </ConfigConstants>
 </Config>

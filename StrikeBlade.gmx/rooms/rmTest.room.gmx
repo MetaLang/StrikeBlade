@@ -98,7 +98,7 @@
     <instance objName="objPlatform" x="1248" y="480" name="inst_6720DF0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="1312" y="480" name="inst_AF7D51B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="1376" y="480" name="inst_7CD90AAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objArmourPickup" x="1248" y="448" name="inst_4673C0BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objArmourPickup" x="1280" y="448" name="inst_4673C0BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="128" y="288" name="inst_D97C128B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="192" y="288" name="inst_8ABB8FEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="256" y="288" name="inst_B05070B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -107,6 +107,10 @@
     <instance objName="objBotSpawner" x="160" y="768" name="inst_8BBC4C39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objArmourPickup" x="224" y="256" name="inst_7011793F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightController" x="96" y="0" name="inst_6251B074" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpawnLocation" x="288" y="192" name="inst_E3AF81D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpawnLocation" x="672" y="544" name="inst_B7E288DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpawnLocation" x="1152" y="384" name="inst_0005987D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpawnController" x="128" y="0" name="inst_5EF36FD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
