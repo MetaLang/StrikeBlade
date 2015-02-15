@@ -289,6 +289,7 @@ else if (mouse_check_button_released(mb_right) &amp;&amp; !instance_exists(objAt
             {
                 instance_destroy();
             }
+            effect_create_above(ef_ring, x, y - sprite_height / 2, 2, c_blue);
         }
     }
     else

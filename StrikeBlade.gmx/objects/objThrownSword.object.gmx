@@ -31,6 +31,9 @@ creationPointX = x;
 creationPointY = y;
 throwDist = 0;
 facing = Direction.right;
+emitParticles = true;
+
+
 </string>
           </argument>
         </arguments>
@@ -53,7 +56,18 @@ facing = Direction.right;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (distance_to_point(creationPointX, creationPointY) &gt; throwDist
+            <string>if (emitParticles)
+{
+    var swordX = x;
+    var swordY = y;
+    var swordAngle = image_angle;
+    with (objPlayer) if (distance_to_point(swordX, swordY) &gt;= 10)
+    {
+        effect_create_above(ef_ring, swordX, swordY, 0, c_blue);
+    }
+}
+
+if (distance_to_point(creationPointX, creationPointY) &gt; throwDist
     || distance_to_point(objPlayer.x, 
                          objPlayer.y - objPlayer.sprite_height / 2) &gt; throwDist)
 {
@@ -107,6 +121,7 @@ image_angle = clamp(image_angle, -90, 45);
             <kind>1</kind>
             <string>move_contact_solid(direction, vspeed * -sign(direction));
 speed = 0;
+emitParticles = false;
 
 </string>
           </argument>
