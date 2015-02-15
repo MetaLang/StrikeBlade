@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>instance_create(x, y, objAttackDrone);
 instance_create(x, y, objShockBot);
+instance_create(x, y, objHeavyAttackDrone);
 alarm[BotSpawnerAlarms.spawn] = sbSeconds(6);
 </string>
           </argument>
@@ -52,6 +53,7 @@ alarm[BotSpawnerAlarms.spawn] = sbSeconds(6);
             <kind>1</kind>
             <string>instance_create(x, y, objAttackDrone);
 instance_create(x, y, objShockBot);
+instance_create(x, y, objHeavyAttackDrone);
 alarm[BotSpawnerAlarms.spawn] = sbSeconds(6);
 </string>
           </argument>
