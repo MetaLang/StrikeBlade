@@ -68,16 +68,6 @@ enum AttackDroneAlarms
 {
     laser = 0,
 }
-
-enum ThrownSwordAlarms
-{
-    returnToPlayer = 0,
-}
-
-enum AttackSwordAlarms
-{
-    swing = 0,
-}
 </string>
           </argument>
         </arguments>
