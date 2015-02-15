@@ -45,6 +45,7 @@ armourColours = sbArray(
 
 maxArmourLevel = array_length_1d(armourColours) - 1;
 armourLevel = maxArmourLevel;
+reticule = makeReticule();
 </string>
           </argument>
         </arguments>
@@ -154,6 +155,8 @@ else
     assert(false, "Unexpected value for 'facing': ", facing);
 }
 
+
+
 if (mouse_check_button(mb_left) &amp;&amp; !instance_exists(objThrownSword))
 {
     var sword = instance_find(objAttackSword, 0);
@@ -214,8 +217,8 @@ else if (mouse_check_button_released(mb_right) &amp;&amp; !instance_exists(objAt
     }
     else
     {
-        var swordStartX = x + getDirSign(facing) * (runSpeed + swordThrowSpeed);
-        with (instance_create(swordStartX, y - (sprite_height / 2), objThrownSword))
+        //var swordStartX = x + getDirSign(facing) * (runSpeed + swordThrowSpeed);
+        with (instance_create(x + getDirSign(facing), y - (sprite_height / 2), objThrownSword))
         {
             facing = objPlayer.facing;
             throwDist = objPlayer.swordThrowDist;
@@ -228,6 +231,23 @@ else if (mouse_check_button_released(mb_right) &amp;&amp; !instance_exists(objAt
             image_angle += dir - 90;
         }
     }
+}
+
+if (instance_exists(objAttackSword))
+{
+    with (reticule)
+    {
+        instance_destroy();
+    }
+    reticule = noone;
+}
+else
+{
+    if (reticule == noone)
+    {
+        reticule = makeReticule();
+    }
+    updateReticule();
 }
 </string>
           </argument>

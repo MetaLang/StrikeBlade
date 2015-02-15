@@ -133,6 +133,9 @@
         <sprite>sprites\sprTomb1</sprite>
       </sprites>
     </sprites>
+    <sprites name="reticule">
+      <sprite>sprites\sprSwordReticule</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bgCity1</background>
@@ -170,13 +173,14 @@
       <script>scripts\canMoveInDir.gml</script>
       <script>scripts\getPlayerSprite.gml</script>
       <script>scripts\damageArmour.gml</script>
+      <script>scripts\updateReticule.gml</script>
+      <script>scripts\makeReticule.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\objBotLaser</object>
-    <object>objects\damageSource</object>
     <object>objects\objPlayer</object>
     <object>objects\objPlatform</object>
+    <object>objects\objReticule</object>
     <objects name="controllers">
       <object>objects\objKeyboardController</object>
       <object>objects\objUnitTestRunner</object>
@@ -204,6 +208,10 @@
       <object>objects\objAttackDrone</object>
       <object>objects\objBotSpawner</object>
       <object>objects\objEnemy</object>
+      <object>objects\objBotLaser</object>
+    </objects>
+    <objects name="hazards">
+      <object>objects\damageSource</object>
     </objects>
   </objects>
   <rooms name="rooms">
