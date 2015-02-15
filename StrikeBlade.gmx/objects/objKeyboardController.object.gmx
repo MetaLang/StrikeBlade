@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>w = ord('W');
+            <string>//Not the best place to put it, but 
+//I couldn't think of a better one
+math_set_epsilon(FP_EPSILON);
+
+w = ord('W');
 a = ord('A');
 s = ord('S');
 d = ord('D');
