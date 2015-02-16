@@ -66,7 +66,7 @@
     <option_audioGroupCount>1</option_audioGroupCount>
     <option_author></option_author>
     <option_backimage>nil</option_backimage>
-    <option_borderless>false</option_borderless>
+    <option_borderless>False</option_borderless>
     <option_changed>false</option_changed>
     <option_changeresolution>false</option_changeresolution>
     <option_closeesc>true</option_closeesc>
@@ -105,7 +105,7 @@
     <option_html5_interpolate>-1</option_html5_interpolate>
     <option_html5_jsprepend></option_html5_jsprepend>
     <option_html5_loadingbar>-1</option_html5_loadingbar>
-    <option_html5_localrunalert>true</option_html5_localrunalert>
+    <option_html5_localrunalert>True</option_html5_localrunalert>
     <option_html5_outputdebugtoconsole>False</option_html5_outputdebugtoconsole>
     <option_html5_outputname>index.html</option_html5_outputname>
     <option_html5_scale>-1</option_html5_scale>
@@ -256,7 +256,7 @@
     <option_screenkey>True</option_screenkey>
     <option_screenshotkey>true</option_screenshotkey>
     <option_shortcircuit>True</option_shortcircuit>
-    <option_showcursor>False</option_showcursor>
+    <option_showcursor>True</option_showcursor>
     <option_showprogress>1</option_showprogress>
     <option_sizeable>False</option_sizeable>
     <option_stayontop>false</option_stayontop>
@@ -431,12 +431,15 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="14">
+    <constants number="17">
       <constant name="MOUSE">objMouseController</constant>
       <constant name="ASSERT_ENABLED">true</constant>
       <constant name="KEYS">objKeyboardController</constant>
       <constant name="UNITTESTS_ENABLED">true</constant>
       <constant name="START_ROOM">rmTutorial</constant>
+      <constant name="CREDITS_ROOM">rmCredits</constant>
+      <constant name="MENU_ROOM">rmMainMenu</constant>
+      <constant name="TEST_ROOM">rmTest</constant>
       <constant name="DEBUG_INFO_ENABLED">false</constant>
       <constant name="DEBUG_KEYS_ENABLED">true</constant>
       <constant name="EASY_LIGHTING_ENABLED">false</constant>

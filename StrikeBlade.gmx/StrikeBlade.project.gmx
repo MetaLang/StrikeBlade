@@ -145,6 +145,11 @@
     <sprites name="reticule">
       <sprite>sprites\sprSwordReticule</sprite>
     </sprites>
+    <sprites name="menu screen">
+      <sprite>sprites\sprCreditsLabel</sprite>
+      <sprite>sprites\sprTutorialLabel</sprite>
+      <sprite>sprites\sprTestRoomLabel</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bgCity1</background>
@@ -152,6 +157,7 @@
     <background>background\bgCity3</background>
     <background>background\bgCitySky</background>
     <background>background\bgTileSetTomb</background>
+    <background>background\bgSplashScreen</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pthSwordSwing</path>
@@ -203,6 +209,9 @@
       <object>objects\objLightController</object>
       <object>objects\objSpawnController</object>
       <object>objects\objBackgroundController</object>
+      <object>objects\objSplashScreenController</object>
+      <object>objects\objCreditsController</object>
+      <object>objects\objSoundController</object>
     </objects>
     <objects name="util">
       <object>objects\objEnumContainer</object>
@@ -237,11 +246,19 @@
     <objects name="hazards">
       <object>objects\damageSource</object>
     </objects>
+    <objects name="menu screen">
+      <object>objects\objTutorialLabel</object>
+      <object>objects\objCreditsLabel</object>
+      <object>objects\objTestRoomLabel</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rmSplashScreen</room>
     <room>rooms\rmUnitTest</room>
     <room>rooms\rmTest</room>
     <room>rooms\rmTutorial</room>
+    <room>rooms\rmCredits</room>
+    <room>rooms\rmMainMenu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
