@@ -102,7 +102,7 @@ image_angle = clamp(image_angle, -90, 45);
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objPlatform">
+    <event eventtype="4" ename="objBlocker">
       <action>
         <libid>1</libid>
         <id>603</id>

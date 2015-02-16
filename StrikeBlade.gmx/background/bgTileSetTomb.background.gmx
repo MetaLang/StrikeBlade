@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>96</width>
-  <height>96</height>
+  <width>160</width>
+  <height>224</height>
   <data>images\bgTileSetTomb.png</data>
 </background>

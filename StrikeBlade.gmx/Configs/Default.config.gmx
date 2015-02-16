@@ -436,7 +436,7 @@
       <constant name="ASSERT_ENABLED">true</constant>
       <constant name="KEYS">objKeyboardController</constant>
       <constant name="UNITTESTS_ENABLED">true</constant>
-      <constant name="START_ROOM">rmTest</constant>
+      <constant name="START_ROOM">rmTutorial</constant>
       <constant name="DEBUG_INFO_ENABLED">false</constant>
       <constant name="DEBUG_KEYS_ENABLED">true</constant>
       <constant name="EASY_LIGHTING_ENABLED">false</constant>
