@@ -163,18 +163,46 @@ if (image_alpha != 1.0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (isPressedNoConflict(KEYS.d) &amp;&amp; canMoveInDir(keyToDir(KEYS.d)))
+            <string>if (isPressedNoConflict(KEYS.d))
 {
-    facing = Direction.right;
-    currentAnimation = Animations.run;
-    x += runSpeed;
+    //Step up slopes
+    if !canMoveInDir(keyToDir(KEYS.d)){
+            
+            if place_empty(x+runSpeed,y-32) then
+            {
+                x += runSpeed;
+                y-=32
+                move_contact_solid(270,32)
+            }
+    }
+    //Walk normally
+    else{
+        facing = Direction.right;
+        currentAnimation = Animations.run;
+        x += runSpeed;
+    }
 }
 
-if (isPressedNoConflict(KEYS.a) &amp;&amp; canMoveInDir(keyToDir(KEYS.a)))
+if (isPressedNoConflict(KEYS.a))
 {
-    facing = Direction.left;
-    currentAnimation = Animations.run;
-    x -= runSpeed;
+
+    //Step up slopes
+    if !canMoveInDir(keyToDir(KEYS.a)){
+            
+            if place_empty(x-runSpeed,y-32) then
+            {
+                x -= runSpeed;
+                y-=32
+                move_contact_solid(270,32)
+            }
+    }
+    //Walk normally
+    else{
+        facing = Direction.left;
+        currentAnimation = Animations.run;
+        x -= runSpeed;
+    }
+    
 }
 
 if (keyboard_check_released(KEYS.d) || keyboard_check_released(KEYS.a))
