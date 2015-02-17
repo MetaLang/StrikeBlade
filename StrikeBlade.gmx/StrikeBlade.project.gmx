@@ -156,8 +156,11 @@
     <background>background\bgCity2</background>
     <background>background\bgCity3</background>
     <background>background\bgCitySky</background>
-    <background>background\bgTileSetTomb</background>
     <background>background\bgSplashScreen</background>
+    <backgrounds name="tile sets">
+      <background>background\tsTomb</background>
+      <background>background\tsTombstones</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths">
     <path>paths\pthSwordSwing</path>

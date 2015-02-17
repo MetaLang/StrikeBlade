@@ -29,7 +29,6 @@
       <init>ls_system_init</init>
       <final>ls_system_free</final>
       <kind>2</kind>
-      <uncompress>0</uncompress>
       <ConfigOptions>
         <Config name="Default">
           <CopyToMask>1048770</CopyToMask>
@@ -648,7 +647,6 @@
       <init></init>
       <final></final>
       <kind>4</kind>
-      <uncompress>0</uncompress>
       <ConfigOptions>
         <Config name="Default">
           <CopyToMask>1114306</CopyToMask>
