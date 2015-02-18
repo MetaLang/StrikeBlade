@@ -32,6 +32,7 @@
     <sprite>sprites\sprBotSpawner</sprite>
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprPlatform</sprite>
+    <sprite>sprites\sprTutorialPlatform</sprite>
     <sprites name="player_old">
       <sprites name="run">
         <sprite>sprites\sprPlayerRunRight_old</sprite>
@@ -117,6 +118,14 @@
       <sprites name="attack">
         <sprite>sprites\sprShockBotAttack</sprite>
       </sprites>
+      <sprites name="faultyBot">
+        <sprite>sprites\sprFaultyBot</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="heavyAttackDrone">
+      <sprite>sprites\sprHeavyAttackDrone</sprite>
+      <sprite>sprites\sprHeavyAttackDroneBomb</sprite>
+      <sprite>sprites\sprBotBomb</sprite>
     </sprites>
     <sprites name="armour pickups">
       <sprite>sprites\sprArmourPickupRed</sprite>
@@ -125,11 +134,21 @@
       <sprite>sprites\sprArmourPickupBlack</sprite>
     </sprites>
     <sprites name="Tiles">
-      <sprite>sprites\sprGrassTile1</sprite>
-      <sprite>sprites\sprGrassTile2</sprite>
       <sprite>sprites\sprWaterTile</sprite>
-      <sprite>sprites\sprCaveFloorTile1</sprite>
-      <sprite>sprites\sprCaveFloorTile2</sprite>
+      <sprites name="Tombstones">
+        <sprite>sprites\sprTomb4</sprite>
+        <sprite>sprites\SprTomb3</sprite>
+        <sprite>sprites\sprTomb2</sprite>
+        <sprite>sprites\sprTomb1</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="reticule">
+      <sprite>sprites\sprSwordReticule</sprite>
+    </sprites>
+    <sprites name="menu screen">
+      <sprite>sprites\sprCreditsLabel</sprite>
+      <sprite>sprites\sprTutorialLabel</sprite>
+      <sprite>sprites\sprTestRoomLabel</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -137,6 +156,11 @@
     <background>background\bgCity2</background>
     <background>background\bgCity3</background>
     <background>background\bgCitySky</background>
+    <background>background\bgSplashScreen</background>
+    <backgrounds name="tile sets">
+      <background>background\tsTomb</background>
+      <background>background\tsTombstones</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths">
     <path>paths\pthSwordSwing</path>
@@ -161,28 +185,42 @@
       <script>scripts\getDirSign.gml</script>
       <script>scripts\keyToDir.gml</script>
       <script>scripts\angleToSign.gml</script>
-      <script>scripts\sbSeconds.gml</script>
+      <script>scripts\seconds.gml</script>
     </scripts>
     <scripts name="player">
       <script>scripts\canMoveInDir.gml</script>
       <script>scripts\getPlayerSprite.gml</script>
       <script>scripts\damageArmour.gml</script>
+      <script>scripts\updateReticule.gml</script>
+      <script>scripts\makeReticule.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fntScore</font>
+  </fonts>
   <objects name="objects">
-    <object>objects\objBotLaser</object>
-    <object>objects\damageSource</object>
     <object>objects\objPlayer</object>
     <object>objects\objPlatform</object>
+    <object>objects\objTutorialPlatform</object>
+    <object>objects\objBlocker</object>
+    <object>objects\objSpawnLocation</object>
+    <object>objects\objReticule</object>
     <objects name="controllers">
       <object>objects\objKeyboardController</object>
       <object>objects\objUnitTestRunner</object>
       <object>objects\objMouseController</object>
       <object>objects\objLightController</object>
+      <object>objects\objSpawnController</object>
+      <object>objects\objBackgroundController</object>
+      <object>objects\objSplashScreenController</object>
+      <object>objects\objCreditsController</object>
+      <object>objects\objSoundController</object>
     </objects>
     <objects name="util">
       <object>objects\objEnumContainer</object>
       <object>objects\objDebug</object>
+      <object>objects\objScore</object>
+      <object>objects\objDeathTextDrawer</object>
     </objects>
     <objects name="armour pickups">
       <object>objects\objChestArmour</object>
@@ -195,17 +233,35 @@
       <object>objects\objSword</object>
       <object>objects\objThrownSword</object>
       <object>objects\objAttackSword</object>
+      <object>objects\objTutorialSwordPickup</object>
     </objects>
     <objects name="enemies">
       <object>objects\objShockBot</object>
+      <object>objects\objFaultyBot</object>
       <object>objects\objAttackDrone</object>
       <object>objects\objBotSpawner</object>
+      <object>objects\objHeavyDroneBlaster</object>
+      <object>objects\objHeavyAttackDrone</object>
+      <object>objects\objBotBomb</object>
+      <object>objects\objBotLaser</object>
       <object>objects\objEnemy</object>
+    </objects>
+    <objects name="hazards">
+      <object>objects\damageSource</object>
+    </objects>
+    <objects name="menu screen">
+      <object>objects\objTutorialLabel</object>
+      <object>objects\objCreditsLabel</object>
+      <object>objects\objTestRoomLabel</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rmSplashScreen</room>
     <room>rooms\rmUnitTest</room>
     <room>rooms\rmTest</room>
+    <room>rooms\rmTutorial</room>
+    <room>rooms\rmCredits</room>
+    <room>rooms\rmMainMenu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

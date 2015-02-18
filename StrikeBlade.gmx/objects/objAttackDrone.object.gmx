@@ -29,10 +29,13 @@
 
 hp = 1;
 runSpeed = 5;
-range = 200;
-currentState = "Flying To Hero";
-droneMinHeight = 700;
-coolDownTime = sbSeconds(3);
+range = 600;
+pointsValue = 100;
+currentState = RangedBotStates.flyingToHero;
+droneMinHeight = room_height - 400;
+droneMaxHeight = room_height - 700;
+droneCurrentHeight = droneMaxHeight;
+coolDownTime = seconds(3);
 image_speed = 1/3;
 </string>
           </argument>
@@ -57,7 +60,14 @@ image_speed = 1/3;
           <argument>
             <kind>1</kind>
             <string>// Leaving Attacking state
-currentState = "Flying To Hero";
+currentState = RangedBotStates.flyingToHero;
+
+if(droneCurrentHeight == droneMaxHeight) {
+    droneCurrentHeight = droneMinHeight;
+} 
+else {
+    droneCurrentHeight = droneMaxHeight;
+}
 </string>
           </argument>
         </arguments>
@@ -80,51 +90,55 @@ currentState = "Flying To Hero";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Shock Bot States
-
-
-// Check for certain dealth
+            <string>// Check for certain dealth
 if(hp &lt; 1) {
- currentState = "Exploding";
+ currentState = RangedBotStates.exploding;
 }
 
 // Check if bot is high enough
-if(y &gt; droneMinHeight) {
-    y = y - runSpeed;
+if(abs(y - droneCurrentHeight) &gt; runSpeed * 2) {
+    if(y - droneCurrentHeight &gt; 0) {
+        y -= runSpeed;
+    }
+    else {
+        y += runSpeed;
+    }
 }
 
 // Check if Hero is on left or right
 image_angle = point_direction(x, y, objPlayer.x, objPlayer.y);
 
 switch(currentState) {
-    case "Flying To Hero":
+    case RangedBotStates.flyingToHero:
         sprite_index = sprAttackDroneIdle;
-        if(distance_to_object(objPlayer) &gt; range) {
+        if(distance_to_object(objPlayer) &gt; range &amp;&amp; (abs(x - objPlayer.x) &gt; runSpeed * 2)) {
             move_towards_point(objPlayer.x, y, runSpeed);
            
         }
         else {
-            currentState = "Attacking";
+            currentState = RangedBotStates.attacking;
         }
     break;
     
-    case "Attacking":
+    case RangedBotStates.attacking:
         // Shoot Laser
         instance_create(x, y, objBotLaser);
         alarm[AttackDroneAlarms.laser] = coolDownTime; // Cool down
-        currentState = "Cooling Down";
+        currentState = RangedBotStates.coolingDown;
     break;
         
-    case "Cooling Down":
+    case RangedBotStates.coolingDown:
         sprite_index = sprAttackDroneCooling;
         speed = 0;
         
     break;
         
-    case "Exploding":
+    case RangedBotStates.exploding:
         // Create Explosion
         effect_create_above(ef_explosion, x, y, 1, c_blue);
         effect_create_above(ef_firework, x, y, 1, c_yellow);
+        var scorePopUp = instance_create(x, y, objScore);
+        scorePopUp.pointsValue = pointsValue;
         instance_destroy();
     break; 
 }

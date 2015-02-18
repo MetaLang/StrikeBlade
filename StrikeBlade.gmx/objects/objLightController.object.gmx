@@ -26,7 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>ls_system_properties(EASY_LIGHTING_ENABLED, ls_dm_normal, c_black);
-assert(ls_noview_attach(), "Could not initialize lighting system or it already exists");
+if (EASY_LIGHTING_ENABLED)
+{
+    assert(ls_noview_attach(), "Could not initialize lighting system or it already exists");
+}
 
 </string>
           </argument>

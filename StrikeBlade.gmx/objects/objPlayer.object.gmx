@@ -35,6 +35,7 @@ maxJumps = 2;
 jumpCount = 0;
 damage = 1;
 invincible = false;
+haveSword = !(room == rmTutorial || instance_exists(objTutorialSwordPickup));
 
 armourColours = sbArray(
     c_red,
@@ -45,6 +46,71 @@ armourColours = sbArray(
 
 maxArmourLevel = array_length_1d(armourColours) - 1;
 armourLevel = maxArmourLevel;
+reticule = noone;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (instance_exists(objSword)) with (objSword)
+{
+    instance_destroy();
+}
+
+if (instance_exists(objReticule)) with (objReticule)
+{
+    instance_destroy();   
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//PlayerAlarms.blink
+
+if (image_alpha == 1.0)
+{
+    image_alpha = 0.2;
+}
+else
+{
+    image_alpha = 1.0;
+}
+alarm[PlayerAlarms.blink] = seconds(0.3);
 </string>
           </argument>
         </arguments>
@@ -67,7 +133,14 @@ armourLevel = maxArmourLevel;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>invincible = false;
+            <string>//PlayerAlarms.invincibility
+
+invincible = false;
+alarm[PlayerAlarms.blink] = -1;
+if (image_alpha != 1.0)
+{
+    image_alpha = 1.0;
+}
 </string>
           </argument>
         </arguments>
@@ -154,166 +227,109 @@ else
     assert(false, "Unexpected value for 'facing': ", facing);
 }
 
-if (mouse_check_button(mb_left) &amp;&amp; !instance_exists(objThrownSword))
+if (haveSword)
 {
-    var sword = instance_find(objAttackSword, 0);
-    if (sword == noone)
+    if (mouse_check_button(mb_left) &amp;&amp; !instance_exists(objThrownSword))
     {
-        sword = instance_create(0, 0, objAttackSword);
-    }
-    var dir = point_direction(x, y - (sprite_height / 2), 
-                              mouse_x, mouse_y);
-    var swordX = lengthdir_x(sprite_width  / 2 + 30, dir);
-    var swordY = lengthdir_y(sprite_height / 2 + 40, dir);
-    var swordXRelativeToPlayer = x + swordX;
-    var swordYRelativeToPlayer = y - sprite_height / 2 + swordY;
-    //with (instance_create(x + swordX, y - (sprite_height / 2) + swordY, objAttackSword))
-    //if (swordX &gt;= -sprite_width / 2 &amp;&amp; swordX &lt;= x + sprite_width / 2)
-    //{
-    with (sword)
-    {
-        x = swordXRelativeToPlayer;
-        y = swordYRelativeToPlayer;
-        facing = objPlayer.facing;
-        var newAngle = dir - 90;
-        //if (newAngle &lt;= 45 || newAngle &gt;= 215)
-        //{
-            image_angle = newAngle;
-        //}
-        //alarm[AttackSwordAlarms.swing] = sbSeconds(0.5);
-        //path_start(pthSwordSwing, swingSpeed, 0, true);
-    }
-    //}
-}
-else if (mouse_check_button_released(mb_left) &amp;&amp; instance_exists(objAttackSword))
-{
-    with (objAttackSword)
-    {
-        instance_destroy();
-    }
-}
-else if (mouse_check_button_released(mb_right) &amp;&amp; !instance_exists(objAttackSword))
-{
-    if (instance_exists(objThrownSword))
-    {
-        var canTeleport = !(place_meeting(objThrownSword.x - sprite_width / 2, objThrownSword.y - sprite_height / 2, objPlatform)
-                            || place_meeting(objThrownSword.x - sprite_width / 2, objThrownSword.y + sprite_height / 2, objPlatform)
-                            || place_meeting(objThrownSword.x + sprite_width / 2, objThrownSword.y + sprite_height / 2, objPlatform)
-                            || place_meeting(objThrownSword.x + sprite_width / 2, objThrownSword.y - sprite_height / 2, objPlatform));
-        if (canTeleport)
+        var sword = instance_find(objAttackSword, 0);
+        if (sword == noone)
         {
-            x = objThrownSword.x;
-            y = objThrownSword.y + (sprite_height / 2);
-            direction = objThrownSword.direction;
-            speed = objThrownSword.speed / 2;
-            with (objThrownSword)
+            sword = instance_create(0, 0, objAttackSword);
+        }
+        var dir = point_direction(x, y - (sprite_height / 2), 
+                                  mouse_x, mouse_y);
+        var swordX = lengthdir_x(sprite_width  / 2 + 30, dir);
+        var swordY = lengthdir_y(sprite_height / 2 + 40, dir);
+        var swordXRelativeToPlayer = x + swordX;
+        var swordYRelativeToPlayer = y - sprite_height / 2 + swordY;
+        //with (instance_create(x + swordX, y - (sprite_height / 2) + swordY, objAttackSword))
+        //if (swordX &gt;= -sprite_width / 2 &amp;&amp; swordX &lt;= x + sprite_width / 2)
+        //{
+        with (sword)
+        {
+            x = swordXRelativeToPlayer;
+            y = swordYRelativeToPlayer;
+            facing = objPlayer.facing;
+            var newAngle = dir - 90;
+            //if (newAngle &lt;= 45 || newAngle &gt;= 215)
+            //{
+                image_angle = newAngle;
+            //}
+            //alarm[AttackSwordAlarms.swing] = sbSeconds(0.5);
+            //path_start(pthSwordSwing, swingSpeed, 0, true);
+        }
+        //}
+    }
+    else if (mouse_check_button_pressed(mb_left) &amp;&amp; instance_exists(objThrownSword))
+    {
+        if (objThrownSword.speed == 0) with (objThrownSword)
+        {
+            instance_destroy();
+        }
+    }
+    else if (mouse_check_button_released(mb_left) &amp;&amp; instance_exists(objAttackSword))
+    {
+        with (objAttackSword)
+        {
+            instance_destroy();
+        }
+    }
+    else if (mouse_check_button_released(mb_right) &amp;&amp; !instance_exists(objAttackSword))
+    {
+        if (instance_exists(objThrownSword))
+        {
+            var canTeleport = !(place_meeting(objThrownSword.x - sprite_width / 2, objThrownSword.y - sprite_height / 2, objPlatform)
+                                || place_meeting(objThrownSword.x - sprite_width / 2, objThrownSword.y + sprite_height / 2, objPlatform)
+                                || place_meeting(objThrownSword.x + sprite_width / 2, objThrownSword.y + sprite_height / 2, objPlatform)
+                                || place_meeting(objThrownSword.x + sprite_width / 2, objThrownSword.y - sprite_height / 2, objPlatform));
+            if (canTeleport)
             {
-                instance_destroy();
+                x = objThrownSword.x;
+                y = objThrownSword.y + (sprite_height / 2);
+                direction = objThrownSword.direction;
+                speed = objThrownSword.speed / 2;
+                with (objThrownSword)
+                {
+                    instance_destroy();
+                }
+                effect_create_above(ef_ring, x, y - sprite_height / 2, 2, c_blue);
+            }
+        }
+        else
+        {
+            //var swordStartX = x + getDirSign(facing) * (runSpeed + swordThrowSpeed);
+            with (instance_create(x + getDirSign(facing), y - (sprite_height / 2), objThrownSword))
+            {
+                facing = objPlayer.facing;
+                throwDist = objPlayer.swordThrowDist;
+                var dir = point_direction(objPlayer.x, 
+                                          objPlayer.y - (objPlayer.sprite_height / 2), 
+                                          mouse_x, 
+                                          mouse_y);
+                direction = dir;
+                speed = objPlayer.swordThrowSpeed;
+                image_angle += dir - 90;
             }
         }
     }
-    else
-    {
-        var swordStartX = x + getDirSign(facing) * (runSpeed + swordThrowSpeed);
-        with (instance_create(swordStartX, y - (sprite_height / 2), objThrownSword))
-        {
-            facing = objPlayer.facing;
-            throwDist = objPlayer.swordThrowDist;
-            var dir = point_direction(objPlayer.x, 
-                                      objPlayer.y - (objPlayer.sprite_height / 2), 
-                                      mouse_x, 
-                                      mouse_y);
-            direction = dir;
-            speed = objPlayer.swordThrowSpeed;
-            image_angle += dir - 90;
-        }
-    }
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="objThrownSword">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>with(other)
+
+if (instance_exists(objAttackSword))
 {
-    if (speed == 0)
+    with (reticule)
     {
         instance_destroy();
     }
+    reticule = noone;
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="objArmourPickup">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (armourLevel &lt; maxArmourLevel)
+else
 {
-    armourLevel++;
-    with (other)
+    if (reticule == noone)
     {
-        instance_destroy();
+        reticule = makeReticule();
     }
+    updateReticule();
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="objPlatform">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>move_contact_solid(direction, vspeed * -sign(direction));
-vspeed = 0;
-
-
 </string>
           </argument>
         </arguments>
@@ -336,12 +352,31 @@ vspeed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!invincible)
-{
-    damageArmour(other.armourDamage);
-    invincible = true;
-    alarm[PlayerAlarms.invincibility] = room_speed * 2;
-}
+            <string>damageArmour(other.armourDamage);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objBlocker">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>move_contact_solid(direction, vspeed * -sign(direction));
+vspeed = 0;
 </string>
           </argument>
         </arguments>
