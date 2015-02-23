@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,64 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>credits = "Scrolling#Credits Example###written by##GMakerPro## "; 
-credits += "This is example text for scrolling end credits.#";
-credits += "Feel free to add as many lines as you want.#";
-credits += "The end credits will wrap once#";
-credits += "the last line of the text has disappeared#";
-credits += "from the screen...";
-y = room_height;
-x = room_width / 2;
-vspeed = -1;
-drawExitText = true;
-alarm[0] = seconds(1);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>drawExitText = !drawExitText;
-alarm[0] = seconds(1);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="53">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>room_goto(MAIN_MENU);
+            <string>showMenu = false;
+menuLabels = sbArray(noone, noone);
 </string>
           </argument>
         </arguments>
@@ -105,15 +49,72 @@ alarm[0] = seconds(1);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_white);
-draw_set_halign(fa_center);
-draw_set_font(fntScore);
-draw_text(room_width / 2,y,credits);
-if ( y &lt; -string_height(credits) ) y = room_height;
-if (drawExitText)
+            <string>if (keyboard_check_pressed(vk_escape))
 {
-    draw_set_halign(fa_left);
-    draw_text(25, room_height - 50, "Press the left mouse button to exit");
+    if (showMenu)
+    {
+        showMenu = false;
+        var menuLabelCount = instance_number(objMenuLabel);
+        while (menuLabelCount &gt;= 0)
+        {
+            with (objMenuLabel)
+            {
+                instance_destroy();
+            }
+            menuLabelCount--;
+        }
+        instance_activate_all();
+    }
+    else
+    {
+        showMenu = true;
+        effect_clear();
+        instance_deactivate_all(true);
+        instance_activate_object(objBlocker);
+    }
+}
+
+if (showMenu)
+{
+    var vi = view_current;
+    var menuX = 700;
+    var menuY = 100;
+    var oldColour = draw_get_colour();
+    
+    draw_set_colour(c_black);
+    draw_rectangle(menuX, menuY, room_width - menuX, room_height - menuY, false);
+    
+    draw_set_colour(c_gray);
+    draw_rectangle(
+        menuX + 1, 
+        menuY + 1, 
+        room_width - menuX - 1, 
+        room_height - menuY - 1, 
+        true
+    );
+    
+    draw_set_colour(oldColour);
+    
+    var mediumLabelHeight = sprite_get_height(sprMenuLabelBase);
+    var largeLabelHeight = sprite_get_height(sprMenuLabelPaused);
+    var labelYPos = menuY + largeLabelHeight;
+    for (var i = 0; i &lt; array_length_1d(menuLabels); i++)
+    {
+        switch (i)
+        {
+            case 0:
+                menuLabels[i] = instance_create(room_width / 2, labelYPos, objMenuLabelTitle);
+            break;
+        
+            case 1:
+                labelYPos += mediumLabelHeight + i * 100;
+                menuLabels[i] = instance_create(room_width / 2, labelYPos, objMenuLabelExit);
+            break;
+            
+            default:
+                assert(false, "This should never be reached");
+        }
+    }
 }
 </string>
           </argument>

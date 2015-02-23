@@ -124,6 +124,7 @@
     <instance objName="objSpawnLocation" x="192" y="736" name="inst_DEEA5303" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpawnLocation" x="1184" y="384" name="inst_B18ABB80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpawnLocation" x="1568" y="736" name="inst_1094FD70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMenuController" x="160" y="0" name="inst_E47149E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

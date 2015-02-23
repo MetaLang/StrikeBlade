@@ -59,7 +59,7 @@ move_towards_point(objPlayer.x, objPlayer.y, laserSpeed);
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objPlatform">
+    <event eventtype="4" ename="objPlayer">
       <action>
         <libid>1</libid>
         <id>203</id>
@@ -75,7 +75,7 @@ move_towards_point(objPlayer.x, objPlayer.y, laserSpeed);
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="4" ename="objPlayer">
+    <event eventtype="4" ename="objPlatform">
       <action>
         <libid>1</libid>
         <id>203</id>

@@ -150,6 +150,11 @@
       <sprite>sprites\sprTutorialLabel</sprite>
       <sprite>sprites\sprTestRoomLabel</sprite>
     </sprites>
+    <sprites name="pause menu">
+      <sprite>sprites\sprMenuLabelBase</sprite>
+      <sprite>sprites\sprMenuLabelPaused</sprite>
+      <sprite>sprites\sprMenuLabelExit</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bgCity1</background>
@@ -214,6 +219,7 @@
       <object>objects\objSplashScreenController</object>
       <object>objects\objCreditsController</object>
       <object>objects\objSoundController</object>
+      <object>objects\objMenuController</object>
     </objects>
     <objects name="util">
       <object>objects\objEnumContainer</object>
@@ -256,6 +262,11 @@
     <objects name="player">
       <object>objects\objPlayer</object>
       <object>objects\objTutorialPlayer</object>
+    </objects>
+    <objects name="pause menu">
+      <object>objects\objMenuLabel</object>
+      <object>objects\objMenuLabelTitle</object>
+      <object>objects\objMenuLabelExit</object>
     </objects>
   </objects>
   <rooms name="rooms">
