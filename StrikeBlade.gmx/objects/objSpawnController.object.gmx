@@ -48,7 +48,7 @@ if (instance_exists(objSpawnLocation))
     spawnX = spawnLocation.x;
     spawnY = spawnLocation.y;
 }
-instance_create(spawnX, spawnY + playerSpriteHeight / 2, objPlayer);
+instance_create(spawnX, spawnY, objPlayer);
 
 instance_activate_all();
 </string>

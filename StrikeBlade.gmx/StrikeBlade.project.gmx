@@ -199,7 +199,6 @@
     <font>fonts\fntScore</font>
   </fonts>
   <objects name="objects">
-    <object>objects\objPlayer</object>
     <object>objects\objPlatform</object>
     <object>objects\objTutorialPlatform</object>
     <object>objects\objBlocker</object>
@@ -253,6 +252,10 @@
       <object>objects\objTutorialLabel</object>
       <object>objects\objCreditsLabel</object>
       <object>objects\objTestRoomLabel</object>
+    </objects>
+    <objects name="player">
+      <object>objects\objPlayer</object>
+      <object>objects\objTutorialPlayer</object>
     </objects>
   </objects>
   <rooms name="rooms">

@@ -8,7 +8,7 @@
   <parentName>objSword</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="4" ename="objPlayer">
+    <event eventtype="4" ename="objTutorialPlayer">
       <action>
         <libid>1</libid>
         <id>603</id>
