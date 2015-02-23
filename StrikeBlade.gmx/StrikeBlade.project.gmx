@@ -33,6 +33,7 @@
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprPlatform</sprite>
     <sprite>sprites\sprTutorialPlatform</sprite>
+    <sprite>sprites\sprEvent</sprite>
     <sprites name="player_old">
       <sprites name="run">
         <sprite>sprites\sprPlayerRunRight_old</sprite>
@@ -142,20 +143,27 @@
         <sprite>sprites\sprTomb1</sprite>
       </sprites>
     </sprites>
-    <sprites name="reticule">
-      <sprite>sprites\sprSwordReticule</sprite>
-    </sprites>
-    <sprites name="menu screen">
-      <sprite>sprites\sprCreditsLabel</sprite>
-      <sprite>sprites\sprTutorialLabel</sprite>
-      <sprite>sprites\sprTestRoomLabel</sprite>
+    <sprites name="ui">
+      <sprites name="menu screen">
+        <sprite>sprites\sprCreditsLabel</sprite>
+        <sprite>sprites\sprTutorialLabel</sprite>
+        <sprite>sprites\sprTestRoomLabel</sprite>
+      </sprites>
+      <sprites name="reticule">
+        <sprite>sprites\sprSwordReticule</sprite>
+      </sprites>
+      <sprites name="tutorial">
+        <sprite>sprites\sprTutorialMouse1</sprite>
+        <sprite>sprites\sprTutorialKeyboard</sprite>
+        <sprite>sprites\sprTutorialMouse2</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\bgCity1</background>
-    <background>background\bgCity2</background>
-    <background>background\bgCity3</background>
-    <background>background\bgCitySky</background>
+    <background>background\rmTutorialBg1</background>
+    <background>background\rmTutorialBg2</background>
+    <background>background\rmTutorialBgBad</background>
+    <background>background\rmTutorialBg0</background>
     <background>background\bgSplashScreen</background>
     <backgrounds name="tile sets">
       <background>background\tsTomb</background>
@@ -194,6 +202,10 @@
       <script>scripts\updateReticule.gml</script>
       <script>scripts\makeReticule.gml</script>
     </scripts>
+    <scripts name="background drawing">
+      <script>scripts\draw_background_tiled_horizontal.gml</script>
+      <script>scripts\draw_background_tiled_vertical.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntScore</font>
@@ -204,7 +216,6 @@
     <object>objects\objTutorialPlatform</object>
     <object>objects\objBlocker</object>
     <object>objects\objSpawnLocation</object>
-    <object>objects\objReticule</object>
     <objects name="controllers">
       <object>objects\objKeyboardController</object>
       <object>objects\objUnitTestRunner</object>
@@ -249,10 +260,18 @@
     <objects name="hazards">
       <object>objects\damageSource</object>
     </objects>
-    <objects name="menu screen">
-      <object>objects\objTutorialLabel</object>
-      <object>objects\objCreditsLabel</object>
-      <object>objects\objTestRoomLabel</object>
+    <objects name="ui">
+      <objects name="tutorial">
+        <object>objects\objTutorialKeyboard</object>
+        <object>objects\objTutorialMouse</object>
+        <object>objects\objTutorialMouse2</object>
+      </objects>
+      <objects name="menu screen">
+        <object>objects\objTutorialLabel</object>
+        <object>objects\objCreditsLabel</object>
+        <object>objects\objTestRoomLabel</object>
+      </objects>
+      <object>objects\objReticule</object>
     </objects>
   </objects>
   <rooms name="rooms">

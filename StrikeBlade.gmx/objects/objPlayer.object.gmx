@@ -165,10 +165,12 @@ if (image_alpha != 1.0)
             <kind>1</kind>
             <string>if (isPressedNoConflict(KEYS.d))
 {
+    //Variable to ensure player doesn't cross level boundry
+    checkCoord = bbox_right + runSpeed;
+
     //Step up slopes
     if !canMoveInDir(keyToDir(KEYS.d)){
-            
-            if place_empty(x+runSpeed,y-32) then
+            if place_empty(x+runSpeed,y-32) &amp;&amp; checkCoord &gt;= 0 &amp;&amp; checkCoord &lt;= room_width then
             {
                 x += runSpeed;
                 y-=32
@@ -185,11 +187,12 @@ if (image_alpha != 1.0)
 
 if (isPressedNoConflict(KEYS.a))
 {
+    //Variable to ensure player doesn't cross level boundry
+    checkCoord = bbox_right - runSpeed;
 
     //Step up slopes
     if !canMoveInDir(keyToDir(KEYS.a)){
-            
-            if place_empty(x-runSpeed,y-32) then
+            if place_empty(x-runSpeed,y-32) &amp;&amp; checkCoord &gt;= 0 &amp;&amp; checkCoord &lt;= room_width then
             {
                 x -= runSpeed;
                 y-=32
@@ -202,7 +205,6 @@ if (isPressedNoConflict(KEYS.a))
         currentAnimation = Animations.run;
         x -= runSpeed;
     }
-    
 }
 
 if (keyboard_check_released(KEYS.d) || keyboard_check_released(KEYS.a))
@@ -405,6 +407,30 @@ else
             <kind>1</kind>
             <string>move_contact_solid(direction, vspeed * -sign(direction));
 vspeed = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="76">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>background_x[1] = view_xview[0] * 1
+background_x[2] = view_xview[0] * .95
 </string>
           </argument>
         </arguments>

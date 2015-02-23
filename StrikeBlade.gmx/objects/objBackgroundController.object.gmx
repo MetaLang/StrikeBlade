@@ -3,12 +3,12 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>9990000</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,8 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>background_x[1] = view_xview[0] * 1
-background_x[2] = view_xview[0] * .95
+            <string>/***************************************************
+  This piece of code draw the background with
+  different illusion of depth, by using position
+  relative to the current view's position.
+  The larger the division number the faster
+  the background will move.
+ ***************************************************/
+draw_background_tiled_horizontal(rmTutorialBg0,view_xview[view_current],view_yview[view_current]) // Draw furthest static background
+//draw_background_tiled_horizontal(background5,view_xview[view_current]/1.1+100,view_yview[view_current]/1.1+300) // Draw background that move slowest
+//draw_background(background6,view_xview[view_current]/1.1+300,view_yview[view_current]/1.1+232)// Draw single big building
+draw_background_tiled_horizontal(rmTutorialBg1,view_xview[view_current]/1.25+100,view_yview[view_current]/1.25+340) // Draw background that move slowest
+draw_background_tiled_horizontal(rmTutorialBg2,view_xview[view_current]/1.5,view_yview[view_current]/1.5+386) // Draw background that move slower
+//draw_background_tiled_horizontal(background4,0,720) // Draw the ground
 </string>
           </argument>
         </arguments>
