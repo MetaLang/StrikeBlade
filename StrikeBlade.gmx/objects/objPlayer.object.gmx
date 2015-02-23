@@ -182,7 +182,7 @@ if (keyboard_check_released(KEYS.d) || keyboard_check_released(KEYS.a))
     currentAnimation = Animations.idle;
 }
 
-if (isPressed(KEYS.w) &amp;&amp; !place_free(x, y + 1))
+if ((isPressed(KEYS.w) || isPressed(KEYS.space))  &amp;&amp; !place_free(x, y + 1))
 {
     y += jumpSpeed;
     vspeed = jumpSpeed;
