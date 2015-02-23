@@ -127,6 +127,7 @@
       <sprite>sprites\sprAttackDroneCooling</sprite>
       <sprite>sprites\sprAttackDroneIdle</sprite>
       <sprite>sprites\sprBotLaser</sprite>
+      <sprite>sprites\sprBotDeflectedLaser</sprite>
     </sprites>
     <sprites name="shockBot">
       <sprites name="run">
@@ -279,6 +280,7 @@
       <object>objects\objHeavyAttackDrone</object>
       <object>objects\objBotBomb</object>
       <object>objects\objBotLaser</object>
+      <object>objects\objBotDeflectedLaser</object>
       <object>objects\objEnemy</object>
     </objects>
     <objects name="hazards">

@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-10</depth>
   <persistent>0</persistent>
-  <parentName>damageSource</parentName>
+  <parentName>objEnemy</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -114,7 +114,6 @@ if(hp &lt; 1) {
  currentState = ShockBotStates.exploding;
 }
 
-show_debug_message(currentState);
 
 switch(currentState) { 
     case ShockBotStates.patrolling:
@@ -172,6 +171,12 @@ switch(currentState) {
     case ShockBotStates.bouncingBack:
         sprite_index = sprShockBotCoolDown;
         speed = runSpeed; 
+        
+        // If close to an edge
+        if(!position_meeting(x + (20 * -image_xscale), y+(sprite_height/2)+8, objPlatform)) {
+            currentState = ShockBotStates.coolingDown;
+        }
+        
     break;
         
     case ShockBotStates.coolingDown:
@@ -195,7 +200,30 @@ switch(currentState) {
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objPlayer">
+    <event eventtype="4" ename="objBotDeflectedLaser">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hp -= other.damage;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+	<event eventtype="4" ename="objPlayer">
       <action>
         <libid>1</libid>
         <id>603</id>

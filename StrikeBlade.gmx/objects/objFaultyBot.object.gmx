@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-10</depth>
   <persistent>0</persistent>
-  <parentName>damageSource</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -31,6 +31,7 @@ hp = 1;
 runSpeed = 5;
 viewField = 200;
 pointsValue = 100;
+broken = false;
 currentState = ShockBotStates.patrolling;
 facing = Direction.left;
 bounceBackTime = seconds(0.5);
@@ -89,14 +90,12 @@ if(hp &lt; 1) {
  currentState = ShockBotStates.exploding;
 }
 
-show_debug_message(currentState);
 
 switch(currentState) { 
     case ShockBotStates.patrolling:
     
         if((abs(objPlayer.y - y) &lt;= 40) &amp;&amp; (abs(objPlayer.x - x) &lt; viewField)) {
             currentState = ShockBotStates.attacking;
-        
         }
         
         sprite_index = sprShockBotRun;
@@ -147,6 +146,11 @@ switch(currentState) {
     case ShockBotStates.bouncingBack:
         sprite_index = sprFaultyBot;
         speed = runSpeed; 
+        
+        // If close to an edge
+        if(!position_meeting(x + (20 * -image_xscale), y+(sprite_height/2)+8, objPlatform)) {
+            currentState = ShockBotStates.coolingDown;
+        }
     break;
         
     case ShockBotStates.coolingDown:
@@ -171,7 +175,30 @@ switch(currentState) {
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objPlayer">
+    <event eventtype="4" ename="objBotDeflectedLaser">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hp -= other.damage;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+	<event eventtype="4" ename="objPlayer">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -262,12 +289,20 @@ alarm[ShockBotAlarms.bounce] = bounceBackTime;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(currentState == ShockBotStates.patrolling) {
-    image_xscale *= -1;
+            <string>if(!broken) {
+        
+    move_bounce_all(false);
+
+    currentState = ShockBotStates.bouncingBack;
+    effect_create_above(ef_smoke, x, y, 0, c_black);
+    effect_create_above(ef_firework, x, y, 0, c_yellow);
+    alarm[ShockBotAlarms.bounce] = bounceBackTime;
+    
+    
+    
+    broken = true;
 }
-else {
-    x = xprevious;
-}
+
 
 </string>
           </argument>
@@ -275,29 +310,6 @@ else {
       </action>
     </event>
     <event eventtype="4" ename="objSword">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>hp -= other.damage;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="objBlocker">
       <action>
         <libid>1</libid>
         <id>603</id>
