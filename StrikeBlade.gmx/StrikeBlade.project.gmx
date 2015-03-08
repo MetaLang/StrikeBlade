@@ -239,10 +239,12 @@
       <object>objects\objLightController</object>
       <object>objects\objSpawnController</object>
       <object>objects\objBackgroundController</object>
-      <object>objects\objSplashScreenController</object>
-      <object>objects\objCreditsController</object>
       <object>objects\objSoundController</object>
       <object>objects\objMenuController</object>
+      <objects name="room controllers">
+        <object>objects\objCreditsController</object>
+        <object>objects\objSplashScreenController</object>
+      </objects>
     </objects>
     <objects name="util">
       <object>objects\objEnumContainer</object>
