@@ -38,13 +38,13 @@ with (objPlayer)
 }
 
 instance_deactivate_all(true);
-instance_activate_object(objSpawnLocation);
+instance_activate_object(objSpawnLocationMarker);
 
 var spawnX = playerX;
 var spawnY = playerY;
-if (instance_exists(objSpawnLocation))
+if (instance_exists(objSpawnLocationMarker))
 {
-    var spawnLocation = instance_nearest(playerX, playerY, objSpawnLocation);
+    var spawnLocation = instance_nearest(playerX, playerY, objSpawnLocationMarker);
     spawnX = spawnLocation.x;
     spawnY = spawnLocation.y;
 }

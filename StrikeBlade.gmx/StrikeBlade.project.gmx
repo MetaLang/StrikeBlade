@@ -102,7 +102,6 @@
           <sprite>sprites\sprRunLeftGreen</sprite>
         </sprites>
       </sprites>
-      <sprite>sprites\sprPlayerInvisible</sprite>
       <sprites name="New Player">
         <sprites name="full_armor">
           <sprite>sprites\idle_right</sprite>
@@ -122,6 +121,7 @@
           <sprite>sprites\idlearmor_left</sprite>
         </sprites>
       </sprites>
+      <sprite>sprites\sprPlayerInvisible</sprite>
     </sprites>
     <sprites name="attackDrone">
       <sprite>sprites\sprAttackDroneCooling</sprite>
@@ -176,6 +176,11 @@
       <sprite>sprites\sprMenuLabelPaused</sprite>
       <sprite>sprites\sprMenuLabelExit</sprite>
     </sprites>
+    <sprites name="tutorial">
+      <sprite>sprites\sprTutorialMouse2</sprite>
+      <sprite>sprites\sprTutorialMouse1</sprite>
+      <sprite>sprites\sprTutorialKeyboard</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bgCity1</background>
@@ -215,6 +220,8 @@
       <script>scripts\keyToDir.gml</script>
       <script>scripts\angleToSign.gml</script>
       <script>scripts\seconds.gml</script>
+      <script>scripts\draw_background_tiled_horizontal.gml</script>
+      <script>scripts\draw_background_tiled_vertical.gml</script>
     </scripts>
     <scripts name="player">
       <script>scripts\canMoveInDir.gml</script>
@@ -229,14 +236,9 @@
     <font>fonts\font1</font>
   </fonts>
   <objects name="objects">
-    <object>objects\objPlatform</object>
-    <object>objects\objTutorialPlatform</object>
-    <object>objects\objBlocker</object>
-    <object>objects\objSpawnLocation</object>
-    <object>objects\objNextScreen</object>
-    <object>objects\objReticule</object>
     <objects name="controllers">
       <object>objects\objKeyboardController</object>
+      <object>objects\objIntroStoryController</object>
       <object>objects\objUnitTestRunner</object>
       <object>objects\objMouseController</object>
       <object>objects\objLightController</object>
@@ -248,7 +250,6 @@
         <object>objects\objCreditsController</object>
         <object>objects\objSplashScreenController</object>
       </objects>
-      <object>objects\objIntroStoryController</object>
     </objects>
     <objects name="util">
       <object>objects\objEnumContainer</object>
@@ -283,12 +284,6 @@
     <objects name="hazards">
       <object>objects\damageSource</object>
     </objects>
-    <objects name="menu screen">
-      <object>objects\objTutorialLabel</object>
-      <object>objects\objStoryLabel</object>
-      <object>objects\objCreditsLabel</object>
-      <object>objects\objTestRoomLabel</object>
-    </objects>
     <objects name="player">
       <object>objects\objPlayer</object>
       <object>objects\objTutorialPlayer</object>
@@ -297,6 +292,29 @@
       <object>objects\objMenuLabel</object>
       <object>objects\objMenuLabelTitle</object>
       <object>objects\objMenuLabelExit</object>
+    </objects>
+    <objects name="ui">
+      <objects name="tutorial">
+        <object>objects\objTutorialKeyboard</object>
+        <object>objects\objTutorialMouse2</object>
+        <object>objects\objTutorialMouse1</object>
+      </objects>
+      <objects name="menu screen">
+        <object>objects\objTutorialLabel</object>
+        <object>objects\objStoryLabel</object>
+        <object>objects\objCreditsLabel</object>
+        <object>objects\objTestRoomLabel</object>
+      </objects>
+      <object>objects\objReticule</object>
+    </objects>
+    <objects name="markers">
+      <object>objects\objSpawnLocationMarker</object>
+      <object>objects\objScreenChangeTrigger</object>
+    </objects>
+    <objects name="platforms">
+      <object>objects\objBlocker</object>
+      <object>objects\objTutorialPlatform</object>
+      <object>objects\objPlatform</object>
     </objects>
   </objects>
   <rooms name="rooms">
