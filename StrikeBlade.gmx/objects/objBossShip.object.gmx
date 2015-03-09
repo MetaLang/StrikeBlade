@@ -29,6 +29,11 @@
 
 hp = 1;
 
+startX = x;
+startY = y;
+
+flightPathRight = true;
+
 damage = 1;
 
 pointsValue = 200;
@@ -44,17 +49,129 @@ blaster2Destroyed = false;
 
 runSpeed = 8;
 
-range = 400;
+range = 20000;
 
-currentState = RangedBotStates.flyingToHero;
+currentState = BossShipStates.attacking;
 
-droneMinHeight = room_height - 400;
-droneMaxHeight = room_height - 700;
+droneMinHeight = room_height / 8;
+droneMaxHeight = room_height / 4;
 droneCurrentHeight = droneMaxHeight;
- 
-coolDownTime = seconds(3);
+
+laserRefreshed = true;
+bombRefreshed = true;
+spanDronesRefreshed = true;
+
+coolDownTime = seconds(1.5);
+droneRefreshTime = seconds(10);
+laserDuration = seconds(15);
+flightPathChangeTime = seconds(5);
+
+alarm[3] = flightPathChangeTime;
 
 image_speed = 1/3;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(flightPathRight) {
+    flightPathRight = false;
+}
+else {
+    flightPathRight = true;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>flightPathChangeTime</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>3</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Refresh laser beam
+currentState = BossShipStates.attacking;
+laserRefreshed = true;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Refresh drones
+spanDronesRefreshed = true;
+
 </string>
           </argument>
         </arguments>
@@ -78,7 +195,7 @@ image_speed = 1/3;
           <argument>
             <kind>1</kind>
             <string>// Leaving Attacking state
-currentState = HeavyRangedBotStates.flyingToHero;
+bombRefreshed = true;
 
 if(droneCurrentHeight == droneMaxHeight) {
     droneCurrentHeight = droneMinHeight;
@@ -86,6 +203,7 @@ if(droneCurrentHeight == droneMaxHeight) {
 else {
     droneCurrentHeight = droneMaxHeight;
 }
+
 </string>
           </argument>
         </arguments>
@@ -160,7 +278,7 @@ else {
             <kind>1</kind>
             <string>// Check for certain dealth
 if(blaster1Destroyed &amp;&amp; blaster2Destroyed &amp;&amp; hp &lt; 1) {
-        currentState = HeavyRangedBotStates.exploding;
+        currentState = BossShipStates.exploding;
 }
 
 // Check if bot is high enough
@@ -177,31 +295,48 @@ if(abs(y - droneCurrentHeight) &gt; runSpeed * 2) {
 //image_angle = point_direction(x, y, objPlayer.x, objPlayer.y);
 
 switch(currentState) {
-    case HeavyRangedBotStates.flyingToHero:
-        sprite_index = sprHeavyAttackDrone;
-        if(distance_to_object(objPlayer) &gt; range &amp;&amp; (abs(x - objPlayer.x) &gt; runSpeed * 2)) {
-           move_towards_point(objPlayer.x, y, runSpeed);
-           
+    case BossShipStates.attacking:
+    
+        if(flightPathRight) {
+            x += runSpeed;
         }
         else {
-            currentState = HeavyRangedBotStates.attacking;
+             x -= runSpeed;
         }
-    break;
+            
     
-    case HeavyRangedBotStates.attacking:
-        // Shoot Laser
-        instance_create(x, y, objBotBomb);
-        alarm[AttackDroneAlarms.laser] = coolDownTime; // Cool down
-        currentState = HeavyRangedBotStates.coolingDown;
+        // Check if bot is ready to attack
+        if(laserRefreshed) { // Beam Laser
+            instance_create(x, y, objLaserBeam);
+            alarm[BossShipAlarms.laserDuration] = laserDuration; // Cool down
+            laserRefreshed = false;
+            runSpeed = 0;
+            currentState = BossShipStates.coolingDown;  
+        }
+        
+        if(bombRefreshed) { // Drop Bomb
+            instance_create(x, y, objBotBomb);
+            alarm[BossShipAlarms.laser] = coolDownTime; // Cool down
+            bombRefreshed = false;
+        }
+        
+        if(spanDronesRefreshed) { // Spawn Drones
+             instance_create(x+128, y+64, objAttackDrone);
+             instance_create(x-128, y+64, objAttackDrone);
+            alarm[BossShipAlarms.droneRefresh] = droneRefreshTime; // Cool down
+            currentState = BossShipStates.attacking;
+            spanDronesRefreshed = false;
+        }
+
     break;
         
-    case HeavyRangedBotStates.coolingDown:
+    case BossShipStates.coolingDown:
        // sprite_index = sprAttackDroneCooling;
         sprite_index = sprHeavyAttackDroneBomb;
-        speed = 0;
+        runSpeed = 0;
     break;
         
-    case HeavyRangedBotStates.exploding:
+    case BossShipStates.exploding:
         // Create Explosion
         effect_create_above(ef_explosion, x, y, 1, c_blue);
         effect_create_above(ef_firework, x, y, 1, c_yellow);

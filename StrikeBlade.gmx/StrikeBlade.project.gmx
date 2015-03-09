@@ -135,9 +135,9 @@
     <sprites name="enemies">
       <sprites name="attackDrone">
         <sprite>sprites\sprAttackDroneCooling</sprite>
-        <sprite>sprites\sprAttackDroneIdle</sprite>
         <sprite>sprites\sprBotLaser</sprite>
         <sprite>sprites\sprBotDeflectedLaser</sprite>
+        <sprite>sprites\sprAttackDroneIdle</sprite>
       </sprites>
       <sprites name="shockBot">
         <sprites name="run">
@@ -160,6 +160,14 @@
       </sprites>
       <sprite>sprites\rmGiantBotCoolDown</sprite>
       <sprite>sprites\sprEnemy</sprite>
+      <sprite>sprites\sprShipBossBomb</sprite>
+      <sprites name="Ship Boss">
+        <sprite>sprites\sprBotShipBossBomb</sprite>
+        <sprite>sprites\sprLaserBeamEnd</sprite>
+        <sprite>sprites\sprLaserBeam</sprite>
+        <sprite>sprites\sprShipBossAttack</sprite>
+        <sprite>sprites\sprAttackDroneBoss</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -258,11 +266,14 @@
       <object>objects\objBotSpawner</object>
       <object>objects\objHeavyDroneBlaster</object>
       <object>objects\objHeavyAttackDrone</object>
+      <object>objects\objBossShip</object>
       <object>objects\objBotBomb</object>
       <object>objects\objBotLaser</object>
       <object>objects\objBotDeflectedLaser</object>
       <object>objects\objEnemy</object>
       <object>objects\objBoss</object>
+      <object>objects\objLaserBeam</object>
+      <object>objects\objLaserBeamMessenger</object>
     </objects>
     <objects name="hazards">
       <object>objects\damageSource</object>
@@ -301,6 +312,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rmLevel1Boss</room>
     <room>rooms\rmSplashScreen</room>
     <room>rooms\rmMainMenu</room>
     <room>rooms\rmIntroStory</room>
@@ -311,7 +323,6 @@
     <room>rooms\rmTutorial</room>
     <room>rooms\rmCredits</room>
     <room>rooms\rmTutorial3</room>
-    <room>rooms\rmLevel1Boss</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
