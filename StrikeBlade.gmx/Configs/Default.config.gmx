@@ -438,7 +438,7 @@
       <constant name="UNITTESTS_ENABLED">true</constant>
       <constant name="START_ROOM">rmIntroStory</constant>
       <constant name="CREDITS_ROOM">rmCredits</constant>
-      <constant name="MAIN_MENU">rmTutorial</constant>
+      <constant name="MAIN_MENU">rmMainMenu</constant>
       <constant name="TEST_ROOM">rmTest</constant>
       <constant name="DEBUG_INFO_ENABLED">false</constant>
       <constant name="DEBUG_KEYS_ENABLED">true</constant>
