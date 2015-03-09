@@ -26,41 +26,17 @@
           <argument>
             <kind>1</kind>
             <string>credits = "It is the year 20XX and the desecrated remains of a once powerful king stir###"; 
-credits += "King Arthurs wife, Qwynevere has been taken and is in need###"; 
-credits += "Britain is in need as well, Robot overlords have laid waste to Cities###";
+credits += "King Arthur's wife, Gwynevere, has been captured by dark forces###"; 
+credits += "Britain is in need as well, as robot overlords lay waste to her cities###";
 credits += "Luckily all is not lost###";
 credits += "Because as the legend goes...###";
-credits += "King Arthur will arise and fight when Britain needs him the most.";
+credits += "King Arthur will arise and fight when Britain needs him the most";
 y = room_height;
 x = room_width / 2;
 vspeed = -1;
 drawExitText = true;
-alarm[0] = seconds(1);
+alarm[0] = seconds(40);
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>1000</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -68,17 +44,24 @@ alarm[0] = seconds(1);
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
-        <id>222</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_next_room</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(TUTORIAL_ROOM1);
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="8" enumb="0">
@@ -108,6 +91,29 @@ if (drawExitText)
     draw_set_halign(fa_left);
     draw_text(25, room_height - 50, "");
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="13">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[0] = seconds(0.1);
 </string>
           </argument>
         </arguments>

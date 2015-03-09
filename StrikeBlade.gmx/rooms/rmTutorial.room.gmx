@@ -212,8 +212,49 @@
     <instance objName="objTutorialPlatform" x="3616" y="992" name="inst_B0693778" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialPlatform" x="3648" y="992" name="inst_E4D85700" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialPlatform" x="3680" y="992" name="inst_406F343D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMenuController" x="160" y="0" name="inst_5D4A1CBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMenuController" x="128" y="0" name="inst_5D4A1CBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialPlayer" x="224" y="800" name="inst_5A954571" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4512" y="832" name="inst_8BF56590" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4544" y="832" name="inst_1A1E4C34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4480" y="832" name="inst_ABE8D656" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4576" y="832" name="inst_2D139AD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4608" y="832" name="inst_B567D4BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4640" y="832" name="inst_772BB513" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="832" name="inst_FB08B7AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4448" y="832" name="inst_CE67A43B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4416" y="832" name="inst_722A5800" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4384" y="832" name="inst_D91C6EF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4384" y="800" name="inst_62F478F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4384" y="768" name="inst_B3077F82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4384" y="736" name="inst_4A33532F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4384" y="704" name="inst_F3BDA77E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4384" y="672" name="inst_176C900C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="800" name="inst_AB0AA2E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="768" name="inst_6DCAB6CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="736" name="inst_0140A250" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="704" name="inst_E3FC328A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="672" name="inst_9BB2288C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="640" name="inst_06E14C39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="608" name="inst_F0B97E5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="576" name="inst_6B234272" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="544" name="inst_4932919E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="512" name="inst_8A66CBAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="480" name="inst_3E5469C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="448" name="inst_C7679270" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="416" name="inst_FCD7C972" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="384" name="inst_8E23C6C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="352" name="inst_845A61F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="320" name="inst_EB1F1888" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="288" name="inst_84D38165" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="256" name="inst_E535512A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="224" name="inst_33218484" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="192" name="inst_EFE5C7A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="160" name="inst_D03D6C64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="128" name="inst_E1D5216B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="96" name="inst_BB6C7E12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="64" name="inst_6132E44E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="32" name="inst_3885D6FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="0" name="inst_309A24C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb" x="512" y="736" w="32" h="32" xo="0" yo="96" id="10005451" name="inst_9AE4EC20" depth="1000010" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

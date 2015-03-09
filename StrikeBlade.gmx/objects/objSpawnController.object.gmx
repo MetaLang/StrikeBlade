@@ -48,7 +48,10 @@ if (instance_exists(objSpawnLocationMarker))
     spawnX = spawnLocation.x;
     spawnY = spawnLocation.y;
 }
-instance_create(spawnX, spawnY, objPlayer);
+with (instance_create(spawnX, spawnY, objPlayer))
+{
+    doDamageBlink(1.5);
+}
 
 instance_activate_all();
 </string>

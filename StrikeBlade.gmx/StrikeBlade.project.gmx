@@ -30,34 +30,9 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprBotSpawner</sprite>
-    <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprPlatform</sprite>
     <sprite>sprites\sprTutorialPlatform</sprite>
     <sprite>sprites\sprInvis</sprite>
-    <sprites name="player_old">
-      <sprites name="run">
-        <sprite>sprites\sprPlayerRunRight_old</sprite>
-        <sprite>sprites\sprPlayerRunLeft_old</sprite>
-      </sprites>
-      <sprites name="idle">
-        <sprite>sprites\sprPlayerIdleRight_old</sprite>
-        <sprite>sprites\sprPlayerIdleLeft_old</sprite>
-      </sprites>
-      <sprites name="jump">
-        <sprite>sprites\sprPlayerJumpLeft</sprite>
-        <sprite>sprites\sprPlayerJumpRight</sprite>
-      </sprites>
-      <sprites name="attack">
-        <sprites name="up">
-          <sprite>sprites\sprPlayerAttackUpRight</sprite>
-          <sprite>sprites\sprPlayerAttackUpLeft</sprite>
-        </sprites>
-        <sprites name="side">
-          <sprite>sprites\sprPlayerAttackRight</sprite>
-          <sprite>sprites\sprPlayerAttackLeft</sprite>
-        </sprites>
-      </sprites>
-    </sprites>
     <sprites name="sword">
       <sprite>sprites\sprSword</sprite>
     </sprites>
@@ -102,7 +77,7 @@
           <sprite>sprites\sprRunLeftGreen</sprite>
         </sprites>
       </sprites>
-      <sprites name="New Player">
+      <sprites name="new player">
         <sprites name="full_armor">
           <sprite>sprites\idle_right</sprite>
           <sprite>sprites\idle_left</sprite>
@@ -122,31 +97,6 @@
         </sprites>
       </sprites>
       <sprite>sprites\sprPlayerInvisible</sprite>
-    </sprites>
-    <sprites name="attackDrone">
-      <sprite>sprites\sprAttackDroneCooling</sprite>
-      <sprite>sprites\sprAttackDroneIdle</sprite>
-      <sprite>sprites\sprBotLaser</sprite>
-      <sprite>sprites\sprBotDeflectedLaser</sprite>
-    </sprites>
-    <sprites name="shockBot">
-      <sprites name="run">
-        <sprite>sprites\sprShockBotRun</sprite>
-      </sprites>
-      <sprites name="coolDown">
-        <sprite>sprites\sprShockBotCoolDown</sprite>
-      </sprites>
-      <sprites name="attack">
-        <sprite>sprites\sprShockBotAttack</sprite>
-      </sprites>
-      <sprites name="faultyBot">
-        <sprite>sprites\sprFaultyBot</sprite>
-      </sprites>
-    </sprites>
-    <sprites name="heavyAttackDrone">
-      <sprite>sprites\sprHeavyAttackDrone</sprite>
-      <sprite>sprites\sprHeavyAttackDroneBomb</sprite>
-      <sprite>sprites\sprBotBomb</sprite>
     </sprites>
     <sprites name="armour pickups">
       <sprite>sprites\sprArmourPickupRed</sprite>
@@ -181,6 +131,35 @@
       <sprite>sprites\sprTutorialMouse2</sprite>
       <sprite>sprites\sprTutorialMouse1</sprite>
       <sprite>sprites\sprTutorialKeyboard</sprite>
+    </sprites>
+    <sprites name="enemies">
+      <sprites name="attackDrone">
+        <sprite>sprites\sprAttackDroneCooling</sprite>
+        <sprite>sprites\sprAttackDroneIdle</sprite>
+        <sprite>sprites\sprBotLaser</sprite>
+        <sprite>sprites\sprBotDeflectedLaser</sprite>
+      </sprites>
+      <sprites name="shockBot">
+        <sprites name="run">
+          <sprite>sprites\sprShockBotRun</sprite>
+        </sprites>
+        <sprites name="coolDown">
+          <sprite>sprites\sprShockBotCoolDown</sprite>
+        </sprites>
+        <sprites name="attack">
+          <sprite>sprites\sprShockBotAttack</sprite>
+        </sprites>
+        <sprites name="faultyBot">
+          <sprite>sprites\sprFaultyBot</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="heavyAttackDrone">
+        <sprite>sprites\sprHeavyAttackDrone</sprite>
+        <sprite>sprites\sprHeavyAttackDroneBomb</sprite>
+        <sprite>sprites\sprBotBomb</sprite>
+      </sprites>
+      <sprite>sprites\rmGiantBotCoolDown</sprite>
+      <sprite>sprites\sprEnemy</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -230,6 +209,7 @@
       <script>scripts\damageArmour.gml</script>
       <script>scripts\updateReticule.gml</script>
       <script>scripts\makeReticule.gml</script>
+      <script>scripts\doDamageBlink.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -282,6 +262,7 @@
       <object>objects\objBotLaser</object>
       <object>objects\objBotDeflectedLaser</object>
       <object>objects\objEnemy</object>
+      <object>objects\objBoss</object>
     </objects>
     <objects name="hazards">
       <object>objects\damageSource</object>
@@ -330,6 +311,7 @@
     <room>rooms\rmTutorial</room>
     <room>rooms\rmCredits</room>
     <room>rooms\rmTutorial3</room>
+    <room>rooms\rmLevel1Boss</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
