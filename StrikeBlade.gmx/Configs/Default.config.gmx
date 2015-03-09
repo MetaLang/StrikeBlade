@@ -436,7 +436,7 @@
       <constant name="ASSERT_ENABLED">true</constant>
       <constant name="KEYS">objKeyboardController</constant>
       <constant name="UNITTESTS_ENABLED">true</constant>
-      <constant name="START_ROOM">rmTutorial</constant>
+      <constant name="START_ROOM">rmIntroStory</constant>
       <constant name="CREDITS_ROOM">rmCredits</constant>
       <constant name="MAIN_MENU">rmMainMenu</constant>
       <constant name="TEST_ROOM">rmTest</constant>

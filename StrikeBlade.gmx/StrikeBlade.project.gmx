@@ -33,6 +33,7 @@
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprPlatform</sprite>
     <sprite>sprites\sprTutorialPlatform</sprite>
+    <sprite>sprites\sprInvis</sprite>
     <sprites name="player_old">
       <sprites name="run">
         <sprite>sprites\sprPlayerRunRight_old</sprite>
@@ -167,6 +168,7 @@
     <sprites name="menu screen">
       <sprite>sprites\sprCreditsLabel</sprite>
       <sprite>sprites\sprTutorialLabel</sprite>
+      <sprite>sprites\sprPlayLabel</sprite>
       <sprite>sprites\sprTestRoomLabel</sprite>
     </sprites>
     <sprites name="pause menu">
@@ -231,6 +233,7 @@
     <object>objects\objTutorialPlatform</object>
     <object>objects\objBlocker</object>
     <object>objects\objSpawnLocation</object>
+    <object>objects\objNextScreen</object>
     <object>objects\objReticule</object>
     <objects name="controllers">
       <object>objects\objKeyboardController</object>
@@ -245,6 +248,7 @@
         <object>objects\objCreditsController</object>
         <object>objects\objSplashScreenController</object>
       </objects>
+      <object>objects\objIntroStoryController</object>
     </objects>
     <objects name="util">
       <object>objects\objEnumContainer</object>
@@ -281,6 +285,7 @@
     </objects>
     <objects name="menu screen">
       <object>objects\objTutorialLabel</object>
+      <object>objects\objStoryLabel</object>
       <object>objects\objCreditsLabel</object>
       <object>objects\objTestRoomLabel</object>
     </objects>
@@ -295,13 +300,15 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rmTutorial2</room>
     <room>rooms\rmSplashScreen</room>
+    <room>rooms\rmMainMenu</room>
+    <room>rooms\rmIntroStory</room>
+    <room>rooms\rmTutorial2</room>
+    <room>rooms\rmLevel1</room>
     <room>rooms\rmUnitTest</room>
     <room>rooms\rmTest</room>
     <room>rooms\rmTutorial</room>
     <room>rooms\rmCredits</room>
-    <room>rooms\rmMainMenu</room>
     <room>rooms\rmTutorial3</room>
   </rooms>
   <help>
