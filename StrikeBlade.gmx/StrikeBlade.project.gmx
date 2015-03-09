@@ -102,6 +102,25 @@
         </sprites>
       </sprites>
       <sprite>sprites\sprPlayerInvisible</sprite>
+      <sprites name="New Player">
+        <sprites name="full_armor">
+          <sprite>sprites\idle_right</sprite>
+          <sprite>sprites\idle_left</sprite>
+          <sprite>sprites\sprarmor_run</sprite>
+        </sprites>
+        <sprites name="bootless">
+          <sprite>sprites\idleboot_right</sprite>
+          <sprite>sprites\idleboot_left</sprite>
+        </sprites>
+        <sprites name="helmetless">
+          <sprite>sprites\idlehelmet_right</sprite>
+          <sprite>sprites\idlehelmet_left</sprite>
+        </sprites>
+        <sprites name="armorless">
+          <sprite>sprites\idlearmor_right</sprite>
+          <sprite>sprites\idlearmor_left</sprite>
+        </sprites>
+      </sprites>
     </sprites>
     <sprites name="attackDrone">
       <sprite>sprites\sprAttackDroneCooling</sprite>
@@ -165,6 +184,9 @@
     <backgrounds name="tile sets">
       <background>background\tsTomb</background>
       <background>background\tsTombstones</background>
+      <background>background\tsTomb1</background>
+      <background>background\tsTomb2</background>
+      <background>background\tsTomb3</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
@@ -202,6 +224,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntScore</font>
+    <font>fonts\font1</font>
   </fonts>
   <objects name="objects">
     <object>objects\objPlatform</object>
@@ -270,12 +293,14 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rmTutorial2</room>
     <room>rooms\rmSplashScreen</room>
     <room>rooms\rmUnitTest</room>
     <room>rooms\rmTest</room>
     <room>rooms\rmTutorial</room>
     <room>rooms\rmCredits</room>
     <room>rooms\rmMainMenu</room>
+    <room>rooms\rmTutorial3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
