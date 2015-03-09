@@ -197,6 +197,10 @@
     <instance objName="objBackgroundController" x="480" y="32" name="inst_C31057D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSoundController" x="512" y="32" name="inst_33F054E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMenuController" x="544" y="32" name="inst_0FBDA5A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="832" name="inst_CFED667F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="864" name="inst_C54AEEE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="896" name="inst_DABEFCF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4672" y="928" name="inst_69C2E096" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

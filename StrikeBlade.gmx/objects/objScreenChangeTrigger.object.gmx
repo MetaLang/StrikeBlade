@@ -35,6 +35,10 @@ else if (room == TUTORIAL_ROOM2)
 }
 else if (room == TUTORIAL_ROOM3)
 {
+    room_goto(TUTORIAL_ROOM4);
+}
+else if (room == TUTORIAL_ROOM4)
+{
     room_goto(TUTORIAL_BOSS_ROOM);
 }
 </string>
