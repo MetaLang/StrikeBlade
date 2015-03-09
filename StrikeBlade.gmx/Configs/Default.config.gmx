@@ -431,15 +431,16 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="22">
+    <constants number="23">
       <constant name="MOUSE">objMouseController</constant>
       <constant name="ASSERT_ENABLED">true</constant>
       <constant name="KEYS">objKeyboardController</constant>
       <constant name="UNITTESTS_ENABLED">true</constant>
-      <constant name="START_ROOM">rmTutorial</constant>
+      <constant name="START_ROOM">rmLevel1Boss</constant>
       <constant name="TUTORIAL_ROOM1">rmTutorial</constant>
       <constant name="TUTORIAL_ROOM2">rmTutorial2</constant>
       <constant name="TUTORIAL_ROOM3">rmTutorial3</constant>
+      <constant name="TUTORIAL_ROOM4">rmLevel1</constant>
       <constant name="TUTORIAL_BOSS_ROOM">rmLevel1Boss</constant>
       <constant name="CREDITS_ROOM">rmCredits</constant>
       <constant name="MAIN_MENU">rmMainMenu</constant>

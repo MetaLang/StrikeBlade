@@ -104,13 +104,20 @@ room_goto(MAIN_MENU);
             <kind>1</kind>
             <string>if (objPlayer.x &gt; x)
 {
-    image_xscale = -1;
+    image_xscale = 1;
     facing = Direction.right;
 }
 else
 {
-    image_xscale = 1;
+    image_xscale = -1;
     facing = Direction.left;
+}
+
+//if (distance_to_object(objPlayer) &gt; sprite_width / 2)
+if (abs(x - objPlayer.x) &gt; sprite_width / 2 
+        /*&amp;&amp; !place_meeting(x + 1, y, objBlocker)*/)
+{
+    x += image_xscale * runSpeed;
 }
 </string>
           </argument>
@@ -209,7 +216,9 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (other)
+            <string>effect_create_above(ef_firework, other.x, other.y, 1, c_yellow);
+
+with (other)
 {
     instance_destroy();
 }
