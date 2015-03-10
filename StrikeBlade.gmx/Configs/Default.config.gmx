@@ -436,7 +436,7 @@
       <constant name="ASSERT_ENABLED">true</constant>
       <constant name="KEYS">objKeyboardController</constant>
       <constant name="UNITTESTS_ENABLED">true</constant>
-      <constant name="START_ROOM">rmLevel1Boss</constant>
+      <constant name="START_ROOM">rmIntroStory</constant>
       <constant name="TUTORIAL_ROOM1">rmTutorial</constant>
       <constant name="TUTORIAL_ROOM2">rmTutorial2</constant>
       <constant name="TUTORIAL_ROOM3">rmTutorial3</constant>
