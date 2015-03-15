@@ -437,7 +437,7 @@
       <constant name="KEYS">objKeyboardController</constant>
       <constant name="UNITTESTS_ENABLED">true</constant>
       <constant name="START_ROOM">rmIntroStory</constant>
-      <constant name="TUTORIAL_ROOM1">rmTutorial</constant>
+      <constant name="TUTORIAL_ROOM1">rmTutorialDom</constant>
       <constant name="TUTORIAL_ROOM2">rmTutorial2</constant>
       <constant name="TUTORIAL_ROOM3">rmTutorial3</constant>
       <constant name="TUTORIAL_ROOM4">rmLevel1</constant>
@@ -454,7 +454,7 @@
       <constant name="UNIT_TEST_EVENT">ev_user0</constant>
       <constant name="PLAYER_DEATH_EVENT">ev_user1</constant>
       <constant name="FP_EPSILON">0.001</constant>
-      <constant name="SOUND_ENABLED">false</constant>
+      <constant name="SOUND_ENABLED">true</constant>
     </constants>
   </ConfigConstants>
 </Config>

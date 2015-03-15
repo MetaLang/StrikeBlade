@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(START_ROOM);
+            <string>//room_goto(START_ROOM);
+room_goto(TUTORIAL_ROOM1);
 </string>
           </argument>
         </arguments>
