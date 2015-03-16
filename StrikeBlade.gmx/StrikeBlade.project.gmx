@@ -271,6 +271,7 @@
       <object>objects\objFaultyBot</object>
       <object>objects\objAttackDrone</object>
       <object>objects\objBotSpawner</object>
+      <object>objects\objDroneSpawner</object>
       <object>objects\objHeavyDroneBlaster</object>
       <object>objects\objHeavyAttackDrone</object>
       <object>objects\objBossShip</object>

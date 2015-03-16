@@ -25,10 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(place_free(x,y)) {
-    instance_create(x, y, objShockBot);
-}
-
+            <string>instance_create(x, y, objAttackDrone);
 
 alarm[BotSpawnerAlarms.spawn] = seconds(6);
 </string>
@@ -53,10 +50,7 @@ alarm[BotSpawnerAlarms.spawn] = seconds(6);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(place_free(x,y)) {
-    instance_create(x, y, objShockBot);
-}
-
+            <string>instance_create(x, y, objAttackDrone);
 
 alarm[BotSpawnerAlarms.spawn] = seconds(6);
 </string>
@@ -81,9 +75,9 @@ alarm[BotSpawnerAlarms.spawn] = seconds(6);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//effect_create_above(ef_explosion, x, y, 1, c_blue);
-//effect_create_above(ef_firework, x, y, 1, c_yellow);
-//instance_destroy();
+            <string>effect_create_above(ef_explosion, x, y, 1, c_blue);
+effect_create_above(ef_firework, x, y, 1, c_yellow);
+instance_destroy();
 </string>
           </argument>
         </arguments>
