@@ -31,7 +31,6 @@
     </sounds>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\sprBotSpawner</sprite>
     <sprite>sprites\sprPlatform</sprite>
     <sprite>sprites\sprTutorialPlatform</sprite>
     <sprite>sprites\sprInvis</sprite>
@@ -170,6 +169,10 @@
         <sprite>sprites\sprShipBossAttack</sprite>
         <sprite>sprites\sprAttackDroneBoss</sprite>
       </sprites>
+    </sprites>
+    <sprites name="enemySpwaners">
+      <sprite>sprites\sprBotSpawner</sprite>
+      <sprite>sprites\sprDroneSpawner</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
