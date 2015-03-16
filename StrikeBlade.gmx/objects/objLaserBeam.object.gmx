@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>objEnemy</parentName>
+  <parentName>damageSource</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -106,9 +106,25 @@ alarm[BossShipAlarms.laserDuration] = seconds(5);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>angle -= beamSpeed;
+            <string>var hit;
+hit = collision_rectangle(x-5, y, laserX+5, laserY, objPlayer, false, true);
+if hit != noone {
+    with(hit) {
+        damageArmour(objBossShip.damage);
+    }
+    
+    
+}
 
-direction = point_direction(x, y, cos(angle)*2000, sin(angle)*2000);
+angle -= beamSpeed;
+
+//direction = point_direction(x, y, cos(angle)*2000, sin(angle)*2000);
+x = objBossShip.x
+y = objBossShip.y
+
+direction = point_direction(objBossShip.x, objBossShip.y, objBossShip.x, objBossShip.y+5);
+
+
 </string>
           </argument>
         </arguments>
@@ -165,13 +181,13 @@ direction = point_direction(x, y, cos(angle)*2000, sin(angle)*2000);
       </action>
       <action>
         <libid>1</libid>
-        <id>513</id>
+        <id>511</id>
         <kind>0</kind>
         <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_draw_line</functionname>
+        <functionname>action_draw_rectangle</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
@@ -179,7 +195,7 @@ direction = point_direction(x, y, cos(angle)*2000, sin(angle)*2000);
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>x</string>
+            <string>x-5</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -187,11 +203,15 @@ direction = point_direction(x, y, cos(angle)*2000, sin(angle)*2000);
           </argument>
           <argument>
             <kind>0</kind>
-            <string>laserX</string>
+            <string>laserX+5</string>
           </argument>
           <argument>
             <kind>0</kind>
             <string>laserY</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>

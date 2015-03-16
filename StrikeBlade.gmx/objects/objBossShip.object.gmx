@@ -32,7 +32,7 @@ hp = 1;
 startX = x;
 startY = y;
 
-flightPathRight = true;
+flightPathRight = false;
 
 damage = 1;
 
@@ -47,7 +47,7 @@ blaster1Destroyed = false;
 blaster2Destroyed = false;
 
 
-runSpeed = 8;
+runSpeed = 5;
 
 range = 20000;
 
@@ -63,8 +63,8 @@ spanDronesRefreshed = true;
 
 coolDownTime = seconds(1.5);
 droneRefreshTime = seconds(10);
-laserDuration = seconds(15);
-flightPathChangeTime = seconds(5);
+laserDuration = seconds(5);
+flightPathChangeTime = seconds(3);
 
 alarm[3] = flightPathChangeTime;
 
@@ -310,7 +310,7 @@ switch(currentState) {
             instance_create(x, y, objLaserBeam);
             alarm[BossShipAlarms.laserDuration] = laserDuration; // Cool down
             laserRefreshed = false;
-            runSpeed = 0;
+            //runSpeed = 0;
             currentState = BossShipStates.coolingDown;  
         }
         
@@ -321,8 +321,8 @@ switch(currentState) {
         }
         
         if(spanDronesRefreshed) { // Spawn Drones
-             instance_create(x+128, y+64, objAttackDrone);
-             instance_create(x-128, y+64, objAttackDrone);
+            instance_create(x+128, y+64, objAttackDrone);
+            instance_create(x-128, y+64, objAttackDrone);
             alarm[BossShipAlarms.droneRefresh] = droneRefreshTime; // Cool down
             currentState = BossShipStates.attacking;
             spanDronesRefreshed = false;
