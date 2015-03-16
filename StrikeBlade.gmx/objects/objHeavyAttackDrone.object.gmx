@@ -42,7 +42,7 @@ blaster1Destroyed = false;
 blaster2Destroyed = false;
 
 
-runSpeed = 5;
+runSpeed = 7;
 
 range = 400;
 

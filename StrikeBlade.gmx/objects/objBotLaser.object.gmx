@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 
-laserSpeed = 5;
+laserSpeed = 15;
 image_angle = point_direction(x, y, objPlayer.x, objPlayer.y);
 move_towards_point(objPlayer.x, objPlayer.y, laserSpeed);
 </string>

@@ -28,7 +28,7 @@
             <string>event_inherited();
 
 hp = 1;
-runSpeed = 5;
+runSpeed = 7;
 viewField = 200;
 pointsValue = 100;
 broken = false;
