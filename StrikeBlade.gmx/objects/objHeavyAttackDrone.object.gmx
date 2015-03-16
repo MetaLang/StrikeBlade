@@ -41,7 +41,6 @@ var blaster1, blaster2;
 blaster1Destroyed = false;
 blaster2Destroyed = false;
 
-
 runSpeed = 8;
 
 range = 400;

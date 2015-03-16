@@ -32,8 +32,8 @@ credits += "Luckily all is not lost###";
 credits += "Because as the legend goes...###";
 credits += "King Arthur will arise and fight when Britain needs him the most";
 y = room_height;
-x = room_width / 2;
-vspeed = -1;
+x = room_width;
+vspeed = -1.2;
 drawExitText = true;
 alarm[0] = seconds(40);
 </string>

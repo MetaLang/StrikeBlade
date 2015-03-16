@@ -39,6 +39,26 @@
       </action>
       <action>
         <libid>1</libid>
+        <id>213</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>-1</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>sndHomelander</sound>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>211</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -53,33 +73,11 @@
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>sndAdventureHo</sound>
+            <sound>sndHomelander</sound>
           </argument>
           <argument>
             <kind>3</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="5">
-      <action>
-        <libid>1</libid>
-        <id>213</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>sndAdventureHo</sound>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -99,7 +97,27 @@
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>sndAdventureHo</sound>
+            <sound>sndRapHipHop</sound>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>212</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>sndWoodlandFantasy</sound>
           </argument>
         </arguments>
       </action>

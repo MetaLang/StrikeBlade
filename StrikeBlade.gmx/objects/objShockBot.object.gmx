@@ -27,8 +27,10 @@
             <kind>1</kind>
             <string>event_inherited();
 
+
 hp = 2;
 runSpeed = 5;
+
 pointsValue = 100;
 viewField = 200;
 currentState = ShockBotStates.patrolling;

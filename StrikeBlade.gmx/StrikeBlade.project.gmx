@@ -26,6 +26,8 @@
       <sound>sound\sndRockMenu</sound>
       <sound>sound\sndAdventureHo</sound>
       <sound>sound\sndWoodlandFantasy</sound>
+      <sound>sound\sndHomelander</sound>
+      <sound>sound\sndRapHipHop</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -182,7 +184,10 @@
       <background>background\tsTomb1</background>
       <background>background\tsTomb2</background>
       <background>background\tsTomb3</background>
+      <background>background\tsTomb1_64</background>
     </backgrounds>
+    <background>background\bgSpace</background>
+    <background>background\bgStreet</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pthSwordSwing</path>
@@ -202,7 +207,6 @@
     </scripts>
     <scripts name="utils">
       <script>scripts\assert.gml</script>
-      <script>scripts\setSpriteFromFacing.gml</script>
       <script>scripts\dirToKey.gml</script>
       <script>scripts\getDirSign.gml</script>
       <script>scripts\keyToDir.gml</script>
@@ -218,6 +222,7 @@
       <script>scripts\updateReticule.gml</script>
       <script>scripts\makeReticule.gml</script>
       <script>scripts\doDamageBlink.gml</script>
+      <script>scripts\setSpriteFromFacing.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -234,6 +239,8 @@
       <object>objects\objSpawnController</object>
       <object>objects\objBackgroundController</object>
       <object>objects\objSoundController</object>
+      <object>objects\objSound2Controller</object>
+      <object>objects\objSound3Controller</object>
       <object>objects\objMenuController</object>
       <objects name="room controllers">
         <object>objects\objCreditsController</object>
@@ -312,17 +319,18 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rmLevel1Boss</room>
     <room>rooms\rmSplashScreen</room>
     <room>rooms\rmMainMenu</room>
     <room>rooms\rmIntroStory</room>
+    <room>rooms\rmTutorial</room>
+    <room>rooms\rmTutorialDom</room>
     <room>rooms\rmTutorial2</room>
+    <room>rooms\rmTutorial3</room>
     <room>rooms\rmLevel1</room>
+    <room>rooms\rmLevel1Boss</room>
     <room>rooms\rmUnitTest</room>
     <room>rooms\rmTest</room>
-    <room>rooms\rmTutorial</room>
     <room>rooms\rmCredits</room>
-    <room>rooms\rmTutorial3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

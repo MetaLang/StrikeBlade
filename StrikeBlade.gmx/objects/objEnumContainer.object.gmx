@@ -51,6 +51,7 @@ enum PlayerAlarms
 {
     invincibility = 0,
     blink = 1,
+    restoreMovement = 2,
 }
 
 enum BotSpawnerAlarms
