@@ -67,27 +67,6 @@ alarm[BossShipAlarms.laserDuration] = seconds(5);
         <relative>0</relative>
         <isnot>0</isnot>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>objBossShip.runSpeed = 8;
-</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -119,11 +98,12 @@ if hit != noone {
 angle -= beamSpeed;
 
 //direction = point_direction(x, y, cos(angle)*2000, sin(angle)*2000);
-x = objBossShip.x
-y = objBossShip.y
+if(instance_exists(objBossShip)) {
+    x = objBossShip.x
+    y = objBossShip.y
 
-direction = point_direction(objBossShip.x, objBossShip.y, objBossShip.x, objBossShip.y+5);
-
+    direction = point_direction(objBossShip.x, objBossShip.y, objBossShip.x, objBossShip.y+5);
+}
 
 </string>
           </argument>

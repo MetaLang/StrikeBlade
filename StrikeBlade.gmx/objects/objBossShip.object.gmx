@@ -342,6 +342,14 @@ switch(currentState) {
         effect_create_above(ef_firework, x, y, 1, c_yellow);
         var scorePopUp = instance_create(x, y, objScore);
         scorePopUp.pointsValue = pointsValue;
+        with(objLaserBeamMessenger) {
+            instance_destroy();
+        }
+        
+        with(objLaserBeam) {
+            instance_destroy();
+        }
+
         instance_destroy();
     break; 
 }
