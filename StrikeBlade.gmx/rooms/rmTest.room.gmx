@@ -130,6 +130,8 @@
     <instance objName="objPlatform" x="1248" y="608" name="inst_F456FDDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBotSpawner" x="704" y="224" name="inst_7F159F5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDroneSpawner" x="1728" y="224" name="inst_77017C37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPuzzleLock" x="1728" y="704" name="inst_35EB0C25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPuzzleKey" x="1120" y="384" name="inst_02F2E49E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

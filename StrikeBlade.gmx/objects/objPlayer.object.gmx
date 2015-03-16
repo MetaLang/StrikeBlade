@@ -35,6 +35,7 @@ maxJumps = 2;
 jumpCount = 0;
 damage = 1;
 invincible = false;
+hasPuzzleKey = false;
 
 armourColours = sbArray(
     c_red,
