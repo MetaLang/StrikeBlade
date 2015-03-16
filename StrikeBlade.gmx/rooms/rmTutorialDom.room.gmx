@@ -81,7 +81,7 @@
     <instance objName="objShockBot" x="3584" y="544" name="inst_3F8F5F12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShockBot" x="3264" y="544" name="inst_C162A54E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="3712" y="544" name="inst_C8F66A07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objScreenChangeTrigger" x="3904" y="544" name="inst_DDB80514" locked="0" code="" scaleX="0.100000001490116" scaleY="10" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="1888" y="5888" name="inst_FAD2B14D" locked="0" code="" scaleX="6" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="3136" y="320" name="inst_04552A51" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objArmourPickup" x="3840" y="576" name="inst_EFD290CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="2592" y="704" name="inst_E31E81F6" locked="0" code="" scaleX="7" scaleY="4" colour="4294967295" rotation="0"/>
@@ -131,7 +131,6 @@
     <instance objName="objShockBot" x="3360" y="5856" name="inst_E6EE78BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShockBot" x="3552" y="5856" name="inst_5CD12F0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objArmourPickup" x="1984" y="1568" name="inst_A851ED24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objScreenChangeTrigger" x="1888" y="5888" name="inst_FAD2B14D" locked="0" code="" scaleX="6" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1_64" x="64" y="128" w="64" h="64" xo="320" yo="192" id="10007970" name="inst_B3D5D23F" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
