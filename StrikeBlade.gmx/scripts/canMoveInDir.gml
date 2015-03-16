@@ -1,3 +1,8 @@
+if (!movementEnabled)
+{
+    return false;
+}
+
 var dir = argument[0];
 var checkCoord = 0;
 

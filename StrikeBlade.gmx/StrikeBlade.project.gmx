@@ -194,7 +194,6 @@
     </scripts>
     <scripts name="utils">
       <script>scripts\assert.gml</script>
-      <script>scripts\setSpriteFromFacing.gml</script>
       <script>scripts\dirToKey.gml</script>
       <script>scripts\getDirSign.gml</script>
       <script>scripts\keyToDir.gml</script>
@@ -210,6 +209,7 @@
       <script>scripts\updateReticule.gml</script>
       <script>scripts\makeReticule.gml</script>
       <script>scripts\doDamageBlink.gml</script>
+      <script>scripts\setSpriteFromFacing.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
