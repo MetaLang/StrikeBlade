@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>objScreenChangeTrigger</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -50,7 +50,7 @@ image_speed = 0;
           <argument>
             <kind>1</kind>
             <string>if (other.hasPuzzleKey) {
-    room_goto(TEST_ROOM);
+    event_inherited();
 }
 </string>
           </argument>
