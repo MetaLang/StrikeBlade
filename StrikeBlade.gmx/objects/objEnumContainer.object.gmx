@@ -96,7 +96,16 @@ enum BossShipAlarms
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// States For Bad-Guys
+            <string>// Wall Laser Beam Directions
+enum LaserDirection
+{
+    up,
+    down,
+    left,
+    right,
+}
+
+// States For Bad-Guys
 enum ShockBotStates
 {
     attacking,

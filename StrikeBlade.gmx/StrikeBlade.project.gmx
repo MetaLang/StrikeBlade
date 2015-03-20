@@ -169,6 +169,7 @@
         <sprite>sprites\sprShipBossAttack</sprite>
         <sprite>sprites\sprAttackDroneBoss</sprite>
       </sprites>
+      <sprite>sprites\sprWallLaser</sprite>
     </sprites>
     <sprites name="enemySpwaners">
       <sprite>sprites\sprBotSpawner</sprite>
@@ -287,9 +288,11 @@
       <object>objects\objBotDeflectedLaser</object>
       <object>objects\objEnemy</object>
       <object>objects\objBoss</object>
+      <object>objects\objWallLaser</object>
+      <object>objects\objWalLaserBeam</object>
+      <object>objects\objWallLaserBeamMessenger</object>
       <object>objects\objLaserBeam</object>
       <object>objects\objLaserBeamMessenger</object>
-      <object>objects\test</object>
     </objects>
     <objects name="hazards">
       <object>objects\damageSource</object>
