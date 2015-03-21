@@ -17,8 +17,8 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>101</width>
-  <height>101</height>
+  <width>96</width>
+  <height>96</height>
   <frames>
     <frame index="0">images\sprBootlessRunRight_0.png</frame>
     <frame index="1">images\sprBootlessRunRight_1.png</frame>

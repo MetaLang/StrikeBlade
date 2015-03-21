@@ -31,8 +31,6 @@
     </sounds>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\sprBotSpawnerDoor</sprite>
-    <sprite>sprites\sprBotSpawner</sprite>
     <sprite>sprites\sprPlatform</sprite>
     <sprite>sprites\sprTutorialPlatform</sprite>
     <sprite>sprites\sprkeyDoor</sprite>
@@ -255,7 +253,6 @@
   <objects name="objects">
     <objects name="controllers">
       <object>objects\objKeyboardController</object>
-      <object>objects\objIntroStoryController</object>
       <object>objects\objUnitTestRunner</object>
       <object>objects\objMouseController</object>
       <object>objects\objLightController</object>
@@ -263,6 +260,13 @@
       <object>objects\objBackgroundController</object>
       <object>objects\objMusicController</object>
       <object>objects\objMenuController</object>
+      <objects name="story">
+        <object>objects\objIntroStoryController</object>
+        <object>objects\objLevel1StoryController</object>
+        <object>objects\objLevel2StoryController</object>
+        <object>objects\objLevel3StoryController</object>
+        <object>objects\objLevel4StoryController</object>
+      </objects>
       <objects name="room controllers">
         <object>objects\objCreditsController</object>
         <object>objects\objSplashScreenController</object>
@@ -313,6 +317,7 @@
     <objects name="player">
       <object>objects\objPlayer</object>
       <object>objects\objTutorialPlayer</object>
+      <object>objects\objPlayerRun</object>
     </objects>
     <objects name="pause menu">
       <object>objects\objMenuLabel</object>
@@ -352,10 +357,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rmStorylv1</room>
     <room>rooms\rmSplashScreen</room>
     <room>rooms\rmMainMenu</room>
-    <room>rooms\rmIntroStory</room>
     <room>rooms\rmTutorial</room>
     <room>rooms\rmTutorialDom</room>
     <room>rooms\rmTutorial2</room>
@@ -366,10 +369,12 @@
     <room>rooms\rmTest</room>
     <room>rooms\rmCredits</room>
     <rooms name="Story Rooms">
+      <room>rooms\rmStorylv1</room>
       <room>rooms\rmStorylv2</room>
       <room>rooms\rmStorylv3</room>
       <room>rooms\rmStorylv4</room>
       <room>rooms\rmStorylv5</room>
+      <room>rooms\rmIntroStory</room>
     </rooms>
   </rooms>
   <help>
