@@ -65,7 +65,7 @@
     <instance objName="objMouseController" x="160" y="32" name="inst_33006B05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpawnController" x="256" y="32" name="inst_AAA855D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialPlatform" x="32" y="832" name="inst_9B7B2D5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSoundController" x="192" y="32" name="inst_88756A0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMusicController" x="192" y="32" name="inst_88756A0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMenuController" x="224" y="32" name="inst_F7E4FA73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="192" y="960" name="inst_FFB1258F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBoss" x="1632" y="960" name="inst_241BE2B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -80,7 +80,6 @@
     <instance objName="objPlatform" x="32" y="-96" name="inst_11B33A04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="4672" y="-32" name="inst_5E0B954E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="4672" y="-96" name="inst_1D81138A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSound3Controller" x="288" y="32" name="inst_82D3734E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1_1" x="32" y="768" w="64" h="64" xo="768" yo="192" id="10007756" name="inst_A9B58470" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

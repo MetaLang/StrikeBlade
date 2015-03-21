@@ -193,6 +193,7 @@
       <background>background\tsTomb2</background>
       <background>background\tsTomb3</background>
       <background>background\tsTomb1_64</background>
+      <background>background\tsTomb3x2</background>
     </backgrounds>
     <background>background\bgSpace</background>
     <background>background\bgStreet</background>
@@ -246,9 +247,7 @@
       <object>objects\objLightController</object>
       <object>objects\objSpawnController</object>
       <object>objects\objBackgroundController</object>
-      <object>objects\objSoundController</object>
-      <object>objects\objSound2Controller</object>
-      <object>objects\objSound3Controller</object>
+      <object>objects\objMusicController</object>
       <object>objects\objMenuController</object>
       <objects name="room controllers">
         <object>objects\objCreditsController</object>

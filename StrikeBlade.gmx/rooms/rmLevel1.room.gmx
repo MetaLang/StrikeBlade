@@ -204,7 +204,7 @@
     <instance objName="objPlatform" x="32" y="800" name="inst_8621BE52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="1408" y="0" name="inst_7ECAC9BD" locked="0" code="" scaleX="34" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="3584" y="0" name="inst_EDA0C04F" locked="0" code="" scaleX="35" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSound2Controller" x="544" y="32" name="inst_9C8B0690" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMusicController" x="544" y="32" name="inst_DC4FDAB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1_64" x="0" y="0" w="64" h="64" xo="256" yo="64" id="10014278" name="inst_6EFAC866" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
