@@ -182,7 +182,7 @@
       </sprites>
       <sprite>sprites\sprWallLaser</sprite>
     </sprites>
-    <sprites name="enemySpwaners">
+    <sprites name="enemy spawners">
       <sprite>sprites\sprBotSpawner</sprite>
       <sprite>sprites\sprDroneSpawner</sprite>
     </sprites>
