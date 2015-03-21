@@ -487,6 +487,9 @@ background_x[2] = view_xview[0] * 0.95;
             <kind>1</kind>
             <string>draw_self();
 
+//Display Score
+draw_set_color(c_yellow);
+draw_text(0+100, 0, 'Score: ' + string(score));
 //draw_text(room_width / 2, 50, "Armour Level: " + string(armourLevel));
 </string>
           </argument>
