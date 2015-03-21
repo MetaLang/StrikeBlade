@@ -48,6 +48,7 @@ maxArmourLevel = array_length_1d(armourColours) - 1;
 armourLevel = maxArmourLevel;
 reticule = noone;
 movementEnabled = true;
+canThrowSword = true;
 </string>
           </argument>
         </arguments>
@@ -235,7 +236,7 @@ else if (mouse_check_button_released(mb_left) &amp;&amp; instance_exists(objAtta
         instance_destroy();
     }
 }
-else if (mouse_check_button_released(mb_right) &amp;&amp; !instance_exists(objAttackSword))
+else if (mouse_check_button_released(mb_right) &amp;&amp; canThrowSword &amp;&amp; !instance_exists(objAttackSword))
 {
     if (instance_exists(objThrownSword))
     {
@@ -247,6 +248,7 @@ else if (mouse_check_button_released(mb_right) &amp;&amp; !instance_exists(objAt
         */
         //if (canTeleport)
         {
+            canThrowSword = false;
             x = objThrownSword.x;
             y = objThrownSword.y + (sprite_height / 2);
             direction = objThrownSword.direction;
@@ -347,7 +349,10 @@ else
 {
     gravity = 0;
     friction = 8;
+    canThrowSword = true;
 }
+
+//if (
 
 if (facing == Direction.right)
 {
@@ -414,7 +419,12 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>move_contact_solid(direction, vspeed * -sign(direction));
+            <string>if (y &gt; other.y &amp;&amp; vspeed &gt; 0)
+{
+    //Hitting the blocker from above
+    canThrowSword = true;
+}
+move_contact_solid(direction, vspeed * -sign(direction));
 vspeed = 0;
 </string>
           </argument>
@@ -491,6 +501,7 @@ background_x[2] = view_xview[0] * 0.95;
 draw_set_color(c_yellow);
 draw_text(0+100, 0, 'Score: ' + string(score));
 //draw_text(room_width / 2, 50, "Armour Level: " + string(armourLevel));
+draw_rectangle_colour(bbox_left, bbox_bottom, bbox_right, bbox_top, c_red, c_red, c_red, c_red, true);
 </string>
           </argument>
         </arguments>
