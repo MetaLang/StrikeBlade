@@ -30,7 +30,7 @@
     image_speed = 0.5;
 }
 
-alarm[BotSpawnerAlarms.spawn] = seconds(6);
+alarm[BotSpawnerAlarms.spawn] = seconds(10);
 </string>
           </argument>
         </arguments>
@@ -59,7 +59,7 @@ alarm[BotSpawnerAlarms.spawn] = seconds(6);
   
 }
 
-alarm[BotSpawnerAlarms.spawn] = seconds(6);
+alarm[BotSpawnerAlarms.spawn] = seconds(10);
 </string>
           </argument>
         </arguments>

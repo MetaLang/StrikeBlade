@@ -328,6 +328,7 @@
       <object>objects\objPuzzleKey</object>
       <object>objects\objPuzzleLock</object>
       <object>objects\objKeyUI</object>
+      <object>objects\objPuzzleKeyWhenNoBots</object>
     </objects>
     <objects name="platforms">
       <object>objects\objBlocker</object>
