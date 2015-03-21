@@ -31,8 +31,6 @@
     </sounds>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\sprBotSpawnerDoor</sprite>
-    <sprite>sprites\sprBotSpawner</sprite>
     <sprite>sprites\sprPlatform</sprite>
     <sprite>sprites\sprTutorialPlatform</sprite>
     <sprite>sprites\sprkeyDoor</sprite>
@@ -184,7 +182,7 @@
       </sprites>
       <sprite>sprites\sprWallLaser</sprite>
     </sprites>
-    <sprites name="enemySpwaners">
+    <sprites name="enemy spawners">
       <sprite>sprites\sprBotSpawner</sprite>
       <sprite>sprites\sprDroneSpawner</sprite>
     </sprites>
