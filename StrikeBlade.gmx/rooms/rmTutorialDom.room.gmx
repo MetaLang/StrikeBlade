@@ -5063,7 +5063,6 @@
     <tile bgName="tsTomb1_64" x="448" y="2784" w="64" h="64" xo="256" yo="64" id="10015339" name="inst_3AC1389F" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1_64" x="512" y="2784" w="64" h="64" xo="256" yo="64" id="10015340" name="inst_FC6B782E" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1_64" x="64" y="2752" w="64" h="64" xo="256" yo="64" id="10015341" name="inst_349E3D13" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsTomb3" x="960" y="224" w="16" h="16" xo="16" yo="80" id="10015545" name="inst_F96E5A2D" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1_64" x="2016" y="256" w="64" h="64" xo="384" yo="192" id="10015570" name="inst_1C28616B" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb3x2" x="1344" y="256" w="32" h="32" xo="32" yo="160" id="10015572" name="inst_9FAE66FF" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb3x2" x="1984" y="256" w="32" h="32" xo="32" yo="160" id="10015589" name="inst_6C7011C3" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
