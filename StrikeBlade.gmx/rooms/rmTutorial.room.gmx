@@ -222,7 +222,7 @@
     <instance objName="objScreenChangeTrigger" x="4640" y="832" name="inst_772BB513" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objScreenChangeTrigger" x="4672" y="832" name="inst_FB08B7AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objScreenChangeTrigger" x="4448" y="832" name="inst_CE67A43B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objScreenChangeTrigger" x="4416" y="832" name="inst_722A5800" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objScreenChangeTrigger" x="4608" y="832" name="inst_722A5800" locked="0" code="" scaleX="8" scaleY="11" colour="4294967295" rotation="0"/>
     <instance objName="objScreenChangeTrigger" x="4384" y="832" name="inst_D91C6EF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objScreenChangeTrigger" x="4384" y="800" name="inst_62F478F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objScreenChangeTrigger" x="4384" y="768" name="inst_B3077F82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
