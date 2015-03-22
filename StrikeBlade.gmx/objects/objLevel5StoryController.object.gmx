@@ -58,7 +58,7 @@ alarm[0] = seconds(40);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(TUTORIAL_ROOM2);
+            <string>room_goto(TUTORIAL_BOSS_ROOM);
 </string>
           </argument>
         </arguments>
