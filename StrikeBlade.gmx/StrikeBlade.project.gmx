@@ -33,6 +33,10 @@
   <sprites name="sprites">
     <sprite>sprites\sprPlatform</sprite>
     <sprite>sprites\sprTutorialPlatform</sprite>
+    <sprite>sprites\sprkeyDoor</sprite>
+    <sprite>sprites\sprTent</sprite>
+    <sprite>sprites\sprCampFire</sprite>
+    <sprite>sprites\sprKey</sprite>
     <sprite>sprites\sprInvis</sprite>
     <sprites name="sword">
       <sprite>sprites\sprSword</sprite>
@@ -80,21 +84,28 @@
       </sprites>
       <sprites name="new player">
         <sprites name="full_armor">
-          <sprite>sprites\idle_right</sprite>
-          <sprite>sprites\idle_left</sprite>
-          <sprite>sprites\sprarmor_run</sprite>
+          <sprite>sprites\sprIdleRight</sprite>
+          <sprite>sprites\sprIdleLeft</sprite>
+          <sprite>sprites\sprArmorRun</sprite>
+          <sprite>sprites\sprArmorRunLeft</sprite>
         </sprites>
         <sprites name="bootless">
-          <sprite>sprites\idleboot_right</sprite>
-          <sprite>sprites\idleboot_left</sprite>
+          <sprite>sprites\sprIdleBootRight</sprite>
+          <sprite>sprites\sprIdleBootLeft</sprite>
+          <sprite>sprites\sprBootlessRunRight</sprite>
+          <sprite>sprites\sprBootlessRunLeft</sprite>
         </sprites>
         <sprites name="helmetless">
-          <sprite>sprites\idlehelmet_right</sprite>
-          <sprite>sprites\idlehelmet_left</sprite>
+          <sprite>sprites\sprIdleHelmetLeft</sprite>
+          <sprite>sprites\sprIdleHelmetRight</sprite>
+          <sprite>sprites\sprHelmetLessRunRight</sprite>
+          <sprite>sprites\sprHelmetLessRunLeft</sprite>
         </sprites>
         <sprites name="armorless">
-          <sprite>sprites\idlearmor_right</sprite>
-          <sprite>sprites\idlearmor_left</sprite>
+          <sprite>sprites\sprIdleArmorlessRight</sprite>
+          <sprite>sprites\sprIdleArmorlessLeft</sprite>
+          <sprite>sprites\sprArmorlessRunRight</sprite>
+          <sprite>sprites\sprArmorlessRunLeft</sprite>
         </sprites>
       </sprites>
       <sprite>sprites\sprPlayerInvisible</sprite>
@@ -172,7 +183,7 @@
       </sprites>
       <sprite>sprites\sprWallLaser</sprite>
     </sprites>
-    <sprites name="enemySpwaners">
+    <sprites name="enemy spawners">
       <sprite>sprites\sprBotSpawner</sprite>
       <sprite>sprites\sprDroneSpawner</sprite>
     </sprites>
@@ -185,6 +196,7 @@
   <backgrounds name="background">
     <background>background\bgCity1</background>
     <background>background\bgCity2</background>
+    <background>background\bgCave1</background>
     <background>background\bgCity3</background>
     <background>background\bgCitySky</background>
     <background>background\bgSplashScreen</background>
@@ -195,6 +207,7 @@
       <background>background\tsTomb2</background>
       <background>background\tsTomb3</background>
       <background>background\tsTomb1_64</background>
+      <background>background\tsTomb3x2</background>
     </backgrounds>
     <background>background\bgSpace</background>
     <background>background\bgStreet</background>
@@ -242,16 +255,20 @@
   <objects name="objects">
     <objects name="controllers">
       <object>objects\objKeyboardController</object>
-      <object>objects\objIntroStoryController</object>
       <object>objects\objUnitTestRunner</object>
       <object>objects\objMouseController</object>
       <object>objects\objLightController</object>
       <object>objects\objSpawnController</object>
       <object>objects\objBackgroundController</object>
-      <object>objects\objSoundController</object>
-      <object>objects\objSound2Controller</object>
-      <object>objects\objSound3Controller</object>
+      <object>objects\objMusicController</object>
       <object>objects\objMenuController</object>
+      <objects name="story">
+        <object>objects\objIntroStoryController</object>
+        <object>objects\objLevel1StoryController</object>
+        <object>objects\objLevel2StoryController</object>
+        <object>objects\objLevel3StoryController</object>
+        <object>objects\objLevel4StoryController</object>
+      </objects>
       <objects name="room controllers">
         <object>objects\objCreditsController</object>
         <object>objects\objSplashScreenController</object>
@@ -304,6 +321,7 @@
     <objects name="player">
       <object>objects\objPlayer</object>
       <object>objects\objTutorialPlayer</object>
+      <object>objects\objPlayerRun</object>
     </objects>
     <objects name="pause menu">
       <object>objects\objMenuLabel</object>
@@ -323,6 +341,8 @@
         <object>objects\objTestRoomLabel</object>
       </objects>
       <object>objects\objReticule</object>
+      <object>objects\objCampfire</object>
+      <object>objects\objTent</object>
     </objects>
     <objects name="markers">
       <object>objects\objSpawnLocationMarker</object>
@@ -332,6 +352,7 @@
       <object>objects\objPuzzleKey</object>
       <object>objects\objPuzzleLock</object>
       <object>objects\objKeyUI</object>
+      <object>objects\objPuzzleKeyWhenNoBots</object>
     </objects>
     <objects name="platforms">
       <object>objects\objBlocker</object>
@@ -340,18 +361,25 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rmLevel1Boss</room>
     <room>rooms\rmSplashScreen</room>
     <room>rooms\rmMainMenu</room>
-    <room>rooms\rmIntroStory</room>
     <room>rooms\rmTutorial</room>
     <room>rooms\rmTutorialDom</room>
     <room>rooms\rmTutorial2</room>
     <room>rooms\rmTutorial3</room>
     <room>rooms\rmLevel1</room>
+    <room>rooms\rmLevel1Boss</room>
     <room>rooms\rmUnitTest</room>
     <room>rooms\rmTest</room>
     <room>rooms\rmCredits</room>
+    <rooms name="Story Rooms">
+      <room>rooms\rmIntroStory</room>
+      <room>rooms\rmStorylv1</room>
+      <room>rooms\rmStorylv2</room>
+      <room>rooms\rmStorylv3</room>
+      <room>rooms\rmStorylv4</room>
+      <room>rooms\rmStorylv5</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

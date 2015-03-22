@@ -54,7 +54,7 @@
     <instance objName="objTutorialLabel" x="928" y="352" name="inst_D855ADE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTestRoomLabel" x="928" y="480" name="inst_351AEFA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCreditsLabel" x="928" y="608" name="inst_3A90E514" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSoundController" x="0" y="0" name="inst_F1C65113" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMusicController" x="0" y="0" name="inst_F1C65113" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

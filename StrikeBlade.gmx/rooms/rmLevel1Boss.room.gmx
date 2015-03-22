@@ -64,7 +64,7 @@
     <instance objName="objKeyboardController" x="128" y="32" name="inst_DFFF2FB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMouseController" x="160" y="32" name="inst_33006B05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpawnController" x="256" y="32" name="inst_AAA855D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objTutorialPlatform" x="32" y="1664" name="inst_9B7B2D5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+	<instance objName="objTutorialPlatform" x="32" y="1664" name="inst_9B7B2D5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSoundController" x="192" y="32" name="inst_88756A0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMenuController" x="224" y="32" name="inst_F7E4FA73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="288" y="1856" name="inst_FFB1258F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -75,7 +75,7 @@
     <instance objName="objKeyboardController" x="4832" y="2496" name="inst_6C2B4162" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKeyboardController" x="3104" y="-928" name="inst_7276467C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKeyboardController" x="5472" y="1152" name="inst_2BF42DAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-  </instances>
+</instances>
   <tiles>
     <tile bgName="tsTomb1_1" x="32" y="768" w="64" h="64" xo="768" yo="192" id="10007756" name="inst_A9B58470" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1_1" x="32" y="704" w="64" h="64" xo="768" yo="192" id="10007757" name="inst_F406E734" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
