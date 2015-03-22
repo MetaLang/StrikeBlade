@@ -369,12 +369,12 @@
     <room>rooms\rmTest</room>
     <room>rooms\rmCredits</room>
     <rooms name="Story Rooms">
+      <room>rooms\rmIntroStory</room>
       <room>rooms\rmStorylv1</room>
       <room>rooms\rmStorylv2</room>
       <room>rooms\rmStorylv3</room>
       <room>rooms\rmStorylv4</room>
       <room>rooms\rmStorylv5</room>
-      <room>rooms\rmIntroStory</room>
     </rooms>
   </rooms>
   <help>
