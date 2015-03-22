@@ -29,40 +29,9 @@
 
 laserX = x;
 laserY = y;
-alarm[BossShipAlarms.laserDuration] = seconds(5);
 </string>
           </argument>
         </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
-        <codestring></codestring>
-        <whoName>objLaserBeamMessenger</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="3" enumb="0">
@@ -92,17 +61,13 @@ if hit != noone {
 
 
 if(instance_exists(objBossShip)) {
-    if(objBossShip.flightPathRight) {
-        x = objBossShip.x + objBossShip.runSpeed;
-    }
-    else {
-        x = objBossShip.x - objBossShip.runSpeed;
-    }
 
-    y = objBossShip.y
+    x = objBossShip.x;
+    y = objBossShip.y+50;
 
     direction = point_direction(objBossShip.x, objBossShip.y, objBossShip.x, objBossShip.y+5);
     
+    x += objBossShip.hspeed * 3; 
     
 }
 
@@ -176,15 +141,15 @@ if(instance_exists(objBossShip)) {
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>x-5</string>
+            <string>x</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>y</string>
+            <string>y-50</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>laserX+5</string>
+            <string>laserX</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -216,7 +181,7 @@ if(instance_exists(objBossShip)) {
           </argument>
           <argument>
             <kind>0</kind>
-            <string>laserX</string>
+            <string>laserX +  (objBossShip.hspeed * 2 )</string>
           </argument>
           <argument>
             <kind>0</kind>

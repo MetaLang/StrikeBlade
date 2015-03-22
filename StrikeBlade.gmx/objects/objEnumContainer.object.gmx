@@ -137,10 +137,8 @@ enum HeavyRangedBotStates
 enum BossShipStates
 {
     spawnDrones,
-    laserBeam,
-    scanning,
     attacking,
-    coolingDown,
+    recovery,
     exploding,
 }
 </string>

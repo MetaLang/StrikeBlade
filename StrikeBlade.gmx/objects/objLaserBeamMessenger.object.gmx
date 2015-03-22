@@ -53,13 +53,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(objBossShip.flightPathRight) {
-    objLaserBeam.laserX = x + objBossShip.runSpeed;
-}
-else {
-    objLaserBeam.laserX = x - objBossShip.runSpeed;
-}
-    
+            <string>objLaserBeam.laserX = x - objBossShip.hspeed * 3;
 objLaserBeam.laserY = y;
 
 

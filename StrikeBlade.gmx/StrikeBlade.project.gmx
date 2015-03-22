@@ -180,6 +180,7 @@
       <sprite>sprites\sprPuzzleKey</sprite>
       <sprite>sprites\sprPuzzleLock</sprite>
     </sprites>
+    <sprite>sprites\sprite77</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgCity1</background>
@@ -285,6 +286,7 @@
       <object>objects\objHeavyAttackDrone</object>
       <object>objects\objBossShip</object>
       <object>objects\objBotBomb</object>
+      <object>objects\objBossBomb</object>
       <object>objects\objBotLaser</object>
       <object>objects\objBotDeflectedLaser</object>
       <object>objects\objEnemy</object>

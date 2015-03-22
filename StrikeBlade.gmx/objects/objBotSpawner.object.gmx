@@ -56,7 +56,6 @@ alarm[BotSpawnerAlarms.spawn] = seconds(6);
             <string>if(place_free(x,y)) {
     instance_create(x, y, objShockBot);
     image_speed = 0.5;
-  
 }
 
 alarm[BotSpawnerAlarms.spawn] = seconds(6);

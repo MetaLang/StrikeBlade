@@ -28,7 +28,7 @@
             <string>event_inherited();
 
 
-hp = 2;
+hp = 1;
 runSpeed = 5;
 
 pointsValue = 100;
