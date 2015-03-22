@@ -27,9 +27,6 @@
             <kind>1</kind>
             <string>event_inherited();
 
-angle = 0;
-beamSpeed = 0.05;
-
 laserX = x;
 laserY = y;
 alarm[BossShipAlarms.laserDuration] = seconds(5);
@@ -86,23 +83,27 @@ alarm[BossShipAlarms.laserDuration] = seconds(5);
           <argument>
             <kind>1</kind>
             <string>var hit;
-hit = collision_rectangle(x-5, y, laserX+5, laserY, objPlayer, false, true);
+hit = collision_rectangle(x, y, laserX, laserY, objPlayer, false, true);
 if hit != noone {
     with(hit) {
         damageArmour(objBossShip.damage);
-    }
-    
-    
+    }  
 }
 
-angle -= beamSpeed;
 
-//direction = point_direction(x, y, cos(angle)*2000, sin(angle)*2000);
 if(instance_exists(objBossShip)) {
-    x = objBossShip.x
+    if(objBossShip.flightPathRight) {
+        x = objBossShip.x + objBossShip.runSpeed;
+    }
+    else {
+        x = objBossShip.x - objBossShip.runSpeed;
+    }
+
     y = objBossShip.y
 
     direction = point_direction(objBossShip.x, objBossShip.y, objBossShip.x, objBossShip.y+5);
+    
+    
 }
 
 </string>
