@@ -29,6 +29,7 @@
       <sound>sound\sndHomelander</sound>
       <sound>sound\sndRapHipHop</sound>
     </sounds>
+    <sound>sound\sndAlarm</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprPlatform</sprite>
