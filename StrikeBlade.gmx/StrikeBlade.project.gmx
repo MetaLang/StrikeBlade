@@ -202,6 +202,7 @@
       <sprite>sprites\sprPuzzleKey</sprite>
       <sprite>sprites\sprPuzzleLock</sprite>
     </sprites>
+    <sprite>sprites\sprStalactite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgCity1</background>
@@ -377,6 +378,7 @@
       <object>objects\objTutorialPlatform</object>
       <object>objects\objPlatform</object>
     </objects>
+    <object>objects\objStalactite</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmSplashScreen</room>
