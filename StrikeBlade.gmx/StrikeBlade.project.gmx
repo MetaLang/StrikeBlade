@@ -192,7 +192,6 @@
       <sprite>sprites\sprPuzzleKey</sprite>
       <sprite>sprites\sprPuzzleLock</sprite>
     </sprites>
-    <sprite>sprites\sprite77</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgCity1</background>
@@ -270,6 +269,7 @@
         <object>objects\objLevel2StoryController</object>
         <object>objects\objLevel3StoryController</object>
         <object>objects\objLevel4StoryController</object>
+        <object>objects\objLevel5StoryController</object>
       </objects>
       <objects name="room controllers">
         <object>objects\objCreditsController</object>

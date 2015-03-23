@@ -61,8 +61,8 @@ alarm[0] = seconds(40);</code>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objLevel1StoryController" x="64" y="32" name="inst_E3FF649C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerRun" x="64" y="736" name="inst_F75CC546" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLevel4StoryController" x="64" y="32" name="inst_4165F93E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb3x2" x="32" y="736" w="32" h="32" xo="448" yo="256" id="10015996" name="inst_4779CC4F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
