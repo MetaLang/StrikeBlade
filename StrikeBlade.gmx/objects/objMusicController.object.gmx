@@ -34,8 +34,9 @@
     switch(room)
     {
         case MAIN_MENU:       sound = sndHomelander;   break;
+        case TUTORIAL_ROOM0:  sound = sndRapHipHop;   break; 
         case TUTORIAL_ROOM1:  sound = sndRapHipHop;   break; 
-        case TUTORIAL_ROOM2:  sound = sndRapHipHop;    break;
+        case TUTORIAL_ROOM2:  sound = sndWoodlandFantasy;    break;
         case TUTORIAL_ROOM3:  sound = sndWoodlandFantasy;    break;
         case TUTORIAL_ROOM4:  sound = sndThunderchild; break;
         case TUTORIAL_BOSS_ROOM:  sound = sndWoodlandFantasy; break;

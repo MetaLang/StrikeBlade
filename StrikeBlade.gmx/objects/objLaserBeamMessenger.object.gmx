@@ -53,7 +53,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>objLaserBeam.laserX = x;
+            <string>objLaserBeam.laserX = x - objBossShip.hspeed * 3;
 objLaserBeam.laserY = y;
 
 

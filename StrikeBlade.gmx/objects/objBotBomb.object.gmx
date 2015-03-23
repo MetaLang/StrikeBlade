@@ -71,11 +71,7 @@ damage = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(y &gt; 960){
-    effect_create_above(ef_explosion, x, y, 3, c_red);
-    instance_destroy();
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
