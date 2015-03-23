@@ -141,9 +141,15 @@
       <sprite>sprites\sprMenuLabelExit</sprite>
     </sprites>
     <sprites name="tutorial">
+      <sprite>sprites\sprTutorialMouseNew</sprite>
+      <sprite>sprites\sprTutorialJump</sprite>
       <sprite>sprites\sprTutorialMouse2</sprite>
       <sprite>sprites\sprTutorialMouse1</sprite>
       <sprite>sprites\sprTutorialKeyboard</sprite>
+      <sprite>sprites\sprTutorialMovement</sprite>
+      <sprite>sprites\sprTutorialSword</sprite>
+      <sprite>sprites\sprTutorialMouse2_2</sprite>
+      <sprite>sprites\sprTutorialArrow</sprite>
     </sprites>
     <sprites name="enemies">
       <sprites name="attackDrone">
@@ -338,7 +344,10 @@
     </objects>
     <objects name="ui">
       <objects name="tutorial">
-        <object>objects\objTutorialKeyboard</object>
+        <object>objects\objTutorialMovement</object>
+        <object>objects\objTutorialArrow</object>
+        <object>objects\objTutorialSword</object>
+        <object>objects\objTutorialJump</object>
         <object>objects\objTutorialMouse2</object>
         <object>objects\objTutorialMouse1</object>
       </objects>
