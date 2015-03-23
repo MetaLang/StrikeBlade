@@ -29,6 +29,7 @@
       <sound>sound\sndHomelander</sound>
       <sound>sound\sndRapHipHop</sound>
     </sounds>
+    <sound>sound\sndAlarm</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprPlatform</sprite>
@@ -191,7 +192,6 @@
       <sprite>sprites\sprPuzzleKey</sprite>
       <sprite>sprites\sprPuzzleLock</sprite>
     </sprites>
-    <sprite>sprites\sprite77</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgCity1</background>
@@ -208,6 +208,7 @@
       <background>background\tsTomb3</background>
       <background>background\tsTomb1_64</background>
       <background>background\tsTomb3x2</background>
+      <background>background\tsBackground</background>
     </backgrounds>
     <background>background\bgSpace</background>
     <background>background\bgStreet</background>
@@ -373,6 +374,7 @@
     <room>rooms\rmUnitTest</room>
     <room>rooms\rmTest</room>
     <room>rooms\rmCredits</room>
+    <room>rooms\rmHorizontalLaserChase</room>
     <rooms name="Story Rooms">
       <room>rooms\rmIntroStory</room>
       <room>rooms\rmStorylv1</room>
