@@ -136,7 +136,7 @@
     <instance objName="objPlatform" x="1280" y="224" name="inst_24D02F86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="1280" y="288" name="inst_FD76EBDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="1216" y="32" name="inst_E3106D71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallLaser" x="1184" y="192" name="inst_3CF0AD5C" locked="0" code="currentDirection = LaserDirection.left;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBot2Spawner" x="1184" y="768" name="inst_5533B640" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

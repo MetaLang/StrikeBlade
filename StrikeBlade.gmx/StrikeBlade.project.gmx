@@ -141,9 +141,15 @@
       <sprite>sprites\sprMenuLabelExit</sprite>
     </sprites>
     <sprites name="tutorial">
+      <sprite>sprites\sprTutorialMouseNew</sprite>
+      <sprite>sprites\sprTutorialJump</sprite>
       <sprite>sprites\sprTutorialMouse2</sprite>
       <sprite>sprites\sprTutorialMouse1</sprite>
       <sprite>sprites\sprTutorialKeyboard</sprite>
+      <sprite>sprites\sprTutorialMovement</sprite>
+      <sprite>sprites\sprTutorialSword</sprite>
+      <sprite>sprites\sprTutorialMouse2_2</sprite>
+      <sprite>sprites\sprTutorialArrow</sprite>
     </sprites>
     <sprites name="enemies">
       <sprites name="attackDrone">
@@ -183,6 +189,10 @@
         <sprite>sprites\sprBossHeart</sprite>
       </sprites>
       <sprite>sprites\sprWallLaser</sprite>
+      <sprites name="shockBot2">
+        <sprite>sprites\sprShockBot2Idle_0</sprite>
+        <sprite>sprites\sprShockBot2CoolDown_0</sprite>
+      </sprites>
     </sprites>
     <sprites name="enemy spawners">
       <sprite>sprites\sprBotSpawner</sprite>
@@ -296,10 +306,12 @@
       <object>objects\objTutorialSwordPickup</object>
     </objects>
     <objects name="enemies">
+      <object>objects\objShockBot2</object>
       <object>objects\objShockBot</object>
       <object>objects\objFaultyBot</object>
       <object>objects\objAttackDrone</object>
       <object>objects\objBotSpawner</object>
+      <object>objects\objBot2Spawner</object>
       <object>objects\objDroneSpawner</object>
       <object>objects\objHeavyDroneBlaster</object>
       <object>objects\objHeavyAttackDrone</object>
@@ -332,7 +344,10 @@
     </objects>
     <objects name="ui">
       <objects name="tutorial">
-        <object>objects\objTutorialKeyboard</object>
+        <object>objects\objTutorialMovement</object>
+        <object>objects\objTutorialArrow</object>
+        <object>objects\objTutorialSword</object>
+        <object>objects\objTutorialJump</object>
         <object>objects\objTutorialMouse2</object>
         <object>objects\objTutorialMouse1</object>
       </objects>
@@ -366,6 +381,7 @@
     <room>rooms\rmSplashScreen</room>
     <room>rooms\rmMainMenu</room>
     <room>rooms\rmTutorial</room>
+    <room>rooms\rmTutorial1</room>
     <room>rooms\rmTutorialDom</room>
     <room>rooms\rmTutorial2</room>
     <room>rooms\rmTutorial3</room>
