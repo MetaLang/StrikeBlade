@@ -73,6 +73,7 @@
     <instance objName="objKeyboardController" x="4832" y="2496" name="inst_6C2B4162" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKeyboardController" x="3104" y="-928" name="inst_7276467C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKeyboardController" x="5472" y="1152" name="inst_2BF42DAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPersistentStore" x="288" y="32" name="inst_F55608C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1_1" x="32" y="768" w="64" h="64" xo="768" yo="192" id="10007756" name="inst_A9B58470" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

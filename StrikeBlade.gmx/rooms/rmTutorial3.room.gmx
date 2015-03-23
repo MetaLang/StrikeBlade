@@ -81,6 +81,7 @@
     <instance objName="objBotSpawner" x="928" y="768" name="inst_3BB5A67C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDroneSpawner" x="832" y="435" name="inst_A6D25EEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMusicController" x="480" y="64" name="inst_7094A809" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objKeyboardController" x="512" y="64" name="inst_84C6A0BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1_64" x="0" y="0" w="64" h="64" xo="320" yo="192" id="10015345" name="inst_C2C74109" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

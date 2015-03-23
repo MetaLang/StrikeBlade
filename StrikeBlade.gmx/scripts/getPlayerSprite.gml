@@ -9,7 +9,7 @@ if (sprite_index == sprPlayerInvisible)
 
 if (argument_count == 2)
 {
-    colour = armourColours[armourLevel];
+    colour = armourColours[objPersistentStore.playerArmourLevel];
 }
 else
 {
