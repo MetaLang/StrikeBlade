@@ -391,7 +391,6 @@
     <room>rooms\rmTest</room>
     <room>rooms\rmCredits</room>
     <room>rooms\rmHorizontalLaserChase</room>
-    <room>rooms\rmVerticalLaserChase</room>
     <rooms name="Story Rooms">
       <room>rooms\rmIntroStory</room>
       <room>rooms\rmStorylv1</room>
