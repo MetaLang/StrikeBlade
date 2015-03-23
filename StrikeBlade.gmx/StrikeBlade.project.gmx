@@ -170,6 +170,10 @@
         <sprite>sprites\sprAttackDroneBoss</sprite>
       </sprites>
       <sprite>sprites\sprWallLaser</sprite>
+      <sprites name="shockBot2">
+        <sprite>sprites\sprShockBot2Idle_0</sprite>
+        <sprite>sprites\sprShockBot2CoolDown_0</sprite>
+      </sprites>
     </sprites>
     <sprites name="enemySpwaners">
       <sprite>sprites\sprBotSpawner</sprite>
@@ -274,10 +278,12 @@
       <object>objects\objTutorialSwordPickup</object>
     </objects>
     <objects name="enemies">
+      <object>objects\objShockBot2</object>
       <object>objects\objShockBot</object>
       <object>objects\objFaultyBot</object>
       <object>objects\objAttackDrone</object>
       <object>objects\objBotSpawner</object>
+      <object>objects\objBot2Spawner</object>
       <object>objects\objDroneSpawner</object>
       <object>objects\objHeavyDroneBlaster</object>
       <object>objects\objHeavyAttackDrone</object>
@@ -340,6 +346,7 @@
     <room>rooms\rmMainMenu</room>
     <room>rooms\rmIntroStory</room>
     <room>rooms\rmTutorial</room>
+    <room>rooms\rmTutorial1</room>
     <room>rooms\rmTutorialDom</room>
     <room>rooms\rmTutorial2</room>
     <room>rooms\rmTutorial3</room>
