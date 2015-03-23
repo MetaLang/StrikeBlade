@@ -34,7 +34,6 @@
   <sprites name="sprites">
     <sprite>sprites\sprPlatform</sprite>
     <sprite>sprites\sprTutorialPlatform</sprite>
-    <sprite>sprites\sprkeyDoor</sprite>
     <sprite>sprites\sprTent</sprite>
     <sprite>sprites\sprCampFire</sprite>
     <sprite>sprites\sprKey</sprite>
@@ -399,6 +398,7 @@
       <room>rooms\rmStorylv4</room>
       <room>rooms\rmStorylv5</room>
     </rooms>
+    <room>rooms\rmVerticalLaserChase</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
