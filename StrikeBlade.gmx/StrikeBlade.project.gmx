@@ -33,6 +33,7 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprPlatform</sprite>
+    <sprite>sprites\sprite94</sprite>
     <sprite>sprites\sprTutorialPlatform</sprite>
     <sprite>sprites\sprTent</sprite>
     <sprite>sprites\sprCampFire</sprite>
