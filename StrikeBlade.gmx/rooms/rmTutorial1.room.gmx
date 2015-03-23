@@ -129,6 +129,7 @@
     <instance objName="objPlatform" x="5888" y="2112" name="inst_82DB8D9A" locked="0" code="" scaleX="4" scaleY="13" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="5888" y="1280" name="inst_411388CE" locked="0" code="" scaleX="4" scaleY="13" colour="4294967295" rotation="0"/>
     <instance objName="objWallLaser" x="3427" y="1163" name="inst_F588B510" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTutorialArrow" x="4992" y="1920" name="inst_8A1A5231" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1_64" x="0" y="0" w="64" h="64" xo="256" yo="64" id="10017779" name="inst_AAC1A9D9" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

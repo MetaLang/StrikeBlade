@@ -390,13 +390,6 @@
     <room>rooms\rmUnitTest</room>
     <room>rooms\rmTest</room>
     <room>rooms\rmCredits</room>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    <room>rooms\rmVerticalLaserChase</room>
-=======
->>>>>>> fd07c63156515a7e91788f8809214f8f3dfb141d
->>>>>>> 581d3bfd9979fe715c9ce4d87a11d8f6c00153d6
     <room>rooms\rmHorizontalLaserChase</room>
     <rooms name="Story Rooms">
       <room>rooms\rmIntroStory</room>
