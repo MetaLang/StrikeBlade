@@ -209,6 +209,7 @@
       <background>background\tsTomb3</background>
       <background>background\tsTomb1_64</background>
       <background>background\tsTomb3x2</background>
+      <background>background\tsBackground</background>
     </backgrounds>
     <background>background\bgSpace</background>
     <background>background\bgStreet</background>
@@ -373,6 +374,7 @@
     <room>rooms\rmUnitTest</room>
     <room>rooms\rmTest</room>
     <room>rooms\rmCredits</room>
+    <room>rooms\rmHorizontalLaserChase</room>
     <rooms name="Story Rooms">
       <room>rooms\rmIntroStory</room>
       <room>rooms\rmStorylv1</room>
