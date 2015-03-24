@@ -352,8 +352,8 @@ else
 bottom = bbox_bottom+NextY-y;
 top = bbox_top+NextY-y;
 
-left = bbox_left+NextX-x;
-right = bbox_right+NextX-x;
+left = bbox_left+NextX-x-10;
+right = bbox_right+NextX-x+10;
 
 colliding = ""
 if(collision_rectangle(left,top,right,bottom,objPlatform,true,true)) {
@@ -556,7 +556,7 @@ draw_text(100,100, 'Score: ' + string(score));
 //draw_text(room_width / 2, 50, "Armour Level: " + string(armourLevel));
 
 draw_text(x-(sprite_width/2), y-sprite_height-20, "Stuck in: " + string(colliding));
-//draw_rectangle_colour(bbox_left, bbox_bottom, bbox_right, bbox_top, c_red, c_red, c_red, c_red, true);
+draw_rectangle_colour(bbox_left, bbox_bottom, bbox_right, bbox_top, c_red, c_red, c_red, c_red, true);
 </string>
           </argument>
         </arguments>
