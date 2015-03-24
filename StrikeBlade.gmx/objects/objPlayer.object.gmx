@@ -251,8 +251,9 @@ else if (mouse_check_button_released(mb_right) &amp;&amp; canThrowSword &amp;&am
             canThrowSword = false;
             x = objThrownSword.x;
             y = objThrownSword.y + (sprite_height / 2);
-            //direction = objThrownSword.direction;
-            //speed = objThrownSword.speed / 2;
+            
+            direction = objThrownSword.direction;
+            speed = objThrownSword.speed / 2;
             with (objThrownSword)
             {
                 instance_destroy();
@@ -299,11 +300,14 @@ else if (mouse_check_button_released(mb_right) &amp;&amp; canThrowSword &amp;&am
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (isPressedNoConflict(KEYS.d) &amp;&amp; canMoveInDir(keyToDir(KEYS.d)))
+            <string>NextX = x;
+NextY = y;
+
+if (isPressedNoConflict(KEYS.d) &amp;&amp; canMoveInDir(keyToDir(KEYS.d)))
 {
     facing = Direction.right;
     currentAnimation = Animations.run;
-    x += runSpeed;
+    NextX += runSpeed;
     /*
     if (place_meeting(x + runSpeed, y, objTutorialPlatform))
     {
@@ -317,7 +321,7 @@ if (isPressedNoConflict(KEYS.a) &amp;&amp; canMoveInDir(keyToDir(KEYS.a)))
 {
     facing = Direction.left;
     currentAnimation = Animations.run;
-    x -= runSpeed;
+    NextX -= runSpeed;
     /*
     if (place_meeting(x - runSpeed, y, objTutorialPlatform))
     {
@@ -333,13 +337,13 @@ if (keyboard_check_released(KEYS.d) || keyboard_check_released(KEYS.a))
 }
 
 if ((isPressed(KEYS.w) || isPressed(KEYS.space)) 
-    &amp;&amp; movementEnabled &amp;&amp; !place_free(x, y + 1))
+    &amp;&amp; movementEnabled &amp;&amp; !place_free(NextX, NextY + 1))
 {
-    y += jumpSpeed;
+    NextY += jumpSpeed;
     vspeed = jumpSpeed;
 }
 
-if (place_free(x, y + 1))
+if (place_free(NextX, NextY + 1))
 {
     friction = 0;
     gravity = 2;
@@ -352,7 +356,23 @@ else
     canThrowSword = true;
 }
 
-//if (
+if(!place_free(NextX, bbox_bottom-y+NextY))
+{
+    // Stuck to floor
+    NextY-=sprite_height;
+} /* else if(!place_free(bbox_left-x+NextX, bbox_top-y+NextY) &amp;&amp; !place_free(bbox_right-x+NextX, bbox_top-y+NextY)) {
+    // Stuck to ceiling 
+    NextY+=8;
+} */ else if(!place_free(bbox_right-x+NextX, bbox_top-y+NextY) &amp;&amp; !place_free(bbox_right-x+NextX, bbox_bottom-y+NextY)) {
+    // Stuck to a wall from right
+    NextX-=16;
+} else if(!place_free(bbox_left-x+NextX, bbox_top-y+NextY) &amp;&amp; !place_free(bbox_left-x+NextX, bbox_bottom-y+NextY)) {
+    // Stuck to a wall from left
+    NextX+=16;
+}
+
+x = NextX;
+y = NextY;
 
 if (facing == Direction.right)
 {
@@ -501,7 +521,7 @@ background_x[2] = view_xview[0] * 0.95;
 draw_set_color(c_yellow);
 draw_text(0+100, 0, 'Score: ' + string(score));
 //draw_text(room_width / 2, 50, "Armour Level: " + string(armourLevel));
-//draw_rectangle_colour(bbox_left, bbox_bottom, bbox_right, bbox_top, c_red, c_red, c_red, c_red, true);
+draw_rectangle_colour(bbox_left, bbox_bottom, bbox_right, bbox_top, c_red, c_red, c_red, c_red, true);
 </string>
           </argument>
         </arguments>
