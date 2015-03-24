@@ -53,35 +53,35 @@
   <instances>
     <instance objName="objPuzzleKeyWhenNoBots" x="224" y="576" name="inst_96E2C96E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPuzzleLock" x="1824" y="640" name="inst_6C2E12B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="1760" y="768" name="inst_9C4EC596" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="1728" y="768" name="inst_9C4EC596" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="960" y="832" name="inst_ACCEC701" locked="0" code="" scaleX="30" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="0" y="416" name="inst_DCB3A0BB" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="32" y="416" name="inst_DCB3A0BB" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="1184" y="0" name="inst_64527E8C" locked="0" code="" scaleX="27" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFaultyBot" x="1632" y="704" name="inst_E2E26654" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="192" y="96" name="inst_A2CD35BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objKeyboardController" x="320" y="80" name="inst_6DC70EE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="1888" y="224" name="inst_0E2183C8" locked="0" code="" scaleX="1" scaleY="16" colour="4294967295" rotation="0"/>
-    <instance objName="objSpawnController" x="384" y="80" name="inst_6F3E0583" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMouseController" x="352" y="80" name="inst_48D4B9BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMenuController" x="416" y="80" name="inst_7A7A98C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objKeyboardController" x="320" y="64" name="inst_6DC70EE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="1856" y="224" name="inst_0E2183C8" locked="0" code="" scaleX="1" scaleY="16" colour="4294967295" rotation="0"/>
+    <instance objName="objSpawnController" x="384" y="64" name="inst_6F3E0583" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMouseController" x="352" y="64" name="inst_48D4B9BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMenuController" x="416" y="64" name="inst_7A7A98C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="160" y="-32" name="inst_6C866193" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightController" x="448" y="64" name="inst_6DF387A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objArmourPickup" x="224" y="800" name="inst_69451483" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objArmourPickup" x="128" y="800" name="inst_DEB14EF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objArmourPickup" x="160" y="800" name="inst_323FF5C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objArmourPickup" x="192" y="800" name="inst_11D450ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="128" y="672" name="inst_89BA5B55" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="160" y="672" name="inst_89BA5B55" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="288" y="672" name="inst_E36A8468" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="736" y="768" name="inst_BC0AFAF4" locked="0" code="" scaleX="0.100000001490116" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="352" y="672" name="inst_924D4472" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="704" y="480" name="inst_7EE28830" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="1280" y="608" name="inst_DD8205E8" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="1568" y="256" name="inst_4B4020A2" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="736" y="768" name="inst_BC0AFAF4" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="384" y="672" name="inst_924D4472" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="704" y="480" name="inst_7EE28830" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="1280" y="608" name="inst_DD8205E8" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="1568" y="256" name="inst_4B4020A2" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDroneSpawner" x="1695" y="212" name="inst_2743B98B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBotSpawner" x="928" y="768" name="inst_3BB5A67C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDroneSpawner" x="832" y="435" name="inst_A6D25EEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMusicController" x="480" y="64" name="inst_7094A809" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objKeyboardController" x="512" y="64" name="inst_84C6A0BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPersistentStore" x="512" y="64" name="inst_EBA1DDD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1_64" x="0" y="0" w="64" h="64" xo="320" yo="192" id="10015345" name="inst_C2C74109" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -152,7 +152,6 @@
     <tile bgName="tsTomb1_64" x="896" y="800" w="64" h="64" xo="256" yo="0" id="10015442" name="inst_A3D23783" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1_64" x="960" y="800" w="64" h="64" xo="256" yo="0" id="10015443" name="inst_CD1C7DE1" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1_64" x="1024" y="800" w="64" h="64" xo="256" yo="0" id="10015444" name="inst_58F3AAC2" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsTomb1_64" x="320" y="-32" w="64" h="64" xo="256" yo="64" id="10015445" name="inst_AA05DB23" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1_64" x="384" y="-32" w="64" h="64" xo="256" yo="64" id="10015446" name="inst_4B773D7C" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1_64" x="448" y="-32" w="64" h="64" xo="256" yo="64" id="10015447" name="inst_A65EB8E7" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1_64" x="512" y="-32" w="64" h="64" xo="256" yo="64" id="10015448" name="inst_569CF6E1" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -208,6 +207,7 @@
     <tile bgName="tsTomb1_64" x="1888" y="480" w="64" h="64" xo="256" yo="64" id="10015531" name="inst_EE972D6E" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1_64" x="1888" y="544" w="64" h="64" xo="256" yo="64" id="10015532" name="inst_852E6B82" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1_64" x="1888" y="576" w="64" h="64" xo="256" yo="64" id="10015533" name="inst_3F11ACC7" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tsTomb1_64" x="320" y="-32" w="64" h="64" xo="192" yo="192" id="10020585" name="inst_EA8FC0D9" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
