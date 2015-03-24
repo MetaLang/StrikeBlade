@@ -25,9 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (other.armourLevel &lt; other.maxArmourLevel)
+            <string>var store = objPersistentStore;
+if (store.playerArmourLevel &lt; store.playerMaxArmourLevel)
 {
-    other.armourLevel++;
+    store.playerArmourLevel++;
     instance_destroy();
 }
 </string>
