@@ -501,7 +501,7 @@ background_x[2] = view_xview[0] * 0.95;
 draw_set_color(c_yellow);
 draw_text(0+100, 0, 'Score: ' + string(score));
 //draw_text(room_width / 2, 50, "Armour Level: " + string(armourLevel));
-draw_rectangle_colour(bbox_left, bbox_bottom, bbox_right, bbox_top, c_red, c_red, c_red, c_red, true);
+//draw_rectangle_colour(bbox_left, bbox_bottom, bbox_right, bbox_top, c_red, c_red, c_red, c_red, true);
 </string>
           </argument>
         </arguments>
