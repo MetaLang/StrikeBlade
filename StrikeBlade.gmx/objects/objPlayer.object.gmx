@@ -370,8 +370,8 @@ else
     canThrowSword = true;
 }
 
-bottom = bbox_bottom+NextY-y-8;
-top = bbox_top+NextY-y+8;
+bottom = bbox_bottom+NextY-y-5;
+top = bbox_top+NextY-y+5;
 left = bbox_left+NextX-x-8;
 right = bbox_right+NextX-x+8;
 
