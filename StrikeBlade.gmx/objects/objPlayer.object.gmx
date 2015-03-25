@@ -41,7 +41,7 @@ reticule = noone;
 movementEnabled = true;
 canThrowSword = true;
 
-colliding = "";
+colliding = ""; // for testing
 </string>
           </argument>
         </arguments>
@@ -242,8 +242,29 @@ else if (mouse_check_button_released(mb_right) &amp;&amp; canThrowSword &amp;&am
         //if (canTeleport)
         {
             canThrowSword = false;
-            x = objThrownSword.x;
-            y = objThrownSword.y + (sprite_height / 2);
+            NextX = objThrownSword.x;
+            NextY = objThrownSword.y + (sprite_height / 2);
+            
+            bottom = bbox_bottom+NextY-y-8;
+            top = bbox_top+NextY-y+8;
+            left = bbox_left+NextX-x-8;
+            right = bbox_right+NextX-x+8;
+            
+            if(collision_rectangle(left,top,right,bottom,objPlatform,true,true)) {
+                if(!collision_rectangle(left,top,right,bottom-48,objPlatform,true,true)) {
+                    NextY-=48;
+                } else if(!collision_rectangle(left,top,right,bottom-64,objPlatform,true,true)) {
+                    NextY-=64;
+                } else if(!collision_rectangle(left,top,right-32,bottom,objPlatform,true,true)) {
+                    NextX-=32;
+                } else if(!collision_rectangle(left+32,top,right,bottom,objPlatform,true,true)) {
+                    NextX+=32;
+                } else if(!collision_rectangle(left,top+48,right,bottom,objPlatform,true,true)) {
+                    NextY+=48;
+                }
+            }
+            x = NextX;
+            y = NextY;
             
             direction = objThrownSword.direction;
             speed = objThrownSword.speed / 2;
@@ -349,34 +370,25 @@ else
     canThrowSword = true;
 }
 
-bottom = bbox_bottom+NextY-y;
-top = bbox_top+NextY-y;
+bottom = bbox_bottom+NextY-y-8;
+top = bbox_top+NextY-y+8;
+left = bbox_left+NextX-x-8;
+right = bbox_right+NextX-x+8;
 
-left = bbox_left+NextX-x-10;
-right = bbox_right+NextX-x+10;
-
-colliding = ""
 if(collision_rectangle(left,top,right,bottom,objPlatform,true,true)) {
-    colliding = "objPlatform";
     direction = 270;
     vspeed = 0;
     if(!collision_rectangle(left,top,right,bottom-48,objPlatform,true,true)) {
         NextY-=48;
-        colliding += " Y-48 ";
     } else if(!collision_rectangle(left,top,right,bottom-64,objPlatform,true,true)) {
         NextY-=64;
-        colliding += " Y-64 ";
     } else if(!collision_rectangle(left,top,right-32,bottom,objPlatform,true,true)) {
         NextX-=32;
-        colliding += " X-32 ";
     } else if(!collision_rectangle(left+32,top,right,bottom,objPlatform,true,true)) {
         NextX+=32;
-        colliding += " X+32 ";
     } else if(!collision_rectangle(left,top+48,right,bottom,objPlatform,true,true)) {
         NextY+=48;
-        colliding += " Y+48 ";
     }
-
 }
 
 
@@ -553,8 +565,9 @@ background_x[2] = view_xview[0] * 0.95;
             <string>draw_self();
 
 //Display Score
-draw_set_color(c_yellow);
-draw_text(view_xview+32,view_yview+32, 'Score: ' + string(score));
+draw_set_color(c_white);
+draw_set_font(fntScore);
+draw_text(view_xview+64,view_yview+64, string(score));
 //draw_text(room_width / 2, 50, "Armour Level: " + string(armourLevel));
 
 //draw_text(x-(sprite_width/2), y-sprite_height-20, "Stuck in: " + string(colliding));
