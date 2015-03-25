@@ -451,7 +451,7 @@
       <constant name="CREDITS_ROOM">rmCredits</constant>
       <constant name="MAIN_MENU">rmMainMenu</constant>
       <constant name="TEST_ROOM">rmTest</constant>
-      <constant name="DEBUG_INFO_ENABLED">true</constant>
+      <constant name="DEBUG_INFO_ENABLED">false</constant>
       <constant name="DEBUG_KEYS_ENABLED">true</constant>
       <constant name="EASY_LIGHTING_ENABLED">false</constant>
       <constant name="DYNAMIC_LIGHTS_ENABLED">false</constant>
