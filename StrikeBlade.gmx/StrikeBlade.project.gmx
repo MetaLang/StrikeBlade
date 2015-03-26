@@ -202,6 +202,7 @@
       <sprite>sprites\sprPuzzleKey</sprite>
       <sprite>sprites\sprPuzzleLock</sprite>
     </sprites>
+    <sprite>sprites\sprYouDied</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgCity1</background>

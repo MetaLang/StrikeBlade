@@ -85,7 +85,7 @@
     <instance objName="objScreenChangeTrigger" x="5408" y="2592" name="inst_39C39B2B" locked="0" code="" scaleX="20" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="4832" y="1632" name="inst_7AB3BC3F" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="4960" y="1760" name="inst_E529DF59" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objTutorialPlayer" x="256" y="768" name="inst_5A954571" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTutorialPlayer" x="248" y="758" name="inst_5A954571" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="5888" y="1280" name="inst_411388CE" locked="0" code="" scaleX="4" scaleY="13" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="2656" y="928" name="inst_D2918BB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallLaser" x="3427" y="1163" name="inst_F588B510" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -96,6 +96,7 @@
     <instance objName="objKeyboardController" x="192" y="64" name="inst_4AA8D933" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMouseController" x="224" y="64" name="inst_5DB5A0E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPersistentStore" x="256" y="64" name="inst_35C16E37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpawnLocationMarker" x="320" y="704" name="inst_35B59D5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1_64" x="0" y="0" w="64" h="64" xo="256" yo="64" id="10017779" name="inst_AAC1A9D9" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
