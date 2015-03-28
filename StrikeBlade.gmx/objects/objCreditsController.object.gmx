@@ -25,18 +25,107 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>credits = "Scrolling#Credits Example###written by##GMakerPro## "; 
-credits += "This is example text for scrolling end credits.#";
-credits += "Feel free to add as many lines as you want.#";
-credits += "The end credits will wrap once#";
-credits += "the last line of the text has disappeared#";
-credits += "from the screen...";
+            <string>sound_stop_all();
+sound_play(sndWoodlandFantasy);
+
+credits = "StrikeBlade## "; 
+credits += "A Game Made with Game Maker Studio##";
+
+credits += "-Producer-##";
+credits += "Richard Young &amp; Team####";
+
+credits += "-Lead Programmers-##";
+credits += "Jared Hanson#";
+credits += "Billy DeLong####";
+
+credits += "-Developer-##";
+credits += "Gairyth Gruchey####";
+
+credits += "-Programmers-##";
+credits += "Dominick Labrie#";
+credits += "Clint Gardiner#";
+credits += "Richard Young#";
+credits += "Gairyth Gruchey####";
+
+credits += "-Writers-##";
+credits += "Clint Gardiner#";
+credits += "Richard Young####";
+
+credits += "-Sprites and Artists-##";
+credits += "Guido Bos “Frogatto”#";
+credits += "Buch “ts” #";
+credits += "Richard Young “Arthur”#";
+credits += "Billy Delong “ Robots”#";
+credits += "Gairyth Gruchey “Upgraded bot”#";
+credits += "Dominick Labrie#";
+credits += "Clint Gardiner#";
+credits += "Zabin and Jetrel “Campfire &amp; Tents”####";
+
+
+credits += "-Soundtrack and Clips-##";
+credits += "TBA”####";
+
+credits += "-Graphic Artist-##";
+credits += "Jesse Reid StrikeBlade logo####";
+
+credits += "-Special Thanks-##";
+credits += "Lunar Rogue for a Fun Saturday”##";
+credits += "Every McDonalds and Grecco in Town##";
+credits += "Jeff Mundee for facilitating this project##";
+credits += "and....###";
+credits += "The greatest team anyone could ask for, Thank you all for putting up with this producer";
+
+
 y = room_height;
 x = room_width / 2;
 vspeed = -1;
 drawExitText = true;
 alarm[0] = seconds(1);
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>212</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>sndHomelander</sound>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>211</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>sndWoodlandFantasy</sound>
+          </argument>
+          <argument>
+            <kind>3</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -82,8 +171,29 @@ alarm[0] = seconds(1);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(MAIN_MENU);
+            <string>sound_stop(sndWoodlandFantasy);
+room_goto(MAIN_MENU);
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>212</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>sndWoodlandFantasy</sound>
           </argument>
         </arguments>
       </action>
