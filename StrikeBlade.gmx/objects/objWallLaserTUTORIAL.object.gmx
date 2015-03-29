@@ -89,7 +89,7 @@ var beam;
 
 // Check if bot is ready to attack
 if(laserRefreshed) { // Beam Laser
-    var beam = instance_create(x, y, objWalLaserBeam);
+    var beam = instance_create(x, y, objWallLaserBeamTUTORIAL);
     beam.num = beam;
     alarm[BossShipAlarms.laserDuration] = laserDuration; // Cool down
     laserRefreshed = false;

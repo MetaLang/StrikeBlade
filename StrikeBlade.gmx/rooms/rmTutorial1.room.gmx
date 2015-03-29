@@ -109,7 +109,7 @@
     <instance objName="objPlatform" x="3808" y="1312" name="inst_234D28C4" locked="0" code="" scaleX="14.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="4128" y="1248" name="inst_426A8EE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="3360" y="1120" name="inst_472A6A5A" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="objWallLaserRight" x="3456" y="1152" name="inst_9FFB8439" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWallLaserTUTORIAL" x="3415" y="1204" name="inst_9FFB8439" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1_64" x="0" y="0" w="64" h="64" xo="256" yo="64" id="10017779" name="inst_AAC1A9D9" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

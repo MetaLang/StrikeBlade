@@ -42,6 +42,7 @@
     <sound>sound\sndExplosionLong</sound>
     <sound>sound\sndExplosionShort</sound>
     <sound>sound\sndLaserDeflect</sound>
+    <sound>sound\sndSwordUnsheath</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprPlatform</sprite>
@@ -337,9 +338,11 @@
       <object>objects\objEnemy</object>
       <object>objects\objBoss</object>
       <object>objects\objWallLaser</object>
-      <object>objects\objWallLaserRight</object>
+      <object>objects\objWallLaserTUTORIAL</object>
       <object>objects\objWalLaserBeam</object>
+      <object>objects\objWallLaserBeamTUTORIAL</object>
       <object>objects\objWallLaserBeamMessenger</object>
+      <object>objects\objWallLaserBeamMessengerTUTORIAL</object>
       <object>objects\objLaserBeam</object>
       <object>objects\objLaserBeamMessenger</object>
       <object>objects\objBossHeart</object>

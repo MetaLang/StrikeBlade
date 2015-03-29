@@ -196,6 +196,7 @@ if (image_alpha != 1.0)
             <kind>1</kind>
             <string>if (mouse_check_button(mb_left) &amp;&amp; !instance_exists(objThrownSword))
 {
+
     var sword = instance_find(objAttackSword, 0);
     if (sword == noone)
     {
@@ -212,6 +213,7 @@ if (image_alpha != 1.0)
     //{
     with (sword)
     {
+        //audio_play_sound(sndSwordUnsheath, 10, false);
         x = swordXRelativeToPlayer;
         y = swordYRelativeToPlayer;
         facing = objPlayer.facing;
