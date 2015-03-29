@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>other.hasPuzzleKey = true;
 objPuzzleLock.image_index = 1;
+audio_play_sound(sndPickupKey, 10, false);
 //objKeyUI.visable = true; 
 </string>
           </argument>

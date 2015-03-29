@@ -119,6 +119,7 @@ switch(currentState) {
         
     case RangedBotStates.exploding:
         // Create Explosion
+        audio_play_sound(sndExplosion1, 10, false);
         effect_create_above(ef_explosion, x, y, 1, c_blue);
         effect_create_above(ef_firework, x, y, 1, c_yellow);
         instance_destroy();

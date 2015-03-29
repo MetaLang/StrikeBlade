@@ -109,6 +109,7 @@ move_towards_point(objPlayer.x, objPlayer.y, laserSpeed);
           <argument>
             <kind>1</kind>
             <string>instance_create(x, y, objBotDeflectedLaser);
+audio_play_sound(sndLaserDeflect, 10, false);
 </string>
           </argument>
         </arguments>

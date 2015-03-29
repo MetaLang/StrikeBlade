@@ -29,6 +29,7 @@
 if (store.playerArmourLevel &lt; store.playerMaxArmourLevel)
 {
     store.playerArmourLevel++;
+    audio_play_sound(sndArmorPickup, 10, false);
     instance_destroy();
 }
 </string>

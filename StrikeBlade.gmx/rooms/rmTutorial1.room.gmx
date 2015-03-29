@@ -57,7 +57,7 @@
     <instance objName="objKeyboardController" x="32" y="0" name="inst_607D46A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightController" x="96" y="0" name="inst_6251B074" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="4992" y="2272" name="inst_9D5AB249" locked="0" code="" scaleX="4" scaleY="13" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="3136" y="1024" name="inst_91C292AA" locked="0" code="" scaleX="20" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="3136" y="992" name="inst_91C292AA" locked="0" code="" scaleX="20" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="4256" y="1088" name="inst_D86A1A2B" locked="0" code="" scaleX="5" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="1824" y="736" name="inst_D005A6A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="1600" y="608" name="inst_2A0A839E" locked="0" code="" scaleX="3.80952382087708" scaleY="1" colour="4294967295" rotation="0"/>
@@ -66,18 +66,18 @@
     <instance objName="objPlatform" x="1440" y="672" name="inst_F8F7A860" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="1376" y="736" name="inst_30E7148B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="768" y="832" name="inst_F9409960" locked="0" code="" scaleX="20" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="2592" y="896" name="inst_6D1876C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="3296" y="1152" name="inst_2B21B03B" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialArrow" x="4992" y="1920" name="inst_8A1A5231" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="64" y="64" name="inst_1C88CDA3" locked="0" code="" scaleX="40" scaleY="2" colour="4294967295" rotation="90"/>
     <instance objName="objPersistentStore" x="160" y="0" name="inst_01BDC356" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="2592" y="864" name="inst_E07B9216" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialSword" x="1080" y="768" name="inst_278CB5E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objTutorialMouse1" x="2176" y="832" name="inst_44ECBAF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTutorialMouse1" x="2176" y="800" name="inst_44ECBAF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialJump" x="1495" y="615" name="inst_32BBD909" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialSwordPickup" x="1106" y="659" name="inst_F6E8502D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="189"/>
-    <instance objName="objTutorialMouse2" x="2375" y="484" name="inst_BFC04BDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="2464" y="224" name="inst_A9AF8129" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objTutorialMovement" x="123" y="768" name="inst_5CA7990E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="2400" y="640" name="inst_7E76A955" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="2464" y="192" name="inst_A9AF8129" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTutorialMovement" x="115" y="803" name="inst_5CA7990E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="5888" y="2112" name="inst_82DB8D9A" locked="0" code="" scaleX="4" scaleY="13" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="5728" y="2368" name="inst_4BCE4EFD" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="4704" y="1472" name="inst_F242E1A2" locked="0" code="" scaleX="3.04761910438538" scaleY="4" colour="4294967295" rotation="0"/>
@@ -88,15 +88,28 @@
     <instance objName="objTutorialPlayer" x="248" y="758" name="inst_5A954571" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="5888" y="1280" name="inst_411388CE" locked="0" code="" scaleX="4" scaleY="13" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="2656" y="928" name="inst_D2918BB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWallLaser" x="3427" y="1163" name="inst_F588B510" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="2528" y="704" name="inst_E241DC16" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objBackgroundController" x="128" y="64" name="inst_65E887E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="2464" y="480" name="inst_E1D04E26" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objArmourPickup" x="4319" y="959" name="inst_4D094CC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="2464" y="512" name="inst_E1D04E26" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objArmourPickup" x="4288" y="960" name="inst_4D094CC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="2464" y="96" name="inst_4607BED9" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKeyboardController" x="192" y="64" name="inst_4AA8D933" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMouseController" x="224" y="64" name="inst_5DB5A0E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPersistentStore" x="256" y="64" name="inst_35C16E37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpawnLocationMarker" x="320" y="704" name="inst_35B59D5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="4576" y="1216" name="inst_BDC681DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="4576" y="1280" name="inst_364BF13B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="4576" y="1344" name="inst_FAA72920" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="4896" y="1664" name="inst_1FF5D0AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="4896" y="1696" name="inst_92F84282" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="5024" y="1824" name="inst_6E6C6E62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="2400" y="704" name="inst_2365DF58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTutorialMouse2" x="2368" y="544" name="inst_33C324AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="2400" y="512" name="inst_1FE30376" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="3808" y="1312" name="inst_234D28C4" locked="0" code="" scaleX="14.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="4128" y="1248" name="inst_426A8EE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="3360" y="1120" name="inst_472A6A5A" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="objWallLaserRight" x="3456" y="1152" name="inst_9FFB8439" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1_64" x="0" y="0" w="64" h="64" xo="256" yo="64" id="10017779" name="inst_AAC1A9D9" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -241,6 +241,7 @@ else if (mouse_check_button_released(mb_left) &amp;&amp; instance_exists(objAtta
 }
 else if (mouse_check_button_released(mb_right) &amp;&amp; canThrowSword &amp;&amp; !instance_exists(objAttackSword))
 {
+    audio_play_sound(sndThrow, 10, false);
     if (instance_exists(objThrownSword))
     {
         /*
@@ -251,6 +252,7 @@ else if (mouse_check_button_released(mb_right) &amp;&amp; canThrowSword &amp;&am
         */
         //if (canTeleport)
         {
+            
             canThrowSword = false;
             var NextX = objThrownSword.x;
             var NextY = objThrownSword.y + (sprite_height / 2);
@@ -263,6 +265,7 @@ else if (mouse_check_button_released(mb_right) &amp;&amp; canThrowSword &amp;&am
             var instance;
             instance = collision_rectangle(left,top,right,bottom,objPlatform,true,true);
             if(instance) {
+                
                 stuckTo = instance;
                 var stuckTo2;
                 var stuckX12;
@@ -282,21 +285,25 @@ else if (mouse_check_button_released(mb_right) &amp;&amp; canThrowSword &amp;&am
                     if(bbox_top &lt;= bottom &amp;&amp; bbox_top &gt;= top &amp;&amp; bbox_bottom &gt; bottom &amp;&amp; !collision_rectangle(left,bbox_top-20,right,bbox_top,objPlatform,true,true)) 
                     {    
                         stuckTo2 += "floor " + string(bottom-bbox_top+5); 
+                        
                         NextY -= bottom-bbox_top+5;
                     }
                     else if(bbox_bottom &lt;= bottom &amp;&amp; bbox_bottom &gt;= top &amp;&amp; bbox_top &lt; top &amp;&amp; !collision_rectangle(left,bbox_bottom,right,bbox_bottom+20,objPlatform,true,true))
                     {
                         stuckTo2 += "ceiling";
+                        
                         NextY += bbox_bottom-top+5;
                     }
                     else if(bbox_left &lt;= right &amp;&amp; bbox_left &gt;= left &amp;&amp; bbox_right &gt; right)
                     {
                         stuckTo2 += "leftOfWall";
+                        
                         NextX -= right-bbox_left+5;
                     }
                     else if(bbox_right &lt;= right &amp;&amp; bbox_right &gt;= left)
                     {
                         stuckTo2 += "rightOfWall";
+                        
                         NextX += bbox_right-left+5;
                     }
                 }
@@ -307,6 +314,8 @@ else if (mouse_check_button_released(mb_right) &amp;&amp; canThrowSword &amp;&am
                 stuckY2 = stuckY22;
                 stuckOriginX = stuckOriginX2;
                 stuckOriginY = stuckOriginY2;
+                
+                
                 
                 direction = 270;
                 vspeed = 0;
@@ -332,6 +341,7 @@ else if (mouse_check_button_released(mb_right) &amp;&amp; canThrowSword &amp;&am
                 instance_destroy();
             }
             effect_create_above(ef_ring, x, y - sprite_height / 2, 2, c_blue);
+            audio_play_sound(sndHitGround, 10, false);
         }
     }
     else
@@ -414,6 +424,7 @@ if ((isPressed(KEYS.w) || isPressed(KEYS.space))
 {
     NextY += jumpSpeed;
     vspeed = jumpSpeed;
+    audio_play_sound(sndJump2, 10, false);
 }
 
 if (place_free(NextX, NextY + 1))
@@ -598,6 +609,7 @@ vspeed = 0;
           <argument>
             <kind>1</kind>
             <string>damageArmour(other.armourDamage);
+audio_play_sound(sndHurt, 10, false);
 </string>
           </argument>
         </arguments>
