@@ -196,7 +196,9 @@ if (image_alpha != 1.0)
             <kind>1</kind>
             <string>if (mouse_check_button(mb_left) &amp;&amp; !instance_exists(objThrownSword))
 {
-
+    if(!audio_is_playing(sndSwordUnsheath))
+            audio_play_sound(sndSwordUnsheath, 10, false)
+            
     var sword = instance_find(objAttackSword, 0);
     if (sword == noone)
     {
@@ -213,7 +215,6 @@ if (image_alpha != 1.0)
     //{
     with (sword)
     {
-        //audio_play_sound(sndSwordUnsheath, 10, false);
         x = swordXRelativeToPlayer;
         y = swordYRelativeToPlayer;
         facing = objPlayer.facing;
@@ -263,76 +264,37 @@ else if (mouse_check_button_released(mb_right) &amp;&amp; canThrowSword &amp;&am
             var top = bbox_top+NextY-y;
             var left = bbox_left+NextX-x-10;
             var right = bbox_right+NextX-x+10;
-            
+
             var instance;
             instance = collision_rectangle(left,top,right,bottom,objPlatform,true,true);
             if(instance) {
-                
-                stuckTo = instance;
-                var stuckTo2;
-                var stuckX12;
-                var stuckY12;
-                var stuckX22;
-                var stuckY22;
-                var stuckOriginX2;
-                var stuckOriginY2;
                 with (instance) {
-                    stuckX12 = bbox_left;
-                    stuckY12 = bbox_top;
-                    stuckX22 = bbox_right
-                    stuckY22 = bbox_bottom;
-                    stuckOriginX2 = x;
-                    stuckOriginY2 = y;
                     stuckTo2 = "";
-                    if(bbox_top &lt;= bottom &amp;&amp; bbox_top &gt;= top &amp;&amp; bbox_bottom &gt; bottom &amp;&amp; !collision_rectangle(left,bbox_top-20,right,bbox_top,objPlatform,true,true)) 
+                    if( bottom-bbox_top &gt; 10 &amp;&amp; bbox_top &lt;= bottom &amp;&amp; bbox_top &gt;= top &amp;&amp; bbox_bottom &gt; bottom &amp;&amp; !collision_rectangle(left,bbox_top-20,right,bbox_top,objPlatform,true,true)) 
                     {    
                         stuckTo2 += "floor " + string(bottom-bbox_top+5); 
-                        
                         NextY -= bottom-bbox_top+5;
                     }
-                    else if(bbox_bottom &lt;= bottom &amp;&amp; bbox_bottom &gt;= top &amp;&amp; bbox_top &lt; top &amp;&amp; !collision_rectangle(left,bbox_bottom,right,bbox_bottom+20,objPlatform,true,true))
+                    else if(bbox_bottom-top &gt; 10 &amp;&amp; bbox_bottom &lt;= bottom &amp;&amp; bbox_bottom &gt;= top &amp;&amp; bbox_top &lt; top &amp;&amp; !collision_rectangle(left,bbox_bottom,right,bbox_bottom+20,objPlatform,true,true))
                     {
                         stuckTo2 += "ceiling";
-                        
                         NextY += bbox_bottom-top+5;
                     }
                     else if(bbox_left &lt;= right &amp;&amp; bbox_left &gt;= left &amp;&amp; bbox_right &gt; right)
                     {
                         stuckTo2 += "leftOfWall";
-                        
                         NextX -= right-bbox_left+5;
                     }
                     else if(bbox_right &lt;= right &amp;&amp; bbox_right &gt;= left)
                     {
                         stuckTo2 += "rightOfWall";
-                        
                         NextX += bbox_right-left+5;
                     }
-                }
-                stuckTo = stuckTo2;
-                stuckX1 = stuckX12;
-                stuckY1 = stuckY12;
-                stuckX2 = stuckX22;
-                stuckY2 = stuckY22;
-                stuckOriginX = stuckOriginX2;
-                stuckOriginY = stuckOriginY2;
-                
-                
-                
+                }        
                 direction = 270;
                 vspeed = 0;
             }
-            else 
-            {
-                stuckTo = "Nothing";
-                stuckX1 = 0;
-                stuckX2 = 0;
-                stuckY1 = 0;
-                stuckY2 = 0;
-                stuckOriginX = 0;
-                stuckOriginY = 0;
-            }
-            
+
             x = NextX;
             y = NextY;
             
@@ -385,14 +347,14 @@ else if (mouse_check_button_released(mb_right) &amp;&amp; canThrowSword &amp;&am
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var NextX = x;
-var NextY = y;
+            <string>var AddX = 0;
+var AddY = 0;
 
 if (isPressedNoConflict(KEYS.d) &amp;&amp; canMoveInDir(keyToDir(KEYS.d)))
 {
     facing = Direction.right;
     currentAnimation = Animations.run;
-    NextX += runSpeed;
+    AddX += runSpeed;
     /*
     if (place_meeting(x + runSpeed, y, objTutorialPlatform))
     {
@@ -406,7 +368,7 @@ if (isPressedNoConflict(KEYS.a) &amp;&amp; canMoveInDir(keyToDir(KEYS.a)))
 {
     facing = Direction.left;
     currentAnimation = Animations.run;
-    NextX -= runSpeed;
+    AddX -= runSpeed;
     /*
     if (place_meeting(x - runSpeed, y, objTutorialPlatform))
     {
@@ -422,14 +384,14 @@ if (keyboard_check_released(KEYS.d) || keyboard_check_released(KEYS.a))
 }
 
 if ((isPressed(KEYS.w) || isPressed(KEYS.space)) 
-    &amp;&amp; movementEnabled &amp;&amp; !place_free(NextX, NextY + 1) &amp;&amp; !collision_rectangle(bbox_left,bbox_top-1,bbox_right,bbox_top,objPlatform,true,true))
+    &amp;&amp; movementEnabled &amp;&amp; !place_free(AddX + x, AddY + y + 1))
 {
-    NextY += jumpSpeed;
+    AddY += jumpSpeed;
     vspeed = jumpSpeed;
     audio_play_sound(sndJump2, 10, false);
 }
 
-if (place_free(NextX, NextY + 1))
+if (place_free(AddX + x, AddY + y + 1))
 {
     friction = 0;
     gravity = 2;
@@ -442,10 +404,10 @@ else
     canThrowSword = true;
 }
 
-var bottom = bbox_bottom+NextY-y;
-var top = bbox_top+NextY-y;
-var left = bbox_left+NextX-x-10;
-var right = bbox_right+NextX-x+10;
+var bottom = bbox_bottom+AddY;
+var top = bbox_top+AddY;
+var left = bbox_left+AddX-5;
+var right = bbox_right+AddX+5;
 bottom2 = bottom;
 top2=top;
 left2=left;
@@ -454,7 +416,7 @@ right2=right;
 var instance;
 instance = collision_rectangle(left,top,right,bottom,objPlatform,true,true);
 if(instance) {
-    stuckTo = instance;
+    //stuckTo = instance;
     var stuckTo2;
     var stuckX12;
     var stuckY12;
@@ -470,28 +432,30 @@ if(instance) {
         stuckOriginX2 = x;
         stuckOriginY2 = y;
         stuckTo2 = "";
-        if(bbox_top &lt;= bottom &amp;&amp; bbox_top &gt;= top &amp;&amp; bbox_bottom &gt; bottom &amp;&amp; !collision_rectangle(left,bbox_top-20,right,bbox_top,objPlatform,true,true)) 
+        if( bottom-bbox_top &gt; 10 &amp;&amp; bbox_top &lt;= bottom &amp;&amp; bbox_top &gt;= top &amp;&amp; bbox_bottom &gt; bottom &amp;&amp; !collision_rectangle(left,bbox_top-20,right,bbox_top,objPlatform,true,true)) 
         {    
             stuckTo2 += "floor " + string(bottom-bbox_top+5); 
-            NextY -= bottom-bbox_top+5;
+            AddY -= bottom-bbox_top+5;
         }
-        else if(bbox_bottom &lt;= bottom &amp;&amp; bbox_bottom &gt;= top &amp;&amp; bbox_top &lt; top &amp;&amp; !collision_rectangle(left,bbox_bottom,right,bbox_bottom+20,objPlatform,true,true))
+        else if(bbox_bottom-top &gt; 10 &amp;&amp; bbox_bottom &lt;= bottom &amp;&amp; bbox_bottom &gt;= top &amp;&amp; bbox_top &lt; top &amp;&amp; !collision_rectangle(left,bbox_bottom,right,bbox_bottom+20,objPlatform,true,true))
         {
             stuckTo2 += "ceiling";
-            NextY += bbox_bottom-top+5;
+            AddY += bbox_bottom-top+5;
         }
         else if(bbox_left &lt;= right &amp;&amp; bbox_left &gt;= left &amp;&amp; bbox_right &gt; right)
         {
             stuckTo2 += "leftOfWall";
-            NextX -= right-bbox_left+5;
+            AddX -= right-bbox_left+5;
         }
         else if(bbox_right &lt;= right &amp;&amp; bbox_right &gt;= left)
         {
             stuckTo2 += "rightOfWall";
-            NextX += bbox_right-left+5;
+            AddX += bbox_right-left+5;
         }
     }
-    stuckTo = stuckTo2;
+    if(stuckTo2!="")
+        stuckTo += " / "+stuckTo2;
+        
     stuckX1 = stuckX12;
     stuckY1 = stuckY12;
     stuckX2 = stuckX22;
@@ -502,19 +466,9 @@ if(instance) {
     direction = 270;
     vspeed = 0;
 }
-else 
-{
-    stuckTo = "Nothing";
-    stuckX1 = 0;
-    stuckX2 = 0;
-    stuckY1 = 0;
-    stuckY2 = 0;
-    stuckOriginX = 0;
-    stuckOriginY = 0;
-}
 
-x = NextX;
-y = NextY;
+if(AddX+AddY!=0)
+    move_contact_solid(point_direction(x,y,x+AddX,y+AddY), point_distance(x,y,x+AddX,y+AddY));
 
 if (facing == Direction.right)
 {
@@ -612,6 +566,29 @@ vspeed = 0;
             <kind>1</kind>
             <string>damageArmour(other.armourDamage);
 audio_play_sound(sndHurt, 10, false);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="67">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>stuckTo = "";
 </string>
           </argument>
         </arguments>
