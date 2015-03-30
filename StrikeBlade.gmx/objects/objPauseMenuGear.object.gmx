@@ -220,7 +220,14 @@ if (showMenu)
             <kind>1</kind>
             <string>draw_self();
 
-if (keyboard_check_pressed(vk_escape) || mouse_check_button_pressed(mb_left))
+var mouseClicked = false;
+if(mouse_check_button_pressed(mb_left)
+    &amp;&amp; mouse_x &gt; bbox_left &amp;&amp; mouse_x &lt; bbox_right
+    &amp;&amp; mouse_y &gt; bbox_top &amp;&amp; mouse_y &lt; bbox_bottom) 
+{
+    mouseClicked = true;
+}
+if (keyboard_check_pressed(vk_escape) || mouseClicked)
 {
     image_alpha = 1;
     image_index = MenuGearImages.lighter;
