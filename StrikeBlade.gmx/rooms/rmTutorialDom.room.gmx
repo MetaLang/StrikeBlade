@@ -67,7 +67,7 @@
     <instance objName="objPlatform" x="1184" y="416" name="inst_2FB3BCC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="1664" y="259" name="inst_93D72540" locked="0" code="" scaleX="12" scaleY="0.100000001490116" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="3680" y="5504" name="inst_59ED1F28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objFaultyBot" x="704" y="1184" name="inst_0359067F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPauseMenuGear" x="320" y="384" name="inst_1F9992DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="1312" y="448" name="inst_5E1C9A15" locked="0" code="" scaleX="0.100000001490116" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="2656" y="32" name="inst_B3670BB7" locked="0" code="" scaleX="42" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="2048" y="256" name="inst_DECD23B9" locked="0" code="" scaleX="0.100000001490116" scaleY="2" colour="4294967295" rotation="0"/>
@@ -122,7 +122,7 @@
     <instance objName="objShockBot" x="1120" y="1184" name="inst_1D00D3D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShockBot" x="1984" y="1184" name="inst_67A1018C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLightController" x="256" y="128" name="inst_FEAAF7FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBotSpawner" x="1312" y="1184" name="inst_60B9DD85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBotSpawner" x="1280" y="1184" name="inst_60B9DD85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShockBot" x="1440" y="928" name="inst_5BB61C00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShockBot" x="1568" y="2688" name="inst_08B3BFF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShockBot" x="352" y="2688" name="inst_6D88C464" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -200,12 +200,11 @@
     <instance objName="objShockBot" x="608" y="3104" name="inst_9EAC5A75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShockBot" x="896" y="3104" name="inst_4AFE3879" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShockBot" x="1568" y="3104" name="inst_F7E4F39D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBotSpawner" x="160" y="3104" name="inst_FDC92285" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="objBotSpawner" x="192" y="3072" name="inst_FDC92285" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
     <instance objName="objShockBot" x="1856" y="2688" name="inst_4B08EA77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShockBot" x="2144" y="2688" name="inst_BD30F962" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShockBot" x="1696" y="2688" name="inst_3A91DE10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShockBot" x="1408" y="2688" name="inst_5F05F36C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPauseMenuGear" x="320" y="384" name="inst_1F9992DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1_64" x="64" y="128" w="64" h="64" xo="320" yo="192" id="10007970" name="inst_B3D5D23F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
