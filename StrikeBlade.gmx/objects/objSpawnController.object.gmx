@@ -26,10 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>//PLAYER_DEATH_EVENT
-room_restart();
-/*var deathTextDrawer = instance_create(x, y, objDeathTextDrawer);
 
-var playerX = objPlayer.x;
+
+var deathTextDrawer = instance_create(x, y, objDeathTextDrawer);
+
+/*var playerX = objPlayer.x;
 var playerY = objPlayer.y;
 var playerSpriteHeight = objPlayer.sprite_height;
 with (objPlayer)
