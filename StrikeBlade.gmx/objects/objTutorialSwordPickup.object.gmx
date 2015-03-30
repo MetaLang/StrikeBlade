@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (other)
+            <string>audio_play_sound(sndPickupKey, 0, false);
+with (other)
 {
     haveSword = true;
 }
