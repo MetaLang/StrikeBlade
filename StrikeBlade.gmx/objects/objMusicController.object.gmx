@@ -27,19 +27,19 @@
             <kind>1</kind>
             <string>if (SOUND_ENABLED == true)
 {
-    sounds[0] = sndHomelander;
-    sounds[1] = sndRapHipHop;
-    sounds[2] = sndThunderchild;
-    sounds[3] = sndWoodlandFantasy;
+    sounds[0] = sndMenu;
+    sounds[1] = sndGameplay;
+    sounds[2] = sndBoss0;
+    sounds[3] = sndBoss1;
     switch(room)
     {
-        case MAIN_MENU:       sound = sndHomelander;   break;
-        case TUTORIAL_ROOM0:  sound = sndRapHipHop;   break; 
-        case TUTORIAL_ROOM1:  sound = sndRapHipHop;   break; 
-        case TUTORIAL_ROOM2:  sound = sndWoodlandFantasy;    break;
-        case TUTORIAL_ROOM3:  sound = sndWoodlandFantasy;    break;
-        case TUTORIAL_ROOM4:  sound = sndThunderchild; break;
-        case TUTORIAL_BOSS_ROOM:  sound = sndWoodlandFantasy; break;
+        case MAIN_MENU:       sound = sndMenu;   break;
+        case TUTORIAL_ROOM0:  sound = sndMenu;   break; 
+        case TUTORIAL_ROOM1:  sound = sndGameplay;   break; 
+        case TUTORIAL_ROOM2:  sound = sndGameplay;    break;
+        case TUTORIAL_ROOM3:  sound = sndBoss0;    break;
+        case TUTORIAL_ROOM4:  sound = sndGameplay; break;
+        case TUTORIAL_BOSS_ROOM:  sound = sndBoss1; break;
     }
     
     i = 0;
