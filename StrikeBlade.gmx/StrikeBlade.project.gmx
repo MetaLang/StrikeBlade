@@ -145,8 +145,9 @@
     <sprites name="menu screen">
       <sprite>sprites\sprCreditsLabel</sprite>
       <sprite>sprites\sprTutorialLabel</sprite>
-      <sprite>sprites\sprPlayLabel</sprite>
+      <sprite>sprites\sprStartLabel</sprite>
       <sprite>sprites\sprTestRoomLabel</sprite>
+      <sprite>sprites\sprQuitLabel</sprite>
     </sprites>
     <sprites name="pause menu">
       <sprite>sprites\sprMenuLabelBase</sprite>
@@ -370,14 +371,14 @@
         <object>objects\objTutorialMouse1</object>
       </objects>
       <objects name="menu screen">
-        <object>objects\objTutorialLabel</object>
-        <object>objects\objStoryLabel</object>
+        <object>objects\objStartLabel</object>
+        <object>objects\objQuitLabel</object>
         <object>objects\objCreditsLabel</object>
         <object>objects\objTestRoomLabel</object>
       </objects>
-      <object>objects\objReticule</object>
       <object>objects\objCampfire</object>
       <object>objects\objTent</object>
+      <object>objects\objReticule</object>
     </objects>
     <objects name="markers">
       <object>objects\objSpawnLocationMarker</object>
