@@ -29,20 +29,28 @@
       <sound>sound\sndHomelander</sound>
       <sound>sound\sndRapHipHop</sound>
     </sounds>
-    <sound>sound\sndAlarm</sound>
-    <sound>sound\sndHitGround</sound>
-    <sound>sound\sndHurt</sound>
-    <sound>sound\sndArmorPickup</sound>
-    <sound>sound\sndPickupKey</sound>
-    <sound>sound\sndJump2</sound>
-    <sound>sound\sndExplosion3</sound>
-    <sound>sound\sndExplosion1</sound>
-    <sound>sound\sndExplosion2</sound>
-    <sound>sound\sndThrow</sound>
-    <sound>sound\sndExplosionLong</sound>
-    <sound>sound\sndExplosionShort</sound>
-    <sound>sound\sndLaserDeflect</sound>
-    <sound>sound\sndSwordUnsheath</sound>
+    <sounds name="Music">
+      <sound>sound\sndBoss1</sound>
+      <sound>sound\sndMenu</sound>
+      <sound>sound\sndGameplay</sound>
+      <sound>sound\sndBoss0</sound>
+    </sounds>
+    <sounds name="Effects">
+      <sound>sound\sndSwordUnsheath</sound>
+      <sound>sound\sndLaserDeflect</sound>
+      <sound>sound\sndExplosionShort</sound>
+      <sound>sound\sndExplosionLong</sound>
+      <sound>sound\sndThrow</sound>
+      <sound>sound\sndExplosion2</sound>
+      <sound>sound\sndExplosion1</sound>
+      <sound>sound\sndExplosion3</sound>
+      <sound>sound\sndJump2</sound>
+      <sound>sound\sndPickupKey</sound>
+      <sound>sound\sndArmorPickup</sound>
+      <sound>sound\sndHurt</sound>
+      <sound>sound\sndHitGround</sound>
+      <sound>sound\sndAlarm</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprPlatform</sprite>
