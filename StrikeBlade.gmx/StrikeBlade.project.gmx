@@ -21,14 +21,6 @@
       <sound>sound\sndSlash2</sound>
       <sound>sound\sndPlayerdmg</sound>
     </sounds>
-    <sounds name="Background Music">
-      <sound>sound\sndThunderchild</sound>
-      <sound>sound\sndRockMenu</sound>
-      <sound>sound\sndAdventureHo</sound>
-      <sound>sound\sndWoodlandFantasy</sound>
-      <sound>sound\sndHomelander</sound>
-      <sound>sound\sndRapHipHop</sound>
-    </sounds>
     <sounds name="Music">
       <sound>sound\sndBoss1</sound>
       <sound>sound\sndMenu</sound>
