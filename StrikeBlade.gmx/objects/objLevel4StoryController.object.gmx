@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>credits = "Arthur began to notice that the caves were more familiar as if he was approaching###"; 
-credits = "His old home, or maybe the machinations were leading him to his doom##"; 
-credits = "Either way now was not the time for questions, and instead it was time to press onward!##";
+            <string>credits = "As the King ventures deeper into the caves, he begins to wonder##";
+credits += "whether he is coming to the rescue,##or whether he is rushing straight to his doom.##";
+credits += "Either way, it is not the time for questions that have no answer.##It is time to press onward!";
 y = room_height;
 x = room_width;
 vspeed = -1.2;

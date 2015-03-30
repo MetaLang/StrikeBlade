@@ -25,8 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>credits = "Arthur had thought he heard a faint echo of Gwynevers voice in the dusty catacombs###"; 
-credits = "So he pressed forward into the familiar hold beneath his once great castle###"; 
+            <string>credits = "Fighting his way through the dusty catacombs, ##King Arthur hears a faint echo.##"; 
+credits += "It is his beloved Gwynevere, calling to him from far away.###";
+credits += '"Dearest King, I am held by dark forces deep below Camelot."##';
+credits += '"I can muster only the strength to send you this message."##"Come swiftly, my King, and take great care."###';
+credits += "Hearing this, the King hastens his march to Camelot, and he soon reaches this once great castle.###";
+credits += "But his enemies have followed him here.##Infiltrating his stronghold will be no easy task...";
 y = room_height;
 x = room_width;
 vspeed = -1.2;

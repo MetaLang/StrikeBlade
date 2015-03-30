@@ -25,9 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>credits = "After defeating the metal beast and finding his queen, Arthur set forth back to his tomb###"; 
-credits = "For Arthur will only arise...###";
-credits = "when Britain needs him the most###";  
+            <string>credits = "The great metal beast has been defeated, and Gwynevere has been saved.##The King and his Queen begin the journey back to their tomb,##";
+credits += "to sleep the centuries away like a fading dream.###";
+credits += "But fair Britannia need not worry, for her True King shall always return##";
+credits += "When he is needed most.";  
 
 
 y = room_height;

@@ -25,14 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>credits = "Arthur's old habits seem to die hard###"; 
-credits += "He found himself resting the night away like days of yore###"; 
-credits += "Luckily on his journey through the catacombs# he had found a scrap of Gwyneveres garments#"; 
-credits += "These odd beings of metal seemed to be stopping him, for what purpose?###";
-credits += "Arthur decided resting was in his best interests to gather his thoughts#";
-credits += "Oddly enough though, despite his resting he was not tired, it was as if undeath#";
-credits += "Had granted him great strength###";
-credits += "With this renewed vigor he set forth to battle the metallic hordes and win back his queen";
+            <string>credits = "Old habits die hard for he who never dies...###"; 
+credits += "The King finds himself once again on a quest for Queen and Country.###"; 
+credits += "On his journey through the catacombs## he stumbles upon a scrap of Gwynevere's garments.###"; 
+credits += "Also, These metal monstrosities hound him at every turn... ##Could it be related?###";
+credits += "Our King stops to rest and calm his agitated mind.##";
+credits += "Death, however, has granted him strength far greater than in life##";
+credits += "and in truth, he is not tired.###";
+credits += "His thoughts still in disarray, ##he resumes his quest to battle the metallic hordes##";
+credits += "and rescue his Queen.";
 y = room_height;
 x = room_width;
 vspeed = -1.2;
