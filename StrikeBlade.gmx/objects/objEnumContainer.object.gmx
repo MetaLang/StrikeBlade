@@ -76,6 +76,12 @@ enum BossShipAlarms
     droneRefresh = 1,
     laserDuration = 2,
 }
+
+enum MenuGearImages
+{
+    darker = 0,
+    lighter = 1,
+}
 </string>
           </argument>
         </arguments>
