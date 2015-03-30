@@ -637,20 +637,24 @@ background_x[2] = view_xview[0] * 0.95;
             <kind>1</kind>
             <string>draw_self();
 
+draw_sprite(sprPauseMenuGear, 0, view_xview + 64, view_yview + 64);
+objPauseMenuGear.x = view_xview + 64;
+objPauseMenuGear.y = view_yview + 64;
+objPauseMenuGear.image_alpha = 0;
+
 //Display Score
 draw_set_color(c_white);
 draw_set_font(fntScore);
-draw_text(view_xview+64,view_yview+64, string(score));
+draw_text(view_xview+view_wview-128,view_yview+64, string(score));
+
 //draw_text(room_width / 2, 50, "Armour Level: " + string(armourLevel));
 
-draw_text(x-48, y-130, "Stuck to : " + string(stuckTo));
-draw_rectangle_colour(stuckX1, stuckY1, stuckX2, stuckY2, c_red, c_red, c_red, c_red, true);
-draw_line_width_colour(stuckOriginX-100, stuckOriginY, stuckOriginX+100, stuckOriginY, 5, c_red, c_red);
-draw_line_width_colour(stuckOriginX, stuckOriginY-100, stuckOriginX, stuckOriginY+100, 5, c_red, c_red)
-;
-draw_rectangle_colour(left2, bottom2, right2, top2, c_red, c_red, c_red, c_red, true);
-
-draw_rectangle_colour(bbox_left, bbox_bottom, bbox_right, bbox_top, c_lime, c_lime, c_lime, c_lime, true);
+//draw_text(x-48, y-130, "Stuck to : " + string(stuckTo));
+//draw_rectangle_colour(stuckX1, stuckY1, stuckX2, stuckY2, c_red, c_red, c_red, c_red, true);
+//draw_line_width_colour(stuckOriginX-100, stuckOriginY, stuckOriginX+100, stuckOriginY, 5, c_red, c_red);
+//draw_line_width_colour(stuckOriginX, stuckOriginY-100, stuckOriginX, stuckOriginY+100, 5, c_red, c_red);
+//draw_rectangle_colour(left2, bottom2, right2, top2, c_red, c_red, c_red, c_red, true);
+//draw_rectangle_colour(bbox_left, bbox_bottom, bbox_right, bbox_top, c_lime, c_lime, c_lime, c_lime, true);
 </string>
           </argument>
         </arguments>
