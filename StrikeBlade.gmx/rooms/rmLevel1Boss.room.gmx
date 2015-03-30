@@ -58,7 +58,7 @@
     <instance objName="objPlatform" x="2464" y="1888" name="inst_3A382E5C" locked="0" code="" scaleX="80" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="5008" y="800" name="inst_8DB0490D" locked="0" code="" scaleX="1" scaleY="33" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialPlatform" x="32" y="1760" name="inst_91E87EE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBossShip" x="1264" y="1504" name="inst_9D31E860" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossShip" x="2528" y="1440" name="inst_9D31E860" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialPlatform" x="0" y="1760" name="inst_283C1D3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialPlatform" x="32" y="1696" name="inst_E48F3678" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKeyboardController" x="128" y="32" name="inst_DFFF2FB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

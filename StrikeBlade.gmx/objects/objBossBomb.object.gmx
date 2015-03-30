@@ -103,11 +103,9 @@ else if(spawnChance &gt; 5 &amp;&amp; spawnChance &lt; 9) {
     if(hitFloor) {
         instance_create(x+60, y+90, objShockBot);
         instance_create(x-60, y+90, objShockBot);
-        instance_create(x, y+90, objShockBot);
     }
     else {
          instance_create(x+50, y-100, objAttackDrone);
-         instance_create(x-50, y-100, objAttackDrone);
     }
 }
 else if(spawnChance &gt; 9) {
@@ -316,7 +314,6 @@ image_speed = 1/3;
             <kind>1</kind>
             <string>alarm[0] = seconds(bombExplodeTime); // Cool down
 image_speed = 1/3;
-hitFloor = true;
 </string>
           </argument>
         </arguments>
@@ -361,7 +358,7 @@ hitFloor = true;
             <kind>1</kind>
             <string>alarm[0] = seconds(bombExplodeTime); // Cool down
 image_speed = 1/3;
-hitFloor = true;
+
 </string>
           </argument>
         </arguments>
@@ -406,7 +403,7 @@ hitFloor = true;
             <kind>1</kind>
             <string>alarm[0] = seconds(bombExplodeTime); // Cool down
 image_speed = 1/3;
-hitFloor = true;
+
 </string>
           </argument>
         </arguments>

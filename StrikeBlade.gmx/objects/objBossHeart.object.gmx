@@ -78,6 +78,8 @@ damage = 1;
 objBossShip.oldState = objBossShip.currentState;
 
 effect_create_above(ef_firework, other.x, other.y, 3, c_yellow);
+audio_play_sound(sndExplosion3, 10, false);
+audio_play_sound(sndExplosionLong, 10, false);
 
 //objBossShip.sprite_index = sprShipBossHide;
 //objBossShip.image_index = 0;
