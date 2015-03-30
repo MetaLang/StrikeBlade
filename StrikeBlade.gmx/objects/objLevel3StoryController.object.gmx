@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>credits = "It is the year 20XX and the desecrated remains of a once powerful king stir###"; 
-
+            <string>credits = "Arthur had thought he heard a faint echo of Gwynevers voice in the dusty catacombs###"; 
+credits = "So he pressed forward into the familiar hold beneath his once great castle###"; 
 y = room_height;
 x = room_width;
 vspeed = -1.2;
