@@ -33,52 +33,6 @@ menuLabels = sbArray(noone, noone, noone);
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="11">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>image_index = MenuGearImages.lighter;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="10">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>image_index = MenuGearImages.darker;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="6" enumb="7">
       <action>
         <libid>1</libid>
@@ -97,105 +51,6 @@ menuLabels = sbArray(noone, noone, noone);
           <argument>
             <kind>1</kind>
             <string>image_index = MenuGearImages.darker;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*image_index = MenuGearImages.lighter;
-
-if (showMenu)
-{
-    showMenu = false;
-    var menuLabelCount = instance_number(objMenuLabel);
-    while (menuLabelCount &gt;= 0)
-    {
-        with (objMenuLabel)
-        {
-            instance_destroy();
-        }
-        menuLabelCount--;
-    }
-    instance_activate_all();
-}
-else
-{
-    showMenu = true;
-    effect_clear();
-    instance_deactivate_all(true);
-    instance_activate_object(objBlocker);
-}
-
-if (showMenu)
-{
-    var vi = view_current;
-    var menuX = 700; 
-    var menuY = 100;
-    var oldColour = draw_get_colour();
-    
-    draw_set_colour(c_black);
-    leftTopCornerX = view_xview + menuX;
-    leftTopCornerY = view_yview + menuY;
-    rightBottomCornerX = view_xview + view_wview - menuX;
-    rightBottomCornerY = view_yview + view_hview - menuY;
-    draw_rectangle(leftTopCornerX, leftTopCornerY, rightBottomCornerX, rightBottomCornerY, false);
-    
-    draw_set_colour(c_gray);
-    draw_rectangle(
-        leftTopCornerX + 1, 
-        leftTopCornerY + 1, 
-        rightBottomCornerX - 1, 
-        rightBottomCornerY - 1, 
-        true
-    );
-    
-    draw_set_colour(oldColour);
-    
-    var mediumLabelHeight = sprite_get_height(sprMenuLabelBase);
-    var largeLabelHeight = sprite_get_height(sprMenuLabelPaused);
-    var labelYPos = leftTopCornerY + largeLabelHeight;
-    var spaceBetweenButtons = 50;
-    for (var i = 0; i &lt; array_length_1d(menuLabels); i++)
-    {
-        switch (i)
-        {
-            case 0:
-                menuLabels[i] = instance_create(leftTopCornerX + view_wport / 2 - menuX, labelYPos, objMenuLabelTitle);
-            break;
-            
-            case 1:
-                labelYPos += mediumLabelHeight + 2 * spaceBetweenButtons;
-                menuLabels[i] = instance_create(leftTopCornerX + view_wport / 2 - menuX, labelYPos, objMenuLabelRestart);
-            break;
-            
-            case 2:
-                labelYPos += mediumLabelHeight + spaceBetweenButtons;
-                menuLabels[i] = instance_create(leftTopCornerX + view_wport / 2 - menuX, labelYPos, objMenuLabelExit);
-            break;
-            
-            default:
-                assert(false, "This should never be reached");
-        }
-    }
-}
-*/
 </string>
           </argument>
         </arguments>
@@ -265,6 +120,7 @@ if (keyboard_check_pressed(vk_escape) || mouseClicked)
         leftTopCornerY = view_yview + menuY;
         rightBottomCornerX = view_xview + view_wview - menuX;
         rightBottomCornerY = view_yview + view_hview - menuY;
+        /*
         draw_rectangle(leftTopCornerX, leftTopCornerY, rightBottomCornerX, rightBottomCornerY, false);
         
         draw_set_colour(c_gray);
@@ -275,6 +131,7 @@ if (keyboard_check_pressed(vk_escape) || mouseClicked)
             rightBottomCornerY - 1, 
             true
         );
+        */
         
         draw_set_colour(oldColour);
         
