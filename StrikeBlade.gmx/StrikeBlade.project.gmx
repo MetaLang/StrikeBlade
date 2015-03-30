@@ -404,7 +404,6 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rmLevel1Boss</room>
     <room>rooms\rmSplashScreen</room>
     <room>rooms\rmMainMenu</room>
     <room>rooms\rmTutorial</room>
@@ -413,6 +412,7 @@
     <room>rooms\rmTutorial2</room>
     <room>rooms\rmTutorial3</room>
     <room>rooms\rmLevel1</room>
+    <room>rooms\rmLevel1Boss</room>
     <room>rooms\rmUnitTest</room>
     <room>rooms\rmTest</room>
     <room>rooms\rmCredits</room>
