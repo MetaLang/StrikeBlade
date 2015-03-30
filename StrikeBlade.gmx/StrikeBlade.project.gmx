@@ -295,6 +295,7 @@
         <object>objects\objLevel3StoryController</object>
         <object>objects\objLevel4StoryController</object>
         <object>objects\objLevel5StoryController</object>
+        <object>objects\objLevel6StoryController</object>
       </objects>
       <objects name="room controllers">
         <object>objects\objCreditsController</object>
