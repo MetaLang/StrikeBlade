@@ -46,12 +46,12 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprPlatform</sprite>
-    <sprite>sprites\sprite94</sprite>
     <sprite>sprites\sprTutorialPlatform</sprite>
     <sprite>sprites\sprTent</sprite>
     <sprite>sprites\sprCampFire</sprite>
     <sprite>sprites\sprKey</sprite>
     <sprite>sprites\sprInvis</sprite>
+    <sprite>sprites\sprYouDied</sprite>
     <sprites name="sword">
       <sprite>sprites\sprSword</sprite>
     </sprites>
@@ -216,7 +216,6 @@
       <sprite>sprites\sprPuzzleKey</sprite>
       <sprite>sprites\sprPuzzleLock</sprite>
     </sprites>
-    <sprite>sprites\sprYouDied</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgCity1</background>
