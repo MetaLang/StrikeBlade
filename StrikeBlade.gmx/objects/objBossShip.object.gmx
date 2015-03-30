@@ -521,6 +521,10 @@ with(objAttackDrone) {
  instance_destroy();
 }
 
+with(objHeavyAttackDrone) {
+ instance_destroy();
+}
+
 with(objShockBot) {
  instance_destroy();
 }
