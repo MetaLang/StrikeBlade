@@ -25,9 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>credits = "Arthur could hear the cries of his wife as if they were coming###"; 
-credits = "From inside of the great metal beast, was her power what this monster sought?###";
-credits = "Its intentions did not matter, for he wanted his wife back and he would stop at nothing to see her laid to rest!###";
+            <string>credits = "After defeating the metal beast and finding his queen, Arthur set forth back to his tomb###"; 
+credits = "For Arthur will only arise...###";
+credits = "when Britain needs him the most###";  
+
+
 y = room_height;
 x = room_width;
 vspeed = -1.2;

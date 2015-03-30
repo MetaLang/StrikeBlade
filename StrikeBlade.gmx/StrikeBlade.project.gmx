@@ -46,12 +46,12 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprPlatform</sprite>
-    <sprite>sprites\sprite94</sprite>
     <sprite>sprites\sprTutorialPlatform</sprite>
     <sprite>sprites\sprTent</sprite>
     <sprite>sprites\sprCampFire</sprite>
     <sprite>sprites\sprKey</sprite>
     <sprite>sprites\sprInvis</sprite>
+    <sprite>sprites\sprYouDied</sprite>
     <sprites name="sword">
       <sprite>sprites\sprSword</sprite>
     </sprites>
@@ -145,13 +145,15 @@
     <sprites name="menu screen">
       <sprite>sprites\sprCreditsLabel</sprite>
       <sprite>sprites\sprTutorialLabel</sprite>
-      <sprite>sprites\sprPlayLabel</sprite>
+      <sprite>sprites\sprStartLabel</sprite>
       <sprite>sprites\sprTestRoomLabel</sprite>
+      <sprite>sprites\sprQuitLabel</sprite>
     </sprites>
     <sprites name="pause menu">
       <sprite>sprites\sprMenuLabelBase</sprite>
       <sprite>sprites\sprMenuLabelPaused</sprite>
       <sprite>sprites\sprMenuLabelExit</sprite>
+      <sprite>sprites\sprMenuLabelRestart</sprite>
     </sprites>
     <sprites name="tutorial">
       <sprite>sprites\sprTutorialMouseNew</sprite>
@@ -219,7 +221,6 @@
       <sprite>sprites\sprPuzzleKey</sprite>
       <sprite>sprites\sprPuzzleLock</sprite>
     </sprites>
-    <sprite>sprites\sprYouDied</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgCity1</background>
@@ -298,6 +299,7 @@
         <object>objects\objLevel3StoryController</object>
         <object>objects\objLevel4StoryController</object>
         <object>objects\objLevel5StoryController</object>
+        <object>objects\objLevel6StoryController</object>
       </objects>
       <objects name="room controllers">
         <object>objects\objCreditsController</object>
@@ -358,11 +360,13 @@
       <object>objects\objPlayer</object>
       <object>objects\objTutorialPlayer</object>
       <object>objects\objPlayerRun</object>
+      <object>objects\objPlayerRunLeft</object>
     </objects>
     <objects name="pause menu">
       <object>objects\objMenuLabel</object>
       <object>objects\objMenuLabelTitle</object>
       <object>objects\objMenuLabelExit</object>
+      <object>objects\objMenuLabelRestart</object>
     </objects>
     <objects name="ui">
       <objects name="tutorial">
@@ -374,14 +378,14 @@
         <object>objects\objTutorialMouse1</object>
       </objects>
       <objects name="menu screen">
-        <object>objects\objTutorialLabel</object>
-        <object>objects\objStoryLabel</object>
+        <object>objects\objStartLabel</object>
+        <object>objects\objQuitLabel</object>
         <object>objects\objCreditsLabel</object>
         <object>objects\objTestRoomLabel</object>
       </objects>
-      <object>objects\objReticule</object>
       <object>objects\objCampfire</object>
       <object>objects\objTent</object>
+      <object>objects\objReticule</object>
     </objects>
     <objects name="markers">
       <object>objects\objSpawnLocationMarker</object>
@@ -420,6 +424,7 @@
       <room>rooms\rmStorylv3</room>
       <room>rooms\rmStorylv4</room>
       <room>rooms\rmStorylv5</room>
+      <room>rooms\rmStorylv6</room>
     </rooms>
   </rooms>
   <help>

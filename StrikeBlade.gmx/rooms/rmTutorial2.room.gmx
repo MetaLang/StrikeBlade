@@ -183,8 +183,7 @@
     <instance objName="objSpawnController" x="256" y="96" name="inst_AD7EB615" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="2208" y="736" name="inst_5E4D01EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="2144" y="800" name="inst_A8F2BD9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objFaultyBot" x="3888" y="928" name="inst_0D394E76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objFaultyBot" x="2640" y="928" name="inst_1171BA93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPersistentStore" x="384" y="96" name="inst_B0122758" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objScreenChangeTrigger" x="4608" y="960" name="inst_FCFCBC1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objArmourPickup" x="3152" y="640" name="inst_2EAD1327" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objArmourPickup" x="4256" y="704" name="inst_03874543" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -193,8 +192,17 @@
     <instance objName="objScreenChangeTrigger" x="4352" y="960" name="inst_49D8EBD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objScreenChangeTrigger" x="4384" y="960" name="inst_25942AF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objScreenChangeTrigger" x="4416" y="960" name="inst_7D0CE355" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objScreenChangeTrigger" x="4464" y="1280" name="inst_072DEB09" locked="0" code="" scaleX="12" scaleY="20" colour="4294967295" rotation="0"/>
-    <instance objName="objPersistentStore" x="384" y="96" name="inst_B0122758" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objShockBot" x="2448" y="608" name="inst_78927F6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objShockBot" x="3296" y="608" name="inst_BF9C9CC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objShockBot" x="1648" y="608" name="inst_8AECF256" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objShockBot" x="1088" y="928" name="inst_7F675298" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objShockBot" x="928" y="864" name="inst_5CC9362F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objShockBot" x="720" y="928" name="inst_FF6BF155" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objShockBot2" x="3024" y="928" name="inst_ABC26DA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objShockBot2" x="2608" y="928" name="inst_EEAF2DE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objShockBot2" x="3328" y="928" name="inst_4E38E810" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objShockBot2" x="4112" y="928" name="inst_B2B6DADB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDroneSpawner" x="4592" y="368" name="inst_09EFE572" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1" x="384" y="912" w="32" h="32" xo="128" yo="32" id="10006072" name="inst_804455BE" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -226,7 +234,6 @@
     <tile bgName="tsTomb1" x="1616" y="608" w="32" h="32" xo="288" yo="160" id="10006106" name="inst_3FBFF9CB" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1" x="1504" y="608" w="32" h="32" xo="288" yo="160" id="10006107" name="inst_A53E70DF" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1" x="1568" y="608" w="32" h="32" xo="288" yo="160" id="10006108" name="inst_9EB91F35" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsTomb1" x="1712" y="576" w="32" h="32" xo="288" yo="0" id="10006111" name="inst_D512F089" depth="-1" locked="0" colour="4294967295" scaleX="2" scaleY="2"/>
     <tile bgName="tsTomb1" x="1552" y="192" w="32" h="32" xo="128" yo="160" id="10006120" name="inst_9EA25F68" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1" x="1488" y="160" w="32" h="32" xo="128" yo="160" id="10006121" name="inst_B5534E34" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1" x="1680" y="160" w="32" h="32" xo="192" yo="160" id="10006122" name="inst_052390A1" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -462,7 +469,6 @@
     <tile bgName="tsTomb1" x="240" y="880" w="32" h="32" xo="160" yo="128" id="10006395" name="inst_CCAA7E56" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1" x="208" y="880" w="32" h="32" xo="160" yo="128" id="10006396" name="inst_FA801D22" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1" x="176" y="880" w="32" h="32" xo="160" yo="128" id="10006397" name="inst_D096F1D1" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsTomb1" x="560" y="832" w="32" h="32" xo="288" yo="32" id="10006399" name="inst_CFCC04A4" depth="-1" locked="0" colour="4294967295" scaleX="2" scaleY="2"/>
     <tile bgName="tsTomb1" x="976" y="960" w="32" h="32" xo="128" yo="64" id="10006400" name="inst_950123C8" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1" x="1008" y="960" w="32" h="32" xo="128" yo="64" id="10006401" name="inst_B07EBA5C" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1" x="1040" y="960" w="32" h="32" xo="128" yo="64" id="10006402" name="inst_0C685DFA" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -973,9 +979,6 @@
     <tile bgName="tsTomb1" x="3088" y="288" w="32" h="32" xo="128" yo="32" id="10007019" name="inst_D51A7213" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1" x="560" y="864" w="32" h="32" xo="288" yo="160" id="10007032" name="inst_952D5209" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1" x="640" y="928" w="32" h="32" xo="288" yo="160" id="10007033" name="inst_6B7B5197" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsTomb1" x="4544" y="672" w="32" h="32" xo="288" yo="160" id="10007034" name="inst_8A418028" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsTomb1" x="4608" y="672" w="32" h="32" xo="128" yo="96" id="10007036" name="inst_C5638D1C" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tsTomb1" x="4336" y="672" w="32" h="32" xo="128" yo="96" id="10007037" name="inst_6CC0D4E5" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1" x="4624" y="272" w="32" h="32" xo="96" yo="96" id="10007038" name="inst_0A718AFD" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1" x="4624" y="304" w="32" h="32" xo="96" yo="96" id="10007039" name="inst_FB8A104F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb1" x="4624" y="336" w="32" h="32" xo="96" yo="96" id="10007040" name="inst_A4150A8A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -25,12 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>credits = "It is the year 20XX and the desecrated remains of a once powerful king stir###"; 
-credits += "King Arthur's wife, Gwynevere, has been captured by dark forces###"; 
-credits += "Britain is in need as well, as robot overlords lay waste to her cities###";
-credits += "Luckily all is not lost###";
-credits += "Because as the legend goes...###";
-credits += "King Arthur will arise and fight when Britain needs him the most";
+            <string>credits = "Arthur began to notice that the caves were more familiar as if he was approaching###"; 
+credits = "His old home, or maybe the machinations were leading him to his doom##"; 
+credits = "Either way now was not the time for questions, and instead it was time to press onward!##";
 y = room_height;
 x = room_width;
 vspeed = -1.2;
