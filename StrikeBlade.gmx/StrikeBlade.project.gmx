@@ -153,6 +153,7 @@
       <sprite>sprites\sprMenuLabelBase</sprite>
       <sprite>sprites\sprMenuLabelPaused</sprite>
       <sprite>sprites\sprMenuLabelExit</sprite>
+      <sprite>sprites\sprMenuLabelRestart</sprite>
     </sprites>
     <sprites name="tutorial">
       <sprite>sprites\sprTutorialMouseNew</sprite>
@@ -361,6 +362,7 @@
       <object>objects\objMenuLabel</object>
       <object>objects\objMenuLabelTitle</object>
       <object>objects\objMenuLabelExit</object>
+      <object>objects\objMenuLabelRestart</object>
     </objects>
     <objects name="ui">
       <objects name="tutorial">
