@@ -195,7 +195,7 @@ switch(currentState) {
         var scorePopUp = instance_create(x, y, objScore);
         scorePopUp.pointsValue = pointsValue;
         
-        spawnChance = random(5);
+        spawnChance = random(10);
 
         if(spawnChance &lt; 1) {
              instance_create(x, y, objArmourPickup);
