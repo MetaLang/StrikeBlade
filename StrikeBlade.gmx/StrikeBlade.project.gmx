@@ -64,71 +64,29 @@
       <sprite>sprites\sprSword</sprite>
     </sprites>
     <sprites name="player">
-      <sprites name="blue">
-        <sprites name="idle">
-          <sprite>sprites\sprIdleRightBlue</sprite>
-          <sprite>sprites\sprIdleLeftBlue</sprite>
-        </sprites>
-        <sprites name="run">
-          <sprite>sprites\sprRunRightBlue</sprite>
-          <sprite>sprites\sprRunLeftBlue</sprite>
-        </sprites>
+      <sprites name="full_armor">
+        <sprite>sprites\sprIdleRight</sprite>
+        <sprite>sprites\sprIdleLeft</sprite>
+        <sprite>sprites\sprArmorRun</sprite>
+        <sprite>sprites\sprArmorRunLeft</sprite>
       </sprites>
-      <sprites name="red">
-        <sprites name="idle">
-          <sprite>sprites\sprIdleRightRed</sprite>
-          <sprite>sprites\sprIdleLeftRed</sprite>
-        </sprites>
-        <sprites name="run">
-          <sprite>sprites\sprRunRightRed</sprite>
-          <sprite>sprites\sprRunLeftRed</sprite>
-        </sprites>
+      <sprites name="bootless">
+        <sprite>sprites\sprIdleBootRight</sprite>
+        <sprite>sprites\sprIdleBootLeft</sprite>
+        <sprite>sprites\sprBootlessRunRight</sprite>
+        <sprite>sprites\sprBootlessRunLeft</sprite>
       </sprites>
-      <sprites name="black">
-        <sprites name="idle">
-          <sprite>sprites\sprIdleRightBlack</sprite>
-          <sprite>sprites\sprIdleLeftBlack</sprite>
-        </sprites>
-        <sprites name="run">
-          <sprite>sprites\sprRunRightBlack</sprite>
-          <sprite>sprites\sprRunLeftBlack</sprite>
-        </sprites>
+      <sprites name="helmetless">
+        <sprite>sprites\sprIdleHelmetLeft</sprite>
+        <sprite>sprites\sprIdleHelmetRight</sprite>
+        <sprite>sprites\sprHelmetLessRunRight</sprite>
+        <sprite>sprites\sprHelmetLessRunLeft</sprite>
       </sprites>
-      <sprites name="green">
-        <sprites name="idle">
-          <sprite>sprites\sprIdleRightGreen</sprite>
-          <sprite>sprites\sprIdleLeftGreen</sprite>
-        </sprites>
-        <sprites name="run">
-          <sprite>sprites\sprRunRightGreen</sprite>
-          <sprite>sprites\sprRunLeftGreen</sprite>
-        </sprites>
-      </sprites>
-      <sprites name="new player">
-        <sprites name="full_armor">
-          <sprite>sprites\sprIdleRight</sprite>
-          <sprite>sprites\sprIdleLeft</sprite>
-          <sprite>sprites\sprArmorRun</sprite>
-          <sprite>sprites\sprArmorRunLeft</sprite>
-        </sprites>
-        <sprites name="bootless">
-          <sprite>sprites\sprIdleBootRight</sprite>
-          <sprite>sprites\sprIdleBootLeft</sprite>
-          <sprite>sprites\sprBootlessRunRight</sprite>
-          <sprite>sprites\sprBootlessRunLeft</sprite>
-        </sprites>
-        <sprites name="helmetless">
-          <sprite>sprites\sprIdleHelmetLeft</sprite>
-          <sprite>sprites\sprIdleHelmetRight</sprite>
-          <sprite>sprites\sprHelmetLessRunRight</sprite>
-          <sprite>sprites\sprHelmetLessRunLeft</sprite>
-        </sprites>
-        <sprites name="armorless">
-          <sprite>sprites\sprIdleArmorlessRight</sprite>
-          <sprite>sprites\sprIdleArmorlessLeft</sprite>
-          <sprite>sprites\sprArmorlessRunRight</sprite>
-          <sprite>sprites\sprArmorlessRunLeft</sprite>
-        </sprites>
+      <sprites name="armorless">
+        <sprite>sprites\sprIdleArmorlessRight</sprite>
+        <sprite>sprites\sprIdleArmorlessLeft</sprite>
+        <sprite>sprites\sprArmorlessRunRight</sprite>
+        <sprite>sprites\sprArmorlessRunLeft</sprite>
       </sprites>
       <sprite>sprites\sprPlayerInvisible</sprite>
     </sprites>
@@ -137,15 +95,6 @@
       <sprite>sprites\sprArmourPickupBlue</sprite>
       <sprite>sprites\sprAmourPickupGreen</sprite>
       <sprite>sprites\sprArmourPickupBlack</sprite>
-    </sprites>
-    <sprites name="Tiles">
-      <sprite>sprites\sprWaterTile</sprite>
-      <sprites name="Tombstones">
-        <sprite>sprites\sprTomb4</sprite>
-        <sprite>sprites\SprTomb3</sprite>
-        <sprite>sprites\sprTomb2</sprite>
-        <sprite>sprites\sprTomb1</sprite>
-      </sprites>
     </sprites>
     <sprites name="reticule">
       <sprite>sprites\sprSwordReticule</sprite>
