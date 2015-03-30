@@ -216,6 +216,7 @@
       <sprite>sprites\sprPuzzleLock</sprite>
     </sprites>
     <sprite>sprites\sprYouDied</sprite>
+    <sprite>sprites\sprite95</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgCity1</background>
@@ -294,6 +295,7 @@
         <object>objects\objLevel3StoryController</object>
         <object>objects\objLevel4StoryController</object>
         <object>objects\objLevel5StoryController</object>
+        <object>objects\objLevel6StoryController</object>
       </objects>
       <objects name="room controllers">
         <object>objects\objCreditsController</object>
@@ -354,6 +356,7 @@
       <object>objects\objPlayer</object>
       <object>objects\objTutorialPlayer</object>
       <object>objects\objPlayerRun</object>
+      <object>objects\objPlayerRunLeft</object>
     </objects>
     <objects name="pause menu">
       <object>objects\objMenuLabel</object>
@@ -416,6 +419,7 @@
       <room>rooms\rmStorylv3</room>
       <room>rooms\rmStorylv4</room>
       <room>rooms\rmStorylv5</room>
+      <room>rooms\rmStorylv6</room>
     </rooms>
   </rooms>
   <help>
