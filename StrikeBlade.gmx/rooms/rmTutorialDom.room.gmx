@@ -188,7 +188,6 @@
     <instance objName="objPlatform" x="1312" y="288" name="inst_35FDB0FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="1312" y="480" name="inst_7261DE9D" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="2048" y="256" name="inst_54AB2666" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objMenuController" x="320" y="128" name="inst_4167B3F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpawnLocationMarker" x="320" y="512" name="inst_80F7A6C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShockBot" x="2368" y="1184" name="inst_A9C39BF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShockBot" x="2144" y="1184" name="inst_54C22612" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -206,6 +205,7 @@
     <instance objName="objShockBot" x="2144" y="2688" name="inst_BD30F962" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShockBot" x="1696" y="2688" name="inst_3A91DE10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShockBot" x="1408" y="2688" name="inst_5F05F36C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPauseMenuGear" x="64" y="64" name="inst_86916CA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1_64" x="64" y="128" w="64" h="64" xo="320" yo="192" id="10007970" name="inst_B3D5D23F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

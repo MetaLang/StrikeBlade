@@ -212,7 +212,6 @@
     <instance objName="objTutorialPlatform" x="3616" y="992" name="inst_B0693778" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialPlatform" x="3648" y="992" name="inst_E4D85700" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialPlatform" x="3680" y="992" name="inst_406F343D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMenuController" x="128" y="0" name="inst_5D4A1CBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialPlayer" x="224" y="800" name="inst_5A954571" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objScreenChangeTrigger" x="4512" y="832" name="inst_8BF56590" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objScreenChangeTrigger" x="4544" y="832" name="inst_1A1E4C34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

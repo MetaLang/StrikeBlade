@@ -64,7 +64,6 @@
     <instance objName="objKeyboardController" x="416" y="32" name="inst_13F442F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="2592" y="672" name="inst_83BDE458" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="2592" y="736" name="inst_DEAF6051" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMenuController" x="512" y="32" name="inst_0FBDA5A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="3296" y="608" name="inst_F870C816" locked="0" code="" scaleX="5" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="3232" y="800" name="inst_49212E1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="3232" y="928" name="inst_1965D309" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -132,6 +131,7 @@
     <instance objName="objPlatform" x="1616" y="256" name="inst_B914F951" locked="0" code="" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="objBackgroundController" x="480" y="32" name="inst_C31057D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpawnController" x="608" y="32" name="inst_0431ACF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPauseMenuGear" x="96" y="480" name="inst_A39B54D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1_64" x="0" y="0" w="64" h="64" xo="256" yo="64" id="10014278" name="inst_6EFAC866" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

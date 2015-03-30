@@ -65,7 +65,6 @@
     <instance objName="objMouseController" x="160" y="32" name="inst_33006B05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpawnController" x="256" y="32" name="inst_AAA855D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialPlatform" x="32" y="1664" name="inst_9B7B2D5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMenuController" x="224" y="32" name="inst_F7E4FA73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="278" y="1851" name="inst_FFB1258F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialPlatform" x="0" y="1664" name="inst_AE0E1BDC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialPlatform" x="0" y="1696" name="inst_CC1683BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -77,6 +76,7 @@
     <instance objName="objMusicController" x="192" y="32" name="inst_C9847DA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpawnLocationMarker" x="320" y="1792" name="inst_B40A31E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKeyboardController" x="-640" y="96" name="inst_50F7B123" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPauseMenuGear" x="144" y="1440" name="inst_60A259E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1_1" x="0" y="896" w="64" h="64" xo="768" yo="192" id="10007756" name="inst_A9B58470" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

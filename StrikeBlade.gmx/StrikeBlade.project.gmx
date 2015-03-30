@@ -292,7 +292,6 @@
       <object>objects\objSpawnController</object>
       <object>objects\objBackgroundController</object>
       <object>objects\objMusicController</object>
-      <object>objects\objMenuController</object>
       <objects name="story">
         <object>objects\objIntroStoryController</object>
         <object>objects\objLevel1StoryController</object>
