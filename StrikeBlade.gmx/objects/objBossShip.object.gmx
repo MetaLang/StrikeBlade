@@ -251,7 +251,7 @@ switch(currentState) {
             image_index = 15;
             image_speed = 0;
         }
-        if(image_index == 15 &amp;&amp;  hp &gt; 1) {
+        if(image_index == 15) {
             // Check if bot is ready to attack
             if(laserRefreshed) { // Beam Laser
                 instance_create(x, y+50, objLaserBeam);
@@ -280,7 +280,7 @@ switch(currentState) {
             image_index = 15;
             image_speed = 0;
         }  
-        if(image_index == 15 &amp;&amp;  hp &gt; 1) {
+        if(image_index == 15) {
             if(spawnedDrones &lt; 2) {
                
                 instance_create(x+175, y+64, objAttackDrone);
@@ -304,25 +304,22 @@ switch(currentState) {
     break;
     
     case BossShipStates.recovery:
-    if(hp &lt; 1) {
-        currentState = BossShipStates.exploding;
-        break;
-    }
+
         if(image_index == 14) {
             image_index = 15;
             image_speed = 0;
         } 
     
-            if(!inRecovery &amp;&amp; hp &gt; 1) {
+            if(!inRecovery) {
                  alarm[4] = recoveryTime; 
                  
                 
                 visible = false;
                 solid = false;
-                with(objBossHeart) {
-                    visible = false;
-                    solid = false;
-                }
+
+                objBossHeart.visible = false;
+                objBossHeart.solid = false;
+                
    
             
                  inRecovery = true;
@@ -365,6 +362,8 @@ switch(currentState) {
         }
 
         instance_destroy();
+        
+        room_goto(rmStorylv6);
     break; 
 }
     
