@@ -207,6 +207,13 @@ switch(currentState) {
         effect_create_above(ef_firework, x, y, 1, c_yellow);
         var scorePopUp = instance_create(x, y, objScore);
         scorePopUp.pointsValue = pointsValue;
+        
+        spawnChance = random(5);
+
+        if(spawnChance &lt; 1) {
+             instance_create(x, y, objArmourPickup);
+        }
+        
         instance_destroy();
     break; 
 }

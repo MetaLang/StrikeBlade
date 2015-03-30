@@ -101,7 +101,7 @@ alarm[0] = seconds(1);
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>sndHomelander</sound>
+            <sound>-100</sound>
           </argument>
         </arguments>
       </action>
@@ -121,7 +121,7 @@ alarm[0] = seconds(1);
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>sndWoodlandFantasy</sound>
+            <sound>-100</sound>
           </argument>
           <argument>
             <kind>3</kind>
