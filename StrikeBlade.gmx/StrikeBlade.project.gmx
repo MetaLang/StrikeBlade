@@ -171,6 +171,7 @@
         <sprite>sprites\sprBotDeflectedLaser</sprite>
         <sprite>sprites\sprAttackDroneIdle</sprite>
       </sprites>
+      <sprite>sprites\rmGiantBotCoolDown</sprite>
       <sprites name="shockBot">
         <sprites name="run">
           <sprite>sprites\sprShockBotRun</sprite>
@@ -190,14 +191,11 @@
         <sprite>sprites\sprHeavyAttackDroneBomb</sprite>
         <sprite>sprites\sprBotBomb</sprite>
       </sprites>
-      <sprite>sprites\rmGiantBotCoolDown</sprite>
-      <sprite>sprites\sprEnemy</sprite>
       <sprite>sprites\sprShipBossBomb</sprite>
-      <sprites name="Ship Boss">
+      <sprites name="Ship Boss Parts">
         <sprite>sprites\sprBotShipBossBomb</sprite>
         <sprite>sprites\sprLaserBeamEnd</sprite>
         <sprite>sprites\sprLaserBeam</sprite>
-        <sprite>sprites\sprShipBossAttack</sprite>
         <sprite>sprites\sprAttackDroneBoss</sprite>
         <sprite>sprites\sprBossHeart</sprite>
       </sprites>
@@ -206,6 +204,12 @@
         <sprite>sprites\sprShockBot2Idle_0</sprite>
         <sprite>sprites\sprShockBot2CoolDown_0</sprite>
       </sprites>
+      <sprites name="Boss Ship">
+        <sprite>sprites\sprShipBossSpawnDrone</sprite>
+        <sprite>sprites\sprShipBossHide</sprite>
+        <sprite>sprites\sprShipBossLazer</sprite>
+      </sprites>
+      <sprite>sprites\sprEnemy</sprite>
     </sprites>
     <sprites name="enemy spawners">
       <sprite>sprites\sprBotSpawner</sprite>
@@ -396,6 +400,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rmLevel1Boss</room>
     <room>rooms\rmSplashScreen</room>
     <room>rooms\rmMainMenu</room>
     <room>rooms\rmTutorial</room>
@@ -404,7 +409,6 @@
     <room>rooms\rmTutorial2</room>
     <room>rooms\rmTutorial3</room>
     <room>rooms\rmLevel1</room>
-    <room>rooms\rmLevel1Boss</room>
     <room>rooms\rmUnitTest</room>
     <room>rooms\rmTest</room>
     <room>rooms\rmCredits</room>

@@ -34,6 +34,7 @@
           <CopyToMask>1048770</CopyToMask>
         </Config>
       </ConfigOptions>
+      <ProxyFiles/>
       <functions>
         <function>
           <name>ls_system_properties</name>
@@ -651,6 +652,7 @@
           <CopyToMask>1114306</CopyToMask>
         </Config>
       </ConfigOptions>
+      <ProxyFiles/>
       <functions/>
       <constants/>
     </file>

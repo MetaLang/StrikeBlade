@@ -343,7 +343,7 @@ alarm[ShockBotAlarms.bounce] = bounceBackTime;
     image_xscale *= -1;
 }
 else {
-    x = xprevious;
+   x = xprevious;
 }
 
 </string>
