@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>16384</colour>
   <showcolour>-1</showcolour>
-  <code>credits = "It is the year 20XX and the desecrated remains of a once powerful king stir###"; 
+  <code>/*credits = "It is the year 20XX and the desecrated remains of a once powerful king stir###"; 
 credits += "King Arthur's wife, Gwynevere, has been captured by dark forces###"; 
 credits += "Britain is in need as well, as robot overlords lay waste to her cities###";
 credits += "Luckily all is not lost###";
@@ -20,7 +20,7 @@ y = room_height;
 x = room_width;
 vspeed = -1.2;
 drawExitText = true;
-alarm[0] = seconds(40);</code>
+alarm[0] = seconds(40);*/</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -41,10 +41,10 @@ alarm[0] = seconds(40);</code>
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bgCitySky" x="0" y="0" htiled="-1" vtiled="0" hspeed="-2" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="0" name="bgCave1" x="0" y="0" htiled="-1" vtiled="0" hspeed="-3" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="0" hspeed="-3" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bgCitySky" x="0" y="0" htiled="-1" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bgCave1" x="0" y="0" htiled="-1" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="0" hspeed="-3" vspeed="0" stretch="0"/>
+    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -64,6 +64,7 @@ alarm[0] = seconds(40);</code>
     <instance objName="objTent" x="1728" y="704" name="inst_7C142DFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCampfire" x="1600" y="704" name="inst_58580606" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLevel1StoryController" x="64" y="32" name="inst_E3FF649C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objUncontrollablePlayer" x="1504" y="736" name="inst_AAA659A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1" x="192" y="736" w="32" h="32" xo="128" yo="64" id="10007897" name="inst_E89F93A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

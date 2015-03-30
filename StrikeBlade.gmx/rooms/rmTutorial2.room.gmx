@@ -202,7 +202,7 @@
     <instance objName="objShockBot2" x="3328" y="928" name="inst_4E38E810" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShockBot2" x="4112" y="928" name="inst_B2B6DADB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDroneSpawner" x="4592" y="368" name="inst_09EFE572" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPauseMenuGear" x="48" y="48" name="inst_78284C8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPauseMenuGear" x="416" y="416" name="inst_C4218F72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1" x="384" y="912" w="32" h="32" xo="128" yo="32" id="10006072" name="inst_804455BE" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

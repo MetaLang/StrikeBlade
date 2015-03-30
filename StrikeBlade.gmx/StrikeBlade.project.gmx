@@ -361,6 +361,7 @@
       <object>objects\objTutorialPlayer</object>
       <object>objects\objPlayerRun</object>
       <object>objects\objPlayerRunLeft</object>
+      <object>objects\objUncontrollablePlayer</object>
     </objects>
     <objects name="pause menu">
       <object>objects\objMenuLabel</object>
