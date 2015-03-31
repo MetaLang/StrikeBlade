@@ -99,17 +99,17 @@ spawnChance = random(10);
 if(spawnChance &lt; 1) {
      instance_create(x, y+50, objArmourPickup);
 }
-else if(spawnChance &gt; 5 &amp;&amp; spawnChance &lt; 9) {
+else if(spawnChance &gt; 5 &amp;&amp; spawnChance &lt; 8) {
     if(hitFloor) {
         instance_create(x+60, y+90, objShockBot);
         instance_create(x-60, y+90, objShockBot);
     }
-    else {
-         instance_create(x+50, y-100, objAttackDrone);
-    }
 }
-else if(spawnChance &gt; 9) {
-      instance_create(x+50, y-100, objHeavyAttackDrone);
+else if(spawnChance &gt; 8) {
+    if(hitFloor) {
+        instance_create(x+60, y+90, objShockBot2);
+        instance_create(x-60, y+90, objShockBot2);
+    }
 }
 
 
@@ -278,26 +278,6 @@ image_speed = 1/3;
     <event eventtype="4" ename="objBossBomb">
       <action>
         <libid>1</libid>
-        <id>104</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_vspeed</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -312,11 +292,57 @@ image_speed = 1/3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = seconds(bombExplodeTime); // Cool down
-image_speed = 1/3;
+            <string>var hit;
+hit = collision_rectangle(x-200, y-200, x+200, y+200, objPlayer, false, true);
+if hit != noone {
+    with(hit) {
+        damageArmour(objBossShip.damage);
+    }
+
+}
+
+
+effect_create_above(ef_explosion, x, y, 3, c_red);
+effect_create_above(ef_explosion, x+20, y+120, 3, c_red);
+effect_create_above(ef_explosion, x-20, y+120, 3, c_red);
+audio_play_sound(sndExplosionShort, 10, false);
+
+
+spawnChance = random(10);
+
+
+if(spawnChance &lt; 1) {
+     instance_create(x, y+50, objArmourPickup);
+}
+else if(spawnChance &gt; 5 &amp;&amp; spawnChance &lt; 9) {
+    if(hitFloor) {
+        instance_create(x+60, y+90, objShockBot);
+        instance_create(x-60, y+90, objShockBot);
+    }
+    else {
+         instance_create(x+50, y-100, objAttackDrone);
+    }
+}
+else if(spawnChance &gt; 9) {
+      instance_create(x+50, y-100, objHeavyAttackDrone);
+}
 </string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="4" ename="objShockBot">
