@@ -25,10 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sound_stop_all();
-sound_play(sndWoodlandFantasy);
-
-credits = "StrikeBlade## "; 
+            <string>credits = "StrikeBlade## "; 
 credits += "A Game Made with Game Maker Studio##";
 
 credits += "-Producer-##";
@@ -38,7 +35,7 @@ credits += "-Lead Programmers-##";
 credits += "Jared Hanson#";
 credits += "Billy DeLong####";
 
-credits += "-Developer-##";
+credits += "-Designer-##";
 credits += "Gairyth Gruchey####";
 
 credits += "-Programmers-##";
@@ -52,31 +49,35 @@ credits += "Clint Gardiner#";
 credits += "Richard Young####";
 
 credits += "-Sprites and Artists-##";
-credits += "Guido Bos “Frogatto”#";
-credits += "Buch “ts” #";
-credits += "Richard Young “Arthur”#";
-credits += "Billy Delong “ Robots”#";
-credits += "Gairyth Gruchey “Upgraded bot”#";
+credits += "Frogatto - Guido Bos#";
+credits += "ts - Buch#";
+credits += "Arthur - Richard Young#";
+credits += "Robots &amp; Boss - Billy Delong#";
+credits += "Excalibur - Jared Hanson#";
+credits += "Upgraded Bot - Gairyth Gruchey#";
+credits += "Campfire &amp; Tents - Zabin and Jetrel#";
 credits += "Dominick Labrie#";
-credits += "Clint Gardiner#";
-credits += "Zabin and Jetrel “Campfire &amp; Tents”####";
+credits += "Clint Gardiner####";
+
 
 
 credits += "-Soundtrack and Clips-##";
-credits += "Track 1: 91 - Peaches (8-bit w/ Organ) by Aaron Krogh";
-credits += "Track 2: ParagonX9 - Untitled VGM 01 by ParagonX9";
-credits += "Track 3: ParagonX9 - Chaoz Fantasy (8-bit) by ParagonX9";
-credits += "Track 4: 8 bit Boss Battle 3 by Simon Erik Lehnberg";
+credits += "Track 1: 91 - Peaches (8-bit w/ Organ) by Aaron Krogh#";
+credits += "Track 2: ParagonX9 - Untitled VGM 01 by ParagonX9#";
+credits += "Track 3: ParagonX9 - Chaoz Fantasy (8-bit) by ParagonX9#";
+credits += "Track 4: 8 bit Boss Battle 3 by Simon Erik Lehnberg#";
+credits += "Track 5: RottenMage Spacejacked OST 1 by sawsquarenoise####";
 
 credits += "-Graphic Artist-##";
-credits += "Jesse Reid StrikeBlade logo####";
+credits += "StrikeBlade logo - Jesse Reid####";
 
 credits += "-Special Thanks-##";
-credits += "Lunar Rogue for a Fun Saturday”##";
+credits += "The Lunar Rogue for a Fun Saturday”##";
 credits += "Every McDonalds and Greco in Town##";
 credits += "Jeff Mundee for facilitating this project##";
 credits += "and....###";
-credits += "The greatest team anyone could ask for, Thank you all for putting up with this producer";
+credits += "The greatest team anyone could ask for.#"
+credits += "Thank you all for putting up with this producer#";
 
 
 y = room_height;
@@ -85,50 +86,6 @@ vspeed = -1;
 drawExitText = true;
 alarm[0] = seconds(1);
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>212</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_end_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>-100</sound>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>-100</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -174,29 +131,8 @@ alarm[0] = seconds(1);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sound_stop(sndWoodlandFantasy);
-room_goto(MAIN_MENU);
+            <string>room_goto(MAIN_MENU);
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>212</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_end_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>sndWoodlandFantasy</sound>
           </argument>
         </arguments>
       </action>
@@ -226,7 +162,7 @@ if ( y &lt; -string_height(credits) ) y = room_height;
 if (drawExitText)
 {
     draw_set_halign(fa_left);
-    draw_text(25, room_height - 50, "Press the left mouse button to exit");
+    draw_text(25, room_height - 50, "LBM to exit");
 }
 </string>
           </argument>

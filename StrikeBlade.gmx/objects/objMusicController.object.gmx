@@ -31,19 +31,22 @@
     sounds[1] = sndGameplay;
     sounds[2] = sndBoss0;
     sounds[3] = sndBoss1;
+    sounds[4] = sndMainMenu;
     switch(room)
     {
-        case MAIN_MENU:       sound = sndMenu;   break;
-        case TUTORIAL_ROOM0:  sound = sndMenu;   break; 
-        case TUTORIAL_ROOM1:  sound = sndGameplay;   break; 
-        case TUTORIAL_ROOM2:  sound = sndGameplay;    break;
-        case TUTORIAL_ROOM3:  sound = sndBoss0;    break;
-        case TUTORIAL_ROOM4:  sound = sndGameplay; break;
-        case TUTORIAL_BOSS_ROOM:  sound = sndBoss1; break;
+        case MAIN_MENU:           sound = sndMainMenu;   break;
+        case CREDITS_ROOM:        sound = sndMenu;       break;
+        case rmStorylv6:          sound = sndMenu;       break;
+        case TUTORIAL_ROOM0:      sound = sndGameplay;   break; 
+        case TUTORIAL_ROOM1:      sound = sndGameplay;   break; 
+        case TUTORIAL_ROOM2:      sound = sndGameplay;   break;
+        case TUTORIAL_ROOM3:      sound = sndBoss0;      break;
+        case TUTORIAL_ROOM4:      sound = sndGameplay;   break;
+        case TUTORIAL_BOSS_ROOM:  sound = sndBoss1;      break;
     }
     
     i = 0;
-    repeat(4) {
+    repeat(array_length_1d(sounds)) {
         if(audio_is_playing(sounds[i]) == true &amp;&amp; sound != sounds[i]) {
             audio_stop_sound(sounds[i]);
         }    

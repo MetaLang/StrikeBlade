@@ -26,6 +26,7 @@
       <sound>sound\sndMenu</sound>
       <sound>sound\sndGameplay</sound>
       <sound>sound\sndBoss0</sound>
+      <sound>sound\sndMainMenu</sound>
     </sounds>
     <sounds name="Effects">
       <sound>sound\sndSwordUnsheath</sound>
@@ -123,7 +124,28 @@
         <sprite>sprites\sprBotDeflectedLaser</sprite>
         <sprite>sprites\sprAttackDroneIdle</sprite>
       </sprites>
-      <sprite>sprites\rmGiantBotCoolDown</sprite>
+      <sprites name="heavyAttackDrone">
+        <sprite>sprites\sprHeavyAttackDrone</sprite>
+        <sprite>sprites\sprHeavyAttackDroneBomb</sprite>
+        <sprite>sprites\sprBotBomb</sprite>
+      </sprites>
+      <sprites name="Ship Boss Parts">
+        <sprite>sprites\sprBotShipBossBomb</sprite>
+        <sprite>sprites\sprLaserBeamEnd</sprite>
+        <sprite>sprites\sprLaserBeam</sprite>
+        <sprite>sprites\sprAttackDroneBoss</sprite>
+        <sprite>sprites\sprBossHeart</sprite>
+      </sprites>
+      <sprites name="shockBot2">
+        <sprite>sprites\sprShockBot2Idle_0</sprite>
+        <sprite>sprites\sprShockBot2CoolDown_0</sprite>
+      </sprites>
+      <sprites name="Boss Ship">
+        <sprite>sprites\sprShipBossSpawnDrone</sprite>
+        <sprite>sprites\sprShipBossDeath</sprite>
+        <sprite>sprites\sprShipBossHide</sprite>
+        <sprite>sprites\sprShipBossLazer</sprite>
+      </sprites>
       <sprites name="shockBot">
         <sprites name="run">
           <sprite>sprites\sprShockBotRun</sprite>
@@ -138,30 +160,9 @@
           <sprite>sprites\sprFaultyBot</sprite>
         </sprites>
       </sprites>
-      <sprites name="heavyAttackDrone">
-        <sprite>sprites\sprHeavyAttackDrone</sprite>
-        <sprite>sprites\sprHeavyAttackDroneBomb</sprite>
-        <sprite>sprites\sprBotBomb</sprite>
-      </sprites>
-      <sprite>sprites\sprShipBossBomb</sprite>
-      <sprites name="Ship Boss Parts">
-        <sprite>sprites\sprBotShipBossBomb</sprite>
-        <sprite>sprites\sprLaserBeamEnd</sprite>
-        <sprite>sprites\sprLaserBeam</sprite>
-        <sprite>sprites\sprAttackDroneBoss</sprite>
-        <sprite>sprites\sprBossHeart</sprite>
-      </sprites>
+      <sprite>sprites\rmGiantBotCoolDown</sprite>
       <sprite>sprites\sprWallLaser</sprite>
-      <sprites name="shockBot2">
-        <sprite>sprites\sprShockBot2Idle_0</sprite>
-        <sprite>sprites\sprShockBot2CoolDown_0</sprite>
-      </sprites>
-      <sprites name="Boss Ship">
-        <sprite>sprites\sprShipBossSpawnDrone</sprite>
-        <sprite>sprites\sprShipBossDeath</sprite>
-        <sprite>sprites\sprShipBossHide</sprite>
-        <sprite>sprites\sprShipBossLazer</sprite>
-      </sprites>
+      <sprite>sprites\sprShipBossBomb</sprite>
       <sprite>sprites\sprEnemy</sprite>
     </sprites>
     <sprites name="enemy spawners">

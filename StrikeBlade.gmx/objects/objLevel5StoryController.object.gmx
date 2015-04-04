@@ -35,6 +35,31 @@ x = room_width;
 vspeed = -1.2;
 drawExitText = true;
 alarm[0] = seconds(40);
+alarm[1] = seconds(1);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>drawExitText = !drawExitText;
+alarm[1] = seconds(1);
 </string>
           </argument>
         </arguments>
@@ -123,7 +148,7 @@ if ( y &lt; -string_height(credits) ) y = room_height;
 if (drawExitText)
 {
     draw_set_halign(fa_left);
-    draw_text(25, room_height - 50, "Press the left mouse button to exit");
+    draw_text(25, room_height - 50, "LMB to skip");
 }
 </string>
           </argument>

@@ -127,7 +127,7 @@ if ( y &lt; -string_height(credits) ) y = room_height;
 if (drawExitText)
 {
     draw_set_halign(fa_left);
-    draw_text(25, room_height - 50, "Press the left mouse button to exit");
+    draw_text(25, room_height - 50, "LMB to skip");
 }
 </string>
           </argument>

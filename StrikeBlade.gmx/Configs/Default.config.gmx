@@ -435,7 +435,7 @@
       <constant name="MOUSE">objMouseController</constant>
       <constant name="ASSERT_ENABLED">true</constant>
       <constant name="KEYS">objKeyboardController</constant>
-      <constant name="UNITTESTS_ENABLED">true</constant>
+      <constant name="UNITTESTS_ENABLED">false</constant>
       <constant name="START_ROOM">rmIntroStory</constant>
       <constant name="TUTORIAL_ROOM0">rmTutorial1</constant>
       <constant name="TUTORIAL_ROOM1">rmTutorialDom</constant>
@@ -452,7 +452,7 @@
       <constant name="MAIN_MENU">rmMainMenu</constant>
       <constant name="TEST_ROOM">rmTest</constant>
       <constant name="DEBUG_INFO_ENABLED">false</constant>
-      <constant name="DEBUG_KEYS_ENABLED">true</constant>
+      <constant name="DEBUG_KEYS_ENABLED">false</constant>
       <constant name="EASY_LIGHTING_ENABLED">false</constant>
       <constant name="DYNAMIC_LIGHTS_ENABLED">false</constant>
       <constant name="EASY_LIGHTING_DEBUG_ENABLED">false</constant>
