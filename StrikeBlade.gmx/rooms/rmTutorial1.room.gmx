@@ -96,7 +96,6 @@
     <instance objName="objKeyboardController" x="192" y="64" name="inst_4AA8D933" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMouseController" x="224" y="64" name="inst_5DB5A0E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPersistentStore" x="256" y="64" name="inst_35C16E37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpawnLocationMarker" x="320" y="704" name="inst_35B59D5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="3744" y="1312" name="inst_234D28C4" locked="0" code="" scaleX="14.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="4128" y="1248" name="inst_426A8EE7" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="4576" y="1280" name="inst_FAA72920" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
@@ -109,6 +108,7 @@
     <instance objName="objPlatform" x="3744" y="1248" name="inst_5C2B83B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFaultyBot" x="3104" y="928" name="inst_4082E066" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialMouse1" x="3013" y="992" name="inst_E72E4332" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpawnLocationMarker" x="288" y="704" name="inst_9ACEA7DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tsTomb1_64" x="0" y="0" w="64" h="64" xo="256" yo="64" id="10017779" name="inst_AAC1A9D9" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

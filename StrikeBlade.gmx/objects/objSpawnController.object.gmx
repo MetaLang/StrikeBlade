@@ -30,7 +30,7 @@
 
 var deathTextDrawer = instance_create(x, y, objDeathTextDrawer);
 
-/*var playerX = objPlayer.x;
+var playerX = objPlayer.x;
 var playerY = objPlayer.y;
 var playerSpriteHeight = objPlayer.sprite_height;
 with (objPlayer)
@@ -54,7 +54,7 @@ with (instance_create(spawnX, spawnY, objPlayer))
     doDamageBlink(1.5);
 }
 
-instance_activate_all();*/
+instance_activate_all();
 </string>
           </argument>
         </arguments>
