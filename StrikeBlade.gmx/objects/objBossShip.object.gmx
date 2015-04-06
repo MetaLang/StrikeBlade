@@ -137,11 +137,16 @@ room_goto(rmStorylv6);
           <argument>
             <kind>1</kind>
             <string>// Create Explosion
-audio_play_sound(sndExplosion3, 10, false);
+audio_play_sound(
+    choose(sndExplosion1, sndExplosion2, sndExplosion3), 
+    10, 
+    false
+);
 audio_play_sound(sndExplosionLong, 10, false);
 
 effect_create_above(ef_explosion, x-250, y-100, 3, c_blue);
 effect_create_above(ef_firework, x-250, y-150, 2, c_yellow);
+effect_create_above(ef_ring, x - 250, y - 100, 3, c_red);
 var scorePopUp = instance_create(x-random_range(200, 250), y-random_range(250, 300), objScore);
 scorePopUp.pointsValue = pointsValue;
 
@@ -193,13 +198,18 @@ scorePopUp.pointsValue = pointsValue;
           <argument>
             <kind>1</kind>
             <string>// Create Explosion
-audio_play_sound(sndExplosion3, 10, false);
+audio_play_sound(
+    choose(sndExplosion1, sndExplosion2, sndExplosion3), 
+    10, 
+    false
+);
 audio_play_sound(sndExplosionLong, 10, false);
 
 
 
 effect_create_above(ef_explosion, x, y, 3, c_blue);
 effect_create_above(ef_firework, x, y-50, 2, c_yellow);
+effect_create_above(ef_ring, x, y, 3, c_red);
 var scorePopUp = instance_create(x - random_range(0, 50), y-random_range(250, 300), objScore);
 scorePopUp.pointsValue = pointsValue;
 
@@ -333,20 +343,26 @@ else {
           <argument>
             <kind>1</kind>
             <string>// Create Explosion
-audio_play_sound(sndExplosion3, 10, false);
+audio_play_sound(
+    choose(sndExplosion1, sndExplosion2, sndExplosion3), 
+    10, 
+    false
+);
 audio_play_sound(sndExplosionLong, 10, false);
 
 
 
 effect_create_above(ef_explosion, x+250, y-random_range(250, 300), 3, c_blue);
 effect_create_above(ef_firework, x+250, y-random_range(250, 300), 2, c_yellow);
+effect_create_above(ef_ring, x + 250, y - random_range(250, 300), 3, c_red);
 var scorePopUp = instance_create(x+250, y-random_range(250, 300), objScore);
 scorePopUp.pointsValue = pointsValue;
 
 
 
-effect_create_above(ef_explosion, x+150, y-random_range(250, 300), 3, c_blue);
-effect_create_above(ef_firework, x+150, y-random_range(250, 300), 2, c_yellow);
+effect_create_above(ef_explosion, x+150, y-random_range(250, 300), 3, c_red);
+effect_create_above(ef_firework, x+150, y-random_range(250, 300), 2, c_orange);
+effect_create_above(ef_ring, x + 150, y - random_range(250, 300), 3, c_red);
 var scorePopUp = instance_create(x+150, y-random_range(250, 300), objScore);
 scorePopUp.pointsValue = pointsValue;
 
