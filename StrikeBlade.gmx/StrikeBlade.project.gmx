@@ -78,6 +78,7 @@
       <sprites name="armorless">
         <sprite>sprites\sprIdleArmorlessRight</sprite>
         <sprite>sprites\sprIdleArmorlessLeft</sprite>
+        <sprite>sprites\sprGwyn</sprite>
         <sprite>sprites\sprArmorlessRunRight</sprite>
         <sprite>sprites\sprArmorlessRunLeft</sprite>
       </sprites>
@@ -313,6 +314,7 @@
       <object>objects\objPlayerRun</object>
       <object>objects\objPlayerRunLeft</object>
       <object>objects\objUncontrollablePlayer</object>
+      <object>objects\objGwynRunLeft</object>
     </objects>
     <objects name="ui">
       <objects name="tutorial">
