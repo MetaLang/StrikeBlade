@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>with (objPauseMenuGear)
 {
-    showMenu = false;
+    childTriggered = true;
 }
 </string>
           </argument>

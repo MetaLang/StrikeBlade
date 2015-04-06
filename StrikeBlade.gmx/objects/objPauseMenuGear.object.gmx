@@ -28,6 +28,7 @@
             <string>image_speed = 0;
 showMenu = false;
 menuLabels = sbArray(noone, noone, noone, noone);
+childTriggered = false;
 </string>
           </argument>
         </arguments>
@@ -83,13 +84,14 @@ if(mouse_check_button_pressed(mb_left)
     mouseClicked = true;
 }
 
-if (keyboard_check_pressed(vk_escape) || mouseClicked)
+if (keyboard_check_pressed(vk_escape) || mouseClicked || childTriggered)
 {
     image_alpha = 1;
     image_index = MenuGearImages.lighter;
     if (showMenu)
     {
         showMenu = false;
+        childTriggered = false;
         var menuLabelCount = instance_number(objMenuLabel);
         while (menuLabelCount &gt;= 0)
         {

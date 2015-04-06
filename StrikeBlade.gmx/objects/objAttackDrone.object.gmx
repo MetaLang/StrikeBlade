@@ -134,6 +134,7 @@ switch(currentState) {
     break;
         
     case RangedBotStates.exploding:
+        audio_play_sound(sndExplosion3, 10, false);
         // Create Explosion
         effect_create_above(ef_explosion, x, y, 1, c_blue);
         effect_create_above(ef_firework, x, y, 1, c_yellow);
@@ -181,24 +182,17 @@ switch(currentState) {
     <event eventtype="4" ename="objSword">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>604</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_inherited</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>hp -= other.damage;
-</string>
-          </argument>
-        </arguments>
       </action>
       <action>
         <libid>1</libid>
