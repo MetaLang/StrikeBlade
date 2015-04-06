@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>credits = "With the holy blade Excalibur once again in hand,##King Arthur tirelessly scours the catacombs in search of his Queen.###"; 
-credits += "His foes are hot on his tail,##but his determination is far greater than that of any mortal man."; 
+            <string>credits = "With his trusty sword at his side,##King Arthur tirelessly scours the catacombs in search of his Queen.###"; 
+credits += "His foes are hot on his trail,##but his determination is far greater than that of any mortal man."; 
 y = room_height;
 x = room_width;
 vspeed = -1.2;

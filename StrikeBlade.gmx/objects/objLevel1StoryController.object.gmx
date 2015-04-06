@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>credits = "Old habits die hard for he who never dies...###"; 
+            <string>credits = "Old habits die hard for he who never dies...###";
+credits += "With the holy blade Excalibur back in hand,#";
 credits += "The King finds himself once again on a quest for Queen and Country.###"; 
 credits += "On his journey through the catacombs## he stumbles upon a scrap of Gwynevere's garments.###"; 
 credits += "Also, These metal monstrosities hound him at every turn... ##Could it be related?###";
