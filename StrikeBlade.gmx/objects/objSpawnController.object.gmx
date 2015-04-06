@@ -30,6 +30,8 @@
 
 var deathTextDrawer = instance_create(x, y, objDeathTextDrawer);
 
+score = floor(score / 2);
+
 var playerX = objPlayer.x;
 var playerY = objPlayer.y;
 var playerSpriteHeight = objPlayer.sprite_height;

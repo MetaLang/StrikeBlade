@@ -342,6 +342,7 @@
       <object>objects\objCampfire</object>
       <object>objects\objTent</object>
       <object>objects\objReticule</object>
+      <object>objects\objMainMenuPointer</object>
     </objects>
     <objects name="markers">
       <object>objects\objSpawnLocationMarker</object>

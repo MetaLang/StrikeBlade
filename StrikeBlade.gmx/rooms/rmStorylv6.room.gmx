@@ -9,7 +9,7 @@
   <speed>30</speed>
   <persistent>0</persistent>
   <colour>16384</colour>
-  <showcolour>-1</showcolour>
+  <showcolour>0</showcolour>
   <code>credits = "It is the year 20XX and the desecrated remains of a once powerful king stir###"; 
 credits += "King Arthur's wife, Gwynevere, has been captured by dark forces###"; 
 credits += "Britain is in need as well, as robot overlords lay waste to her cities###";
@@ -41,10 +41,10 @@ alarm[0] = seconds(40);</code>
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bgCitySky" x="0" y="0" htiled="-1" vtiled="0" hspeed="-2" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="0" name="bgCave1" x="0" y="0" htiled="-1" vtiled="0" hspeed="-3" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="0" hspeed="-3" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bgCitySky" x="0" y="0" htiled="-1" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bgCave1" x="0" y="0" htiled="-1" vtiled="0" hspeed="3" vspeed="0" stretch="0"/>
+    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="0" hspeed="-3" vspeed="0" stretch="0"/>
+    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>

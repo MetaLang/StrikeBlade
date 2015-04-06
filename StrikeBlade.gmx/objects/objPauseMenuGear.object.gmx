@@ -90,6 +90,10 @@ if (keyboard_check_pressed(vk_escape) || mouseClicked || childTriggered)
     image_index = MenuGearImages.lighter;
     if (showMenu)
     {
+        if (instance_exists(objMainMenuPointer)) with (objMainMenuPointer)
+        {
+            instance_destroy();
+        }
         showMenu = false;
         childTriggered = false;
         var menuLabelCount = instance_number(objMenuLabel);
@@ -113,6 +117,7 @@ if (keyboard_check_pressed(vk_escape) || mouseClicked || childTriggered)
     
     if (showMenu)
     {
+        instance_create(mouse_x, mouse_y, objMainMenuPointer);
         var vi = view_current;
         var menuX = 700; 
         var menuY = 100;
