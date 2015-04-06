@@ -102,6 +102,7 @@
     <sprites name="pause menu">
       <sprite>sprites\sprMenuLabelBase</sprite>
       <sprite>sprites\sprMenuLabelPaused</sprite>
+      <sprite>sprites\sprMenuLabelResume</sprite>
       <sprite>sprites\sprMenuLabelExit</sprite>
       <sprite>sprites\sprMenuLabelRestart</sprite>
       <sprite>sprites\sprPauseMenuGear</sprite>
@@ -314,13 +315,6 @@
       <object>objects\objPlayerRunLeft</object>
       <object>objects\objUncontrollablePlayer</object>
     </objects>
-    <objects name="pause menu">
-      <object>objects\objMenuLabel</object>
-      <object>objects\objMenuLabelTitle</object>
-      <object>objects\objMenuLabelExit</object>
-      <object>objects\objMenuLabelRestart</object>
-      <object>objects\objPauseMenuGear</object>
-    </objects>
     <objects name="ui">
       <objects name="tutorial">
         <object>objects\objTutorialMovement</object>
@@ -335,6 +329,14 @@
         <object>objects\objQuitLabel</object>
         <object>objects\objCreditsLabel</object>
         <object>objects\objTestRoomLabel</object>
+      </objects>
+      <objects name="pause menu">
+        <object>objects\objMenuLabel</object>
+        <object>objects\objMenuLabelTitle</object>
+        <object>objects\objMenuLabelResume</object>
+        <object>objects\objMenuLabelExit</object>
+        <object>objects\objMenuLabelRestart</object>
+        <object>objects\objPauseMenuGear</object>
       </objects>
       <object>objects\objCampfire</object>
       <object>objects\objTent</object>

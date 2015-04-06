@@ -645,7 +645,7 @@ objPauseMenuGear.image_alpha = 0;
 //Display Score
 draw_set_color(c_white);
 draw_set_font(fntScore);
-draw_text(view_xview+view_wview-128,view_yview+64, string(score));
+draw_text(view_xview+view_wview-128,view_yview+64, "Score: " + string(score));
 
 //draw_text(room_width / 2, 50, "Armour Level: " + string(armourLevel));
 
