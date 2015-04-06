@@ -36,10 +36,19 @@ jumpCount = 0;
 damage = 1;
 invincible = false;
 hasPuzzleKey = false;
-//armourLevel = 4;
 reticule = noone;
 movementEnabled = true;
 canThrowSword = true;
+
+armourColours = sbArray(
+    c_red,
+    c_blue,
+    c_green,
+    c_black,
+);
+
+maxArmourLevel = array_length_1d(armourColours) - 1;
+armourLevel = maxArmourLevel;
 
 stuckTo = "";
 stuckX1 = 0;

@@ -183,7 +183,6 @@
     <instance objName="objSpawnController" x="256" y="96" name="inst_AD7EB615" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="2208" y="736" name="inst_5E4D01EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="2144" y="800" name="inst_A8F2BD9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPersistentStore" x="384" y="96" name="inst_B0122758" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objScreenChangeTrigger" x="4608" y="960" name="inst_FCFCBC1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objArmourPickup" x="3152" y="640" name="inst_2EAD1327" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objArmourPickup" x="4256" y="704" name="inst_03874543" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -2,14 +2,14 @@ var armourDamage = argument[0];
 
 if (!invincible)
 {   
-    if (objPersistentStore.playerArmourLevel - armourDamage >= 0)
+    if (objPlayer.armourLevel - armourDamage >= 0)
     {
+        objPlayer.armourLevel -= armourDamage;
         movementEnabled = false;
         hspeed = -getDirSign(facing) * runSpeed;
         vspeed = -runSpeed;
         alarm[PlayerAlarms.restoreMovement] = seconds(0.4);
         doDamageBlink(1.5);
-        objPersistentStore.playerArmourLevel -= armourDamage;
     }
     else //Player dies
     {

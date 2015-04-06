@@ -80,7 +80,6 @@
     <instance objName="objBotSpawner" x="928" y="768" name="inst_3BB5A67C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDroneSpawner" x="832" y="435" name="inst_A6D25EEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMusicController" x="480" y="64" name="inst_7094A809" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPersistentStore" x="512" y="64" name="inst_EBA1DDD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objHeavyDroneBlaster" x="1184" y="352" name="inst_54571FE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpawnLocationMarker" x="160" y="576" name="inst_8B6B1200" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPauseMenuGear" x="256" y="256" name="inst_2A308B60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

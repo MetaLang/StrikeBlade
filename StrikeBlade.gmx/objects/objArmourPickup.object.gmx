@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var store = objPersistentStore;
-if (store.playerArmourLevel &lt; store.playerMaxArmourLevel)
+            <string>var player = objPlayer;
+if (player.armourLevel &lt; player.maxArmourLevel)
 {
-    store.playerArmourLevel++;
+    player.armourLevel++;
     audio_play_sound(sndArmorPickup, 10, false);
     instance_destroy();
 }

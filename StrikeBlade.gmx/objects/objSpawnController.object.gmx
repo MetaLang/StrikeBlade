@@ -51,6 +51,7 @@ if (instance_exists(objSpawnLocationMarker))
 }
 with (instance_create(spawnX, spawnY, objPlayer))
 {
+    armourLevel = 2;
     doDamageBlink(1.5);
 }
 

@@ -68,7 +68,6 @@
     <instance objName="objPlayer" x="278" y="1851" name="inst_FFB1258F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialPlatform" x="0" y="1664" name="inst_AE0E1BDC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTutorialPlatform" x="0" y="1696" name="inst_CC1683BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPersistentStore" x="288" y="32" name="inst_F55608C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMusicController" x="192" y="32" name="inst_C9847DA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpawnLocationMarker" x="320" y="1792" name="inst_B40A31E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPauseMenuGear" x="144" y="1440" name="inst_60A259E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

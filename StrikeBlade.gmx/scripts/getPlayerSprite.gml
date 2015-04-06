@@ -9,8 +9,8 @@ if (sprite_index == sprPlayerInvisible)
 
 if (argument_count == 2)
 {
-    var store = objPersistentStore;
-    colour = store.playerArmourColours[store.playerArmourLevel];
+    var player = objPlayer;
+    colour = player.armourColours[player.armourLevel];
 }
 else
 {

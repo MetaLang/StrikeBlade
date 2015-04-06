@@ -263,7 +263,6 @@
       <object>objects\objDebug</object>
       <object>objects\objScore</object>
       <object>objects\objDeathTextDrawer</object>
-      <object>objects\objPersistentStore</object>
     </objects>
     <objects name="armour pickups">
       <object>objects\objChestArmour</object>
