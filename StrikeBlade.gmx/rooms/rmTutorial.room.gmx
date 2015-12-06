@@ -2555,18 +2555,6 @@
     <tile bgName="tsTomb" x="3616" y="992" w="32" h="32" xo="64" yo="192" id="10005170" name="inst_4A40402D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb" x="3648" y="992" w="32" h="32" xo="64" yo="192" id="10005171" name="inst_D7F9BDE0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb" x="3680" y="992" w="32" h="32" xo="64" yo="192" id="10005172" name="inst_45DB98E6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgTileSetGraves" x="1824" y="576" w="32" h="32" xo="0" yo="0" id="10005174" name="inst_BB1F982C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgTileSetGraves" x="1888" y="576" w="32" h="32" xo="64" yo="0" id="10005175" name="inst_54763ABC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgTileSetGraves" x="1920" y="576" w="32" h="32" xo="32" yo="0" id="10005177" name="inst_14D46780" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgTileSetGraves" x="1952" y="576" w="32" h="32" xo="32" yo="0" id="10005178" name="inst_82EDD69B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgTileSetGraves" x="1984" y="576" w="32" h="32" xo="0" yo="0" id="10005179" name="inst_D194ABF0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgTileSetGraves" x="2016" y="576" w="32" h="32" xo="64" yo="0" id="10005181" name="inst_E723349D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgTileSetGraves" x="1856" y="576" w="32" h="32" xo="64" yo="0" id="10005182" name="inst_251C8DCE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgTileSetGraves" x="2048" y="576" w="32" h="32" xo="0" yo="0" id="10005183" name="inst_183E2DE8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgTileSetGraves" x="2080" y="576" w="32" h="32" xo="0" yo="0" id="10005184" name="inst_CB73FC98" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgTileSetGraves" x="2112" y="576" w="32" h="32" xo="64" yo="0" id="10005186" name="inst_F27FB1B0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgTileSetGraves" x="2144" y="576" w="32" h="32" xo="32" yo="0" id="10005187" name="inst_01E72EAA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgTileSetGraves" x="1760" y="576" w="32" h="32" xo="32" yo="0" id="10005189" name="inst_C9F768DD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb" x="416" y="768" w="32" h="32" xo="0" yo="96" id="10005192" name="inst_3E65C024" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb" x="384" y="864" w="32" h="32" xo="0" yo="32" id="10005246" name="inst_D8928FD7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tsTomb" x="352" y="864" w="32" h="32" xo="0" yo="32" id="10005247" name="inst_A80E24CE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
